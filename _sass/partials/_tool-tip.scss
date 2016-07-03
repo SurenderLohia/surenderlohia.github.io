@@ -1,0 +1,46 @@
+/* tool-tip */
+.tool-tip {
+  display:inline-block;
+  position:relative;
+  .tool-tip-con {
+    background-color:#fff;
+    border:1px solid $grey;
+    left:0;
+    position:absolute;
+    padding:10px;
+    top:40px;
+    width:280px;
+    ul {
+      li {
+        @extend .row;
+        border-bottom:1px solid $grey;
+        margin-bottom:5px;
+        padding-bottom:5px;
+        &.bottom {
+          border-bottom:0;
+          margin-bottom:0;
+          padding-bottom:0;  
+        }
+      }
+    }
+    .year {
+      display:block;
+      float:left;
+    }
+    .desc {
+      margin-left:90px;
+    }
+    &.r {
+      left:auto;
+      right:0;
+    }  
+  }
+}
+
+@include respond-to(mobile) {
+  .tool-tip {
+    .tool-tip-con {
+      width:auto;
+    }
+  }
+}

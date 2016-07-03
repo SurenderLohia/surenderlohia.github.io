@@ -3,8 +3,6 @@
 ---
 @charset "utf-8";
 
-
-
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
@@ -49,5 +47,27 @@ $on-laptop:        800px;
 @import
         "base",
         "layout",
-        "syntax-highlighting"
+        "syntax-highlighting",
+        "partials/variables",
+        "partials/boilerplate_first",
+        "partials/media_query",
+        "partials/base",
+        "partials/layout",
+        "partials/typography",
+        "partials/z-index",
+        "partials/sprite",
+        "partials/main-menu",
+        "partials/slider",
+        "partials/intro",
+        "partials/skill",
+        "partials/list",
+        "partials/portfolio",
+        "partials/form",
+        "partials/share",
+        "partials/tool-tip",
+        "partials/light-box",
+        "partials/common",
+        "partials/icons",
+        "partials/animation",
+        "partials/helper"
 ;

@@ -1,0 +1,29 @@
+/* my-skill */
+
+.my-skill {
+  li {
+    border-radius: 40px;
+    border:1px solid $grey;
+    padding:2px;
+    margin-bottom:15px;
+    .my-skill-item {
+      background:$main-color;
+      display:block;
+      line-height:34px;
+      border-radius: 34px;
+      color:#000;
+      span {
+        padding-left:5%;
+      }
+      &.html_css {
+        width:90%;
+      }
+      &.javascript {
+        width:70%;
+      }
+      &.jquery {
+        width:80%;
+      }
+    }
+  }
+}

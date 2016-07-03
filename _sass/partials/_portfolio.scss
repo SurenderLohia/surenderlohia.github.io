@@ -1,0 +1,53 @@
+/*-- portfolio --*/
+.thumb-box {
+  border:1px solid $main-color;
+  position:relative;
+}
+
+
+// Detail
+
+.portfolio-detail-image-ct {
+  position:relative;
+}
+/*.portfolio-detail-title {
+  display:block;
+}*/
+
+
+.portfolio-detail-image-ct {
+  float:left;
+  width:60%;
+  position:relative;
+  
+  @include respond-to(mobile) {
+    float: none;
+    width: auto;
+  }
+}
+
+.portfolio-detail-aside {
+  float: right;
+  width: 36%;
+  padding:0 1% 0 3%;
+  @include respond-to(mobile) {
+    float: none;
+    width: auto;
+    padding:10px;
+  }
+}
+
+.portfolio-info-item {
+  margin-bottom:15px;
+  &.tech {
+    margin-bottom:5px;
+  }
+}
+
+.portfolio-info-item-title {
+  font-size:1.2em;
+  margin:0 0 10px 0;
+}
+
+
+

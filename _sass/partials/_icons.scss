@@ -1,0 +1,56 @@
+// Icons
+// ---------------------
+.icon {
+  width:$icon-size;
+  height:$icon-size;
+  text-align:center;
+  display:inline-block;
+  
+  i {
+    font-size:$icon-font-size;
+    line-height:$icon-size;
+  }
+  
+  // Absolute icons overlay on image
+  &.a {
+    position:absolute;
+    background-color:$black-op-5;
+    color:$main-color;
+    // Left
+    
+    &.p-left {
+      left:0;
+    }
+    &.p-right {
+      right:0;
+    }
+    &.p-top {
+      top:0;
+    }
+    &.p-bottom {
+      bottom:0;
+    }
+    &.p-v-center {
+      top:50%;
+      margin-top:-$icon-size/2;
+    }
+    
+    &.p-h-center {
+      left:50%;
+      margin-left:-$icon-size/2;
+    }
+    
+    &:hover {
+      color:#fff;
+    }
+    
+    &:active {
+      background-color:$base-color;
+    }
+  }
+  &.w {
+    color: #fff
+  }
+}
+
+

@@ -1,0 +1,47 @@
+/*-- intro --*/
+.intro {
+  text-align:center;
+}
+.intro-name {
+  font:{
+    size:2.5em;
+    weight:bold;
+  }
+  margin:0 0 0 0;
+  text-transform:uppercase;
+}
+.intro-des {
+  font:{
+    weight:normal;
+    size:1.3em;
+  }
+  margin:0 0 7px 0;
+}
+.intro-work {
+  font-size:1em;
+  margin:0;
+  a {
+    @include link;
+  }
+}
+.my-resume {
+  float:right;
+  @include respond-to(mobile-tablet-port) {
+    float:none;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+  }
+}
+
+.education {
+    @include respond-to(tablet-port) {
+      margin-bottom:10px;
+    }
+  }
+
+.my-resume-title {
+  font-weight:normal;
+  font-size:18px;
+  margin:0 0 10px 0;
+}

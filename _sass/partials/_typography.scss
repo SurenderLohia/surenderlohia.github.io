@@ -1,0 +1,61 @@
+/* -- Typography -- */   
+.title {
+    font-size:1.7em;
+    margin-bottom:15px;
+    margin-top:0;
+    text-transform:uppercase;
+}
+
+.sub-title {
+    font-size:1.4em;
+}
+
+.small-sub-title {
+    font-size:1.2em;
+}
+
+.main-text {
+  font-size:1.2em;
+}
+
+.desc {
+  text-indent:50px;
+}
+
+.sub-title2 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.button {
+    border-radius: 3px;
+    background-color:$main-color;
+    border:0;
+    color:#fff;
+    display:inline-block;
+    line-height:30px;
+    padding:5px 15px;
+    text-align: center;
+    cursor: pointer;
+    
+    transition: all 200ms ease;
+    
+    &:hover {
+        background-color:darken($main-color, 10%);
+    }
+    &:active {
+        background-color:$base-color;
+    }
+}
+
+.label {
+    border-radius: 3px;
+    background-color:$grey;
+    border:0;
+    color:$dark-grey;
+    display:block;
+    float:left;
+    line-height:20px;
+    margin:0 20px 20px 0;
+    padding:5px 10px;
+}

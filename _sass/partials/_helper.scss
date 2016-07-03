@@ -1,0 +1,136 @@
+/* -- Helper -- */
+.left {
+  float:left;
+}
+.right {
+  float:right;
+}
+
+/* clearfix */
+.row:before, .row:after {
+  display:table;
+  content:" ";
+}
+.row:after {
+  clear:both;
+}
+
+/* margins */
+.mb0 {
+  margin-bottom: 0;
+}
+
+.mt0 {
+  margin-top: 0;
+}
+
+.mb5 {
+  margin-bottom:5px;
+}
+.mb10 {
+  margin-bottom:10px;
+}
+.mR10 {
+  margin-right:10px;
+}
+.pB3per {
+  margin-bottom:3%;
+}
+.mB22 {
+  margin-bottom:22px;
+}
+.mb20 {
+  margin-bottom:20px;
+}
+.mor-bot-reset {
+  margin-bottom:0;
+}
+.center {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.tar {
+  text-align:right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.line-height-1 {
+  line-height: 1;
+}
+
+
+/* reset */
+.last {
+  margin-right:0;
+  padding-right:0;
+}
+
+.first {
+  margin-left:0;
+  padding-left:0;
+}
+
+.top {
+  margin-top:0;
+  padding-top:0;
+}
+
+.bottom {
+  margin-bottom:0;
+  padding-bottom:0;
+}
+
+.mor-top-bot-reset {
+  margin-top:0;
+  margin-bottom:0;
+}
+
+// Colors
+.grey-bg {
+  background-color: $grey;
+}
+
+// Typography
+.bold {
+  font-weight: bold;
+}
+
+.expand {
+  display:block;
+}
+
+
+// Animation
+.trans {
+  transition: all 200ms ease;
+}
+
+/* For Show Hide */
+.show {
+  display:block;
+}
+
+.hide {
+  display:none;
+}
+
+.overflow-hidden {
+  overflow: hidden; 
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+/* mobile */
+@include respond-to(mobile) {
+  .m-bottom {
+    margin-bottom:0;
+  }
+}
+
+

@@ -1,0 +1,42 @@
+.main-menu-ct {
+  background-color: $main-color;
+}
+
+.main-menu {
+  @extend .row;
+}
+
+.main-menu-item {
+  float: left;
+  /*width: 33%;*/
+
+  /*&.mid {
+    width: 34%;
+  }*/
+}
+
+.main-menu-link {
+  display: block;
+  color: #fff;
+  line-height:40px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0 15px;
+
+  transition: all 200ms ease;
+
+
+  &:hover {
+    background-color: darken($main-color, 5%);
+  }
+
+  &:active {
+    background-color: darken($main-color, 7%);
+  }
+  
+  &.active {
+    background-color: darken($main-color, 10%);
+  }
+}
+

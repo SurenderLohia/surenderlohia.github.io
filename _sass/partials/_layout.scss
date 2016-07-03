@@ -1,0 +1,165 @@
+/* -- Layout -- */
+.wrap {
+  width:100%;
+  max-width:1000px;
+  margin:0 auto;
+}
+
+.wrap-in {
+  @include respond-to(mobile) {
+    padding-left:10px;
+    padding-right:10px;
+  }
+}
+
+.divider {
+    border-bottom:2px dashed $main-color;
+    margin-bottom:3%;
+    padding-bottom:3%;
+    @include respond-to(mobile) {
+      margin-bottom:10px;
+      padding-bottom:10px;
+    }
+}
+
+.l-my-resume, 
+.one-half, 
+.one-third,
+.one-fourth, 
+.l-contact, 
+.l-contact-left, 
+.l-share  {
+    float:left;
+}
+
+.l-intro {
+  margin-bottom: 3%;
+}
+
+.one-half {
+    width:47%;
+    margin-left:-2px;
+    @include respond-to(mobile-por) {
+      float:none;
+      width:auto;
+      margin:0 0 10px 0;
+    }
+}
+
+.col-50 {
+  width: 50%;
+}
+
+.col-60 {
+  width: 60%;
+}
+
+.one-third {
+    width:30%;
+    margin-right: 5%;
+    @include respond-to(mobile) {
+      float:none;
+      width:auto;
+      margin:0 0 10px 0;
+    }
+    &.last {
+      margin-right:0;
+    }
+}
+
+
+.one-half.first, 
+.l-contact {
+    margin-right:3%;
+    border-right:2px dashed $main-color;
+    padding-right:3%;
+    margin-left:0;
+    @include respond-to(mobile-por) {
+       border-bottom:2px dashed $main-color;
+       border-right:0;
+       margin-right:0;
+       padding-right:0;
+    }
+}
+
+
+
+.one-fourth {
+    width:23.5%;
+    margin:0 2% 2% 0;
+    @include respond-to(mobile) {
+      width:48%;
+      margin:0 4% 4% 0;
+      
+      &:nth-child(2n) {
+        margin-right:0;
+      }
+    }
+}
+
+.one-fourth {
+  &:nth-child(4n) {
+      @include respond-to(tablet-up) {
+      margin-right:0;
+    }
+  }
+}
+
+.l-contact {
+    width:74%;
+    margin-right:-2%;
+}
+
+.l-contact {
+    @include respond-to(mobile) {
+       border-bottom:2px dashed $main-color;
+       border-right:0;
+       margin-right:0;
+       padding-right:0;
+    }
+}
+
+.l-contact-left  {
+  width:32%;
+  margin-left:1px;
+}
+
+.l-contact-right  {
+  float:right;
+  width:65%;
+}
+
+@include respond-to(mobile-por) {
+  .l-contact-left,
+  .l-contact-right  {
+    float:none;
+    width:auto;
+    margin-bottom:10px;
+  }
+}
+
+.l-share {
+    float:right;
+    width:20%;
+}
+
+/*-- Mobile --*/
+@include respond-to(mobile) {
+  .l-slider, 
+  .l-intro, 
+  .l-my-resume, 
+  .l-contact, 
+  .l-share,
+  .l-contact-left,
+  .l-contact-right  {
+    float:none;
+    width:auto;
+    margin-bottom:10px;
+  }
+  .l-slider {
+    width:180px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+}
+

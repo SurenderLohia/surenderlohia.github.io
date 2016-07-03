@@ -1,0 +1,38 @@
+.one-fourth.ng-enter,
+.one-fourth.ng-leave,
+.one-fourth.ng-move {
+  -webkit-transition: 1s linear all;
+  -moz-transition: 1s linear all;
+  -o-transition: 1s linear all;
+  transition: 1s linear all;
+}
+
+.one-fourth.ng-enter,
+.one-fourth.ng-move {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.one-fourth.ng-move.ng-move-starting,
+.one-fourth.ng-enter.ng-enter-starting {
+  opacity: 0;
+}
+
+.one-fourth.ng-move.ng-move-active,
+.one-fourth.ng-enter.ng-enter-active {
+  opacity: 1;
+  height: auto;
+}
+
+.one-fourth.ng-leave {
+  opacity: 1;
+  overflow: hidden;
+}
+
+.one-fourth.ng-leave.ng-leave-active {
+  opacity: 0;
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}

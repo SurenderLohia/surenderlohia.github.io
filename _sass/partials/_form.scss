@@ -1,0 +1,23 @@
+/*-- Form --*/
+.input {
+  color:$grey;
+  border:1px solid $grey;
+  margin:0 -1px 10px -1px;
+  box-shadow: 0 2px 2px #e2e2e2 inset;
+  width:94%;
+  padding:0 3%;
+  &.text {
+    height:28px;
+    line-height:28px;
+  }
+  &.textarea {
+    height:71px;
+    padding-top:5px;
+    padding-bottom:5px;
+  }
+  @include respond-to(mobile-land-up) {
+    &.name {
+      margin-bottom: 22px;
+    }
+  }
+}
