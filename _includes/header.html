@@ -1,15 +1,15 @@
 <div class="main-menu-ct">
   <div class="wrap">
     <ul class="main-menu">
-      <li class="main-menu-item">
-          <span class="main-menu-link active" data-href="home">Home</span>
-      </li>
-      <li class="main-menu-item">
-          <span class="main-menu-link" data-href="portfolio">Portfolio</span>
-      </li>
-      <li class="main-menu-item">
-          <span class="main-menu-link" data-href="blog">Blog</span>
-      </li>
+      {% for item in site.data.navigation %}
+        <li class="main-menu-item">
+          {% if {{page.active}} == {{item.active}} %}
+            <a class="main-menu-link active" href="{{ item.url }}">{{ item.name }}</a>
+          {% else %}
+            <a class="main-menu-link" href="{{ item.url }}">{{ item.name }}</a>
+          {% endif %}
+        </li>
+      {% endfor %}
     </ul>
   </div>
 </div>

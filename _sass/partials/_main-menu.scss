@@ -23,6 +23,7 @@
   cursor: pointer;
   font-weight: bold;
   padding: 0 15px;
+  text-decoration: none;
 
   transition: all 200ms ease;
 
@@ -38,5 +39,13 @@
   &.active {
     background-color: darken($main-color, 10%);
   }
+
+  &:visited,
+  &:hover,
+  &:active {
+    color: #fff;
+    text-decoration: none;
+  }
+
 }
 

@@ -1,0 +1,9 @@
+- name: Home
+  url: /
+  active: home
+- name: Portfolio
+  url: /portfolio/
+  active: portfolio
+- name: Blog
+  url: /blog/
+  active: blog
