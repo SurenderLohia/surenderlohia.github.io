@@ -1,0 +1,125 @@
+[
+  {
+    "name": "HTML5",
+    "type": ["html", "front-end", "language"]
+  },
+  {
+    "name": "CSS3",
+    "type": ["css", "front-end", "language"]
+  },
+  {
+    "name": "JavaScript",
+    "type": ["js", "front-end", "language"]
+  },
+  {
+    "name": "JSON",
+    "type": ["js", "front-end", "back-end", "language"]
+  },
+  {
+    "name": "AJAX",
+    "type": ["js", "front-end"]
+  },
+  {
+    "name": "jQuery",
+    "type": ["js", "front-end", "library"]
+  },
+  {
+    "name": "Sass",
+    "type": ["css", "front-end", "tool"]
+  },
+  {
+    "name": "Photoshop",
+    "type": ["tool", "front-end"]
+  },
+  {
+    "name": "Bootstrap",
+    "type": ["front-end", "html", "css", "framework"]
+  },
+  
+  {
+    "name": "Knockout JS",
+    "type": ["js", "front-end", "framework", "library", "MV*"]
+  },
+  {
+    "name": "Angular JS",
+    "type": ["js", "front-end", "framework", "MV*"]
+  },
+  
+  {
+    "name": "Backbone.js",
+    "type": ["js", "front-end", "framework", "library", "MV*"]
+  },
+  {
+    "name": "React",
+    "type": ["js", "front-end", "library"]
+  },
+  {
+    "name": "Cordova",
+    "type": ["hybrid", "front-end", "tool"]
+  },
+  {
+    "name": "Require JS",
+    "type": ["js", "module-loader", "front-end", "tool", "library"]
+  },
+  {
+    "name": "Grunt",
+    "type": ["tool", "build-tool", "taks-runner"]
+  },
+  {
+    "name": "Qunit",
+    "type": ["js", "front-end", "testing", "unit-testing", "library", "framework"]
+  },
+
+  {
+    "name": "Famous",
+    "type": ["js", "front-end", "library", "animation"]
+  },
+  {
+    "name": "Linux",
+    "type": ["os"]
+  },
+  {
+    "name": "Git",
+    "type": ["tool", "version-control"]
+  },
+  {
+    "name": "Vim",
+    "type": ["tool", "editor"]
+  },
+  {
+    "name": "Php",
+    "type": ["language", "back-end"]
+  },
+  {
+    "name": "Python",
+    "type": ["language", "back-end"]
+  },
+  {
+    "name": "Node",
+    "type": ["js", "language", "back-end"]
+  },
+  {
+    "name": "SQLite",
+    "type": ["db", "language", "back-end"]
+  },
+  {
+    "name": "MongoDB",
+    "type": ["db", "language", "back-end", "document-database"]
+  },
+  {
+    "name": "Polymer",
+    "type": ["js", "front-end", "framework"]
+  },
+  {
+    "name": "D3",
+    "type": ["js", "front-end", "library", "chart", "animatio", "data"]
+  },
+  {
+    "name": "Django",
+    "type": ["framework", "back-end", "python"]
+  },
+  {
+    "name": "Wordpress",
+    "type": ["framework", "back-end", "php"]
+  }
+]
