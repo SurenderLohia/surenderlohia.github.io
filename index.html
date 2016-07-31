@@ -7,9 +7,9 @@ active: home
   <!-- Slider main container -->
   <div class="slider-ct">
     <div class="slider">
-      <img  src="{{ "/images/slide_2.jpg" | prepend: site.baseurl }}" alt="Suren Portfolio Slider">
-      <img src="images/slide_2.jpg" alt="Suren Portfolio Slider">
-      <img src="images/slide_2.jpg" alt="Suren Portfolio Slider">
+      <img  src="{{ "/asserts/images/slide_2.jpg" | prepend: site.baseurl }}" alt="Suren Portfolio Slider">
+      <img src="{{ "/asserts/images/slide_2.jpg" | prepend: site.baseurl }}" alt="Suren Portfolio Slider">
+      <img src="{{ "/asserts/images/slide_2.jpg" | prepend: site.baseurl }}" alt="Suren Portfolio Slider">
     </div>
   </div>
   
@@ -48,7 +48,7 @@ active: home
       {% for project in site.data.projects limit:4 %}
         <div class="one-fourth">
           <div class="thumb-box" data-detail-link="/portfolio/{{ project.slugName }}">
-            <span class="portfolio-btn detail-link"><img src="/images/projects/thumb/{{ project.slugName }}.jpg" | prepend: site.baseurl }}" alt="{{ project.name }}" title="{{ skill.name }}"> </span>
+            <span class="portfolio-btn detail-link"><img src="/asserts/images/projects/thumb/{{ project.slugName }}.jpg" | prepend: site.baseurl }}" alt="{{ project.name }}" title="{{ skill.name }}"> </span>
             <a class="icon a p-top p-right" href="{{project.link}}"><i class="fa fa-external-link"></i></a>
           </div>
         </div><!-- thumb-item -->
