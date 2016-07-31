@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "Welcome to JavaScript!"
+date:   2016-07-30 14:39:05 +0530
+categories: javascript
+---
+Hello javascript

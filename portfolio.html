@@ -5,6 +5,14 @@ permalink: /portfolio/
 active: portfolio
 ---
 
-<div>
-  <h2>Portfolio</h2>
+<h2 class="title mt3per">Projects</h2>
+<div class="row recent-projects">
+  {% for project in site.data.projects %}
+    <div class="one-fourth">
+      <div class="thumb-box" data-detail-link="/portfolio/{{ project.slugName }}">
+        <span class="portfolio-btn detail-link"><img src="/images/projects/thumb/{{ project.slugName }}.jpg" | prepend: site.baseurl }}" alt="{{ project.name }}" title="{{ skill.name }}"> </span>
+        <a class="icon a p-top p-right" href="{{project.link}}"><i class="fa fa-external-link"></i></a>
+      </div>
+    </div><!-- thumb-item -->
+  {% endfor %}
 </div>

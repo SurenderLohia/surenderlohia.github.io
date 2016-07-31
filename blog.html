@@ -6,5 +6,8 @@ active: blog
 ---
 
 <div>
-  <h2>Blog</h2>
+  <h2 class="mt3per">Blog</h2>
+  {% for post in site.posts %}
+    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+  {% endfor %}
 </div>
