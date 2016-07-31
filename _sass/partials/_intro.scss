@@ -20,9 +20,6 @@
 .intro-work {
   font-size:1em;
   margin:0;
-  a {
-    @include link;
-  }
 }
 .my-resume {
   float:right;

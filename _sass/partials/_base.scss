@@ -31,21 +31,45 @@ ul {
   padding:0;
 }
 
-@mixin link {
-  //@include link-colors($my-link, $my-link-hover, $my-link-active, $my-link-visited, $my-link-hover);   
-}
+@mixin link-setup($color, $hover-color, $active-color, $visited-color) {
+  color: $my-link;
+  text-decoration: none;
 
-@mixin dark-link {
-  //@include link-colors(darken($my-link, 20%), $my-link-hover, $my-link-active, $my-link-visited, $my-link-hover);    
+  &:hover,
+  &:focus {
+    color: red;
+    text-decoration: none;
+  }
+
+  &:active {
+    color: $my-link-active;
+  }
+
+  &:visited {
+    color: $my-link-visited;
+  }
 }
 
 .link {
-  @include link();
+  color: $my-link;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $my-link;
+    text-decoration: none;
+  }
+
+  &:active {
+    color: $my-link-active;
+  }
+
+  &:visited {
+    color: $my-link-visited;
+  }
 }
 
-.dark-link {
-  @include dark-link();
-}
+
 
 
 
