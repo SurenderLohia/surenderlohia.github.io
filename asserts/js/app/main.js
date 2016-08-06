@@ -3,6 +3,7 @@
   $(document).ready(function() {
     slickInit();
     lightBoxInit();
+    $('.con-group').colorbox({rel:'gal', inline: true});
   });
 
 
@@ -39,5 +40,7 @@
       $lightBox.hide();
     }
   }
+
+  
 
 })(window, document, window.jQuery);
