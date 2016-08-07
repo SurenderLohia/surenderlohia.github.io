@@ -6,6 +6,11 @@
   float:right;
 }
 
+.res-img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* clearfix */
 .row:before, .row:after {
   display:table;

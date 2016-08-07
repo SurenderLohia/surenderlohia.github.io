@@ -3,7 +3,7 @@
   $(document).ready(function() {
     slickInit();
     lightBoxInit();
-    $('.con-group').colorbox({rel:'gal', inline: true});
+    $('.thumb-box').colorbox({rel:'gal', inline: true});
   });
 
 

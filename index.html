@@ -46,7 +46,7 @@ active: home
     <div class="row recent-projects">
       {% for project in site.data.projects limit:4 %}
         <div class="one-fourth">
-          <div class="thumb-box" data-detail-link="/portfolio/{{ project.slugName }}">
+          <div class="thumb-box" href="#{{ project.slugName }}">
             <span class="portfolio-btn detail-link"><img src="/asserts/images/projects/thumb/{{ project.slugName }}.jpg" | prepend: site.baseurl }}" alt="{{ project.name }}" title="{{ skill.name }}"> </span>
             <a class="icon a p-top p-right" href="{{project.link}}"><i class="fa fa-external-link"></i></a>
           </div>
@@ -58,19 +58,6 @@ active: home
     </div>
   </div><!-- /portfolio-list -->
   <div class="row">
-    <div class="l-contact">
-      <h2 class="title">Contact Me</h2>
-      <form class="row pB3per" action="#" method="post">
-        <div class="l-contact-left">
-          <input class="input text name" type="text" placeholder="Your Name">
-          <input class="input text m-bottom" type="text" placeholder="Your E-Main">
-        </div>
-        <div class="l-contact-right tar m-bottom">
-          <textarea class="input textarea" placeholder="Your Message"></textarea>
-          <button class="button" type="submit">Submit</button>
-        </div>
-      </form>
-    </div><!--/contact-->
     <div class="l-share">
       <h2 class="title">Share</h2>
       <div class="share row">
@@ -78,14 +65,7 @@ active: home
         <a class="twitter" href="#">Twitter</a>
         <a class="google_plus" href="#">Google Plus</a>
       </div>
-      <a class="con-group" href="#con-1">content-1 btn</a>
-      <a class="con-group" href="#con-2">content-2 btn</a>
-      <div class="hide">
-        <div id="con-1">This is conent one</div>
-        <div id="con-2">This is conent two</div>
-      </div>
     </div><!--/Share-->
-  
   </div>
 </section>
 
@@ -125,3 +105,72 @@ active: home
       </div> <!-- /#education -->
     </div>
     <!-- Light box end -->
+
+<div class="hide">
+{% for project in site.data.projects limit:4 %}
+<!-- Detail -->
+
+<div id="{{ project.slugName }}">
+  <div class="wrap">
+  <h2>{{ project.name }}</h2>
+  <div class="row">
+    <div class="portfolio-detail-image-ct mb20">
+      <a class="icon a p-right"><i class="fa fa-external-link"></i></a>
+      <img class="res-img" src="/asserts/images/projects/detail/{{ project.slugName }}.png" | prepend: site.baseurl}}" alt="{{ project.name }}">
+    </div>
+    <div class="portfolio-detail-aside">
+      <div class="portfolio-info-item tech">
+        <h4 class="portfolio-info-item-title">Technologies Used:</h4>
+        <div class="row">
+          {% for tech in project.technologies %}
+            <span class="label">{{ tech }}</span>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="portfolio-info-item">
+        <h4 class="portfolio-info-item-title">Team Members</h4>
+        <div class="mb10 row">
+          <div class="sub-title2 mb10">Designer(s):</div>
+          <ul class="divider-list row">
+          {% for designer in project.teamMembers.designers %}
+            <li class="divider-list-item"><a class="link" href="{{ designer.linked_in }}">{{ designer.name }}</a></li>
+          {% endfor %}
+          </ul>
+        </div>
+
+        <div class="mb10 row">
+          <div class="sub-title2 mb10">Front End Developer(s)</div>
+          <ul class="divider-list row">
+          {% for frontEndDeveloper in project.teamMembers.frontEndDevelopers %}
+              <li class="divider-list-item"><a class="link" href="{{ frontEndDeveloper.linked_in }}">{{ frontEndDeveloper.name }}</a></li>
+          {% endfor %}
+          </ul>
+        </div>
+
+        <div class="mb10 row">
+          <div class="sub-title2 mb10">Back End Developer(s):</div>
+          <ul class="divider-list row">
+          {% for backEndDeveloper in project.teamMembers.backEndDevelopers %}
+              <li class="divider-list-item"><a class="link" href="{{ backEndDeveloper.linked_in }}">{{ backEndDeveloper.name }}</a></li>
+          {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <div class="portfolio-info-item">
+        <h4 class="portfolio-info-item-title">Supported:</h4>
+        <div class="row">
+          {% for item in project.devices  %}
+            <span class="label">{{ item }}</span>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="portfolio-info-item">
+        <h4 class="portfolio-info-item-title">Link:</h4>
+        <a class="link main-text" href="{{ project.link }}">{{ project.link }}</a>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+{% endfor %}
+</div>
