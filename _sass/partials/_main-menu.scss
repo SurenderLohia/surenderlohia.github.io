@@ -1,9 +1,9 @@
 .main-menu-ct {
-  background-color: $main-color;
+  
 }
 
 .main-menu {
-  @extend .row;
+  display: inline-block;
 }
 
 .main-menu-item {
@@ -17,7 +17,7 @@
 
 .main-menu-link {
   display: block;
-  color: #fff;
+  color: $main-color;
   line-height:40px;
   text-align: center;
   cursor: pointer;
@@ -29,21 +29,21 @@
 
 
   &:hover {
-    background-color: darken($main-color, 5%);
+    color: darken($main-color, 10%);
   }
 
   &:active {
-    background-color: darken($main-color, 7%);
+    color: darken($main-color, 15%);
   }
   
   &.active {
-    background-color: darken($main-color, 10%);
+    color: darken($main-color, 20%);
   }
 
   &:visited,
   &:hover,
   &:active {
-    color: #fff;
+    color: $main-color;
     text-decoration: none;
   }
 
