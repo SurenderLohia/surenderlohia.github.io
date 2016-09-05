@@ -1,5 +1,5 @@
 .main-menu-ct {
-  
+  margin-top: 2%;
 }
 
 .main-menu {
@@ -8,11 +8,7 @@
 
 .main-menu-item {
   float: left;
-  /*width: 33%;*/
-
-  /*&.mid {
-    width: 34%;
-  }*/
+  margin: 0 15px;
 }
 
 .main-menu-link {
@@ -24,20 +20,25 @@
   font-weight: bold;
   padding: 0 15px;
   text-decoration: none;
+  font-size: 18px;
+  border-bottom: 2px solid #fff;
 
   transition: all 200ms ease;
 
 
   &:hover {
     color: darken($main-color, 10%);
+    border-color: $main-color;
   }
 
   &:active {
     color: darken($main-color, 15%);
+    border-color: $main-color;
   }
   
   &.active {
     color: darken($main-color, 20%);
+    border-color: $main-color;
   }
 
   &:visited,
