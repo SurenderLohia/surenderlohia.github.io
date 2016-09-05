@@ -31,41 +31,23 @@ ul {
   padding:0;
 }
 
-@mixin link-setup($color, $hover-color, $active-color, $visited-color) {
-  color: $my-link;
+
+.primary-link {
+  color: $primary-color-text;
   text-decoration: none;
 
   &:hover,
   &:focus {
-    color: red;
+    color: $primary-color-text;
     text-decoration: none;
   }
 
   &:active {
-    color: $my-link-active;
+    color: $primary-color-text;
   }
 
   &:visited {
-    color: $my-link-visited;
-  }
-}
-
-.link {
-  color: $my-link;
-  text-decoration: none;
-
-  &:hover,
-  &:focus {
-    color: $my-link;
-    text-decoration: none;
-  }
-
-  &:active {
-    color: $my-link-active;
-  }
-
-  &:visited {
-    color: $my-link-visited;
+    color: $primary-color-text;
   }
 }
 

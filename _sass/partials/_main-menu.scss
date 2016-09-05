@@ -1,5 +1,6 @@
 .main-menu-ct {
-  margin-top: 2%;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .main-menu {
@@ -13,7 +14,7 @@
 
 .main-menu-link {
   display: block;
-  color: $main-color;
+  color: $accent-color;
   line-height:40px;
   text-align: center;
   cursor: pointer;
@@ -27,24 +28,24 @@
 
 
   &:hover {
-    color: darken($main-color, 10%);
-    border-color: $main-color;
+    color: darken($accent-color, 10%);
+    border-color: $accent-color;
   }
 
   &:active {
-    color: darken($main-color, 15%);
-    border-color: $main-color;
+    color: darken($accent-color, 15%);
+    border-color: $accent-color;
   }
   
   &.active {
-    color: darken($main-color, 20%);
-    border-color: $main-color;
+    color: darken($accent-color, 20%);
+    border-color: $accent-color;
   }
 
   &:visited,
   &:hover,
   &:active {
-    color: $main-color;
+    color: $accent-color;
     text-decoration: none;
   }
 

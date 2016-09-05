@@ -30,24 +30,58 @@
 
 .button {
     border-radius: 3px;
-    background-color:$main-color;
     border:0;
-    color:#fff;
     display:inline-block;
     line-height:30px;
     padding:5px 15px;
     text-align: center;
     cursor: pointer;
-    
     transition: all 200ms ease;
-    
+}
+
+.button-primary {
+    background-color:$primary-color-text;
+    color: $primary-color;
+
     &:hover {
-        background-color:darken($main-color, 10%);
+        background-color:darken($primary-color-text, 5%);
     }
     &:active {
-        background-color:$base-color;
+        background-color:darken($primary-color-text, 10%);
+    }
+
+    &.button-spacing-border {
+        border: 1px solid $primary-color-text;
     }
 }
+
+.button-accent {
+   background-color:$accent-color;
+   color:#fff;
+
+    &:hover {
+        background-color:darken($accent-color, 5%);
+    }
+    &:active {
+        background-color:darken($accent-color, 10%);
+    } 
+}
+
+.button-primary-transparent {
+   background-color: transparent;
+   color:#fff;
+   border: 1px solid $primary-color-text;
+
+    &:hover {
+        background-color:$primary-color-text;
+        color: $primary-color;
+    }
+    &:active {
+        background-color:darken($primary-color-text, 5%);
+        color: $primary-color;
+    } 
+}
+
 
 .label {
     border-radius: 3px;

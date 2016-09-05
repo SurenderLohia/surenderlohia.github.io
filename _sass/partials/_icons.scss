@@ -17,7 +17,7 @@
   &.a {
     position:absolute;
     background-color:$black-op-5;
-    color:$main-color;
+    color:$primary-color-text;
     // Left
     
     &.p-left {
@@ -43,11 +43,11 @@
     }
     
     &:hover {
-      color:#fff;
+      background-color: $black-op-7;
     }
     
     &:active {
-      background-color:$base-color;
+      background-color: $black-op-7;
     }
   }
   &.w {

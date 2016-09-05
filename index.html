@@ -2,67 +2,79 @@
 layout: default
 active: home
 ---
-<header class="row divider">
-  <!-- Slider main container -->
-  <div class="slider-ct">
-    <div class="slider">
-      <img  src="{{ "/asserts/images/slide_2.jpg" | prepend: site.baseurl }}" alt="Suren Portfolio Slider">
-      <img src="{{ "/asserts/images/slide_2.jpg" | prepend: site.baseurl }}" alt="Suren Portfolio Slider">
-      <img src="{{ "/asserts/images/slide_2.jpg" | prepend: site.baseurl }}" alt="Suren Portfolio Slider">
-    </div>
-  </div>
-  
-  <div class="l-intro">
-    <div class="intro">
-      <h1 class="intro-name">Surender Lohia</h1>
-      <h2 class="intro-des">Front-End Developer</h2>
-      <h3 class="intro-work"><a class="link" href="#">@ Tenmiles</a></h3>
-    </div>
-  </div><!-- /l-intro-->
-  <div class="col-60 row center">
-    <div class="one-third">
-      <div class="button expand light-box-btn" data-href="education">Education</div>
-    </div>
-    <div class="one-third">
-      <div class="button expand light-box-btn" data-href="employment">Employment</div>
-    </div>
-    <div class="one-third last">
-      <a class="button expand" href="images/surender_lohia_2016_resume.docx" target="_blank">Resume</a>
-    </div>
-  </div>
-</header>
-<section>
-  <div class="row divider">
-    <h2 class="title">Skill Set</h2>
-    <div class="row text-center">
-      {% for skill in site.data.skills %}
-      <span class="label">{{ skill.name }}</span>
-      {% endfor %}
-    </div>
-  </div>
-  <!--/top-section-->
-  <div class="divider">
-    <h2 class="title">Recent Projects</h2>
-    <div class="row recent-projects">
-      {% for project in site.data.projects limit:4 %}
-        <div class="one-fourth">
-          <div class="thumb-box" href="#{{ project.slugName }}">
-            <span class="portfolio-btn detail-link"><img src="/asserts/images/projects/thumb/{{ project.slugName }}.jpg" | prepend: site.baseurl }}" alt="{{ project.name }}" title="{{ skill.name }}"> </span>
-            <a class="icon a p-top p-right" href="{{project.link}}"><i class="fa fa-external-link"></i></a>
+
+<div class="head-section">
+  <div class="wrap">
+    <div class="wrap-in">
+      <header class="row divider">
+        <!-- Slider main container -->
+        <div class="slider-ct">
+          <div class="slider">
+            <img  src="{{ "/asserts/images/slide_2.jpg" | prepend: site.baseurl }}" alt="Suren Portfolio Slider">
+            <img src="{{ "/asserts/images/slide_2.jpg" | prepend: site.baseurl }}" alt="Suren Portfolio Slider">
+            <img src="{{ "/asserts/images/slide_2.jpg" | prepend: site.baseurl }}" alt="Suren Portfolio Slider">
           </div>
-        </div><!-- thumb-item -->
-      {% endfor %}
+        </div>
+        
+        <div class="l-intro">
+          <div class="intro">
+            <h1 class="intro-name">Surender Lohia</h1>
+            <h2 class="intro-des">Front-End Developer</h2>
+            <h3 class="intro-work"><a class="primary-link" href="#">@ Tenmiles</a></h3>
+          </div>
+        </div><!-- /l-intro-->
+        <div class="col-60 row center">
+          <div class="one-third">
+            <div class="button button-primary-transparent expand light-box-btn" data-href="education">Education</div>
+          </div>
+          <div class="one-third">
+            <div class="button button-primary button-spacing-border expand light-box-btn" data-href="employment">Employment</div>
+          </div>
+          <div class="one-third last">
+            <a class="button button-primary-transparent expand" href="images/surender_lohia_2016_resume.docx" target="_blank">Resume</a>
+          </div>
+        </div>
+      </header>
     </div>
-    <div class="row">
-      <a class="button right">View More</a>
-    </div>
-  </div><!-- /portfolio-list -->
-  <div class="row divider">
-    <h2 class="title text-center">Share</h2>
-    <div class="share row text-center">
-      <a href="#"><i class="fa fa-facebook icon share-icon"></i></a>
-      <a href="#"><i class="fa fa-twitter icon share-icon"></i></a>
-      <a href="#"><i class="fa fa-google-plus icon share-icon"></i></a>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="wrap-in">
+      <div class="row divider">
+        <h2 class="title">Skill Set</h2>
+        <div class="row text-center">
+          {% for skill in site.data.skills %}
+          <span class="label">{{ skill.name }}</span>
+          {% endfor %}
+        </div>
+      </div>
+      <!--/top-section-->
+      <div class="divider">
+        <h2 class="title">Recent Projects</h2>
+        <div class="row recent-projects">
+          {% for project in site.data.projects limit:4 %}
+            <div class="one-fourth">
+              <div class="thumb-box" href="#{{ project.slugName }}">
+                <span class="portfolio-btn detail-link"><img src="/asserts/images/projects/thumb/{{ project.slugName }}.jpg" | prepend: site.baseurl }}" alt="{{ project.name }}" title="{{ skill.name }}"> </span>
+                <a class="icon a p-top p-right" href="{{project.link}}"><i class="fa fa-external-link"></i></a>
+              </div>
+            </div><!-- thumb-item -->
+          {% endfor %}
+        </div>
+        <div class="row">
+          <a class="button right">View More</a>
+        </div>
+      </div><!-- /portfolio-list -->
+      <div class="row divider">
+        <h2 class="title text-center">Share</h2>
+        <div class="share row text-center">
+          <a href="#"><i class="fa fa-facebook icon share-icon"></i></a>
+          <a href="#"><i class="fa fa-twitter icon share-icon"></i></a>
+          <a href="#"><i class="fa fa-google-plus icon share-icon"></i></a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
