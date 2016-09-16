@@ -9,3 +9,8 @@
 .slider {
   position:relative;
 }
+
+
+.slider:not(:first-child) {
+    display: none;
+}

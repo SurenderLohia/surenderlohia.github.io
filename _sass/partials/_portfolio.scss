@@ -1,23 +1,29 @@
-/*-- portfolio --*/
+/*-- Projects --*/
+
 .thumb-box {
-  border:1px solid $main-color;
+  border:1px solid $divider-color;
   position:relative;
+  cursor: pointer;
 }
 
 
 // Detail
 
-.portfolio-detail-image-ct {
+.project-detail-title {
+  padding: 10px;
+  border-bottom: 1px solid $divider-color;
+  margin-bottom: 0;
+}
+
+.project-detail-image-ct {
+  padding:20px 0;
   position:relative;
 }
-/*.portfolio-detail-title {
-  display:block;
-}*/
 
 
-.portfolio-detail-image-ct {
+.project-detail-image-ct {
   float:left;
-  width:60%;
+  width:64%;
   position:relative;
   
   @include respond-to(mobile) {
@@ -26,10 +32,11 @@
   }
 }
 
-.portfolio-detail-aside {
+.project-detail-aside {
+  background-color: #ECEAEA;
   float: right;
   width: 36%;
-  padding:0 1% 0 3%;
+  padding:20px 1% 20px 3%;
   @include respond-to(mobile) {
     float: none;
     width: auto;
@@ -37,17 +44,42 @@
   }
 }
 
-.portfolio-info-item {
+.project-info-item {
   margin-bottom:15px;
   &.tech {
     margin-bottom:5px;
   }
 }
 
-.portfolio-info-item-title {
+.project-info-item-title {
   font-size:1.2em;
   margin:0 0 10px 0;
 }
+
+#cboxPrevious, #cboxNext {
+  display: none !important;
+}
+
+.colorbox-controls {
+  position: absolute;
+  top: -41px;
+  right: 0;
+}
+
+.colorbox-control-btn {
+  background: $primary-color-text;
+  color: $primary-color;
+  display: block;
+  float: left;
+  margin-right: 1px;
+
+  &:hover {
+    background: $primary-color;
+    color: $primary-color-text;
+  }
+}
+
+
 
 
 

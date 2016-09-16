@@ -3,7 +3,7 @@
   $(document).ready(function() {
     slickInit();
     lightBoxInit();
-    $('.thumb-box').colorbox({rel:'gal', inline: true});
+    colorboxInit();
   });
 
 
@@ -39,6 +39,24 @@
       $overlay.hide();
       $lightBox.hide();
     }
+  }
+
+  function colorboxInit() {
+    var $colorbox = $('.thumb-box');
+    var $colorboxPrevBtn = $('.colorbox-prev-btn');
+    var $colorboxNextBtn = $('.colorbox-next-btn');
+    var $colorboxCloseBtn = $('.colorbox-close-btn');
+    
+    $colorbox.colorbox({
+      rel:'gal', 
+      inline: true,
+      arrowKey: false,
+      closeButton: false
+    });
+
+    $colorboxPrevBtn.on('click', $.colorbox.prev);
+    $colorboxNextBtn.on('click', $.colorbox.next);
+    $colorboxCloseBtn.on('click', $.colorbox.close);
   }
 
   

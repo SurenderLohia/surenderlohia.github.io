@@ -1,6 +1,6 @@
 /* -- Base -- */
 body {
-  color:#2c3e50;
+  color: $primary-text-color;
   font-size:0.875em;
   line-height:1.4;
   height:100%;
@@ -32,7 +32,7 @@ ul {
 }
 
 
-.primary-link {
+.primary-text-link {
   color: $primary-color-text;
   text-decoration: none;
 
@@ -50,6 +50,65 @@ ul {
     color: $primary-color-text;
   }
 }
+
+.accent-link {
+  color: $accent-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    text-decoration: none;
+  }
+
+  &:active {
+    color: $accent-color;
+  }
+
+  &:visited {
+    color: $accent-color;
+  }
+}
+
+.primary-link {
+  color: $primary-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $primary-color;
+    text-decoration: none;
+  }
+
+  &:active {
+    color: $primary-color;
+  }
+
+  &:visited {
+    color: $primary-color;
+  }
+}
+
+.secondary-link {
+  color: $secondary-text-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $secondary-text-color;
+    text-decoration: none;
+  }
+
+  &:active {
+    color: $secondary-text-color;
+  }
+
+  &:visited {
+    color: $secondary-text-color;
+  }
+}
+
+
 
 
 

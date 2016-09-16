@@ -6,8 +6,7 @@ active: blog
 ---
 <div class="wrap">
   <div class="wrap-in">
-    <div>
-      <h2 class="mt3per">Blog</h2>
+    <div class="text-center main-content">
       {% for post in site.posts %}
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       {% endfor %}
