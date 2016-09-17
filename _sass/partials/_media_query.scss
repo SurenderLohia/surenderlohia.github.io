@@ -44,13 +44,6 @@ $tablet               : 1024px;
     }
   }
   
-  // Mobile and tablet portrait 
-  @else if $media == mobile-tablet-port {
-    @media only screen and (max-width: $tablet - 1) {
-      @content;
-    }
-  }
-  
   // Tablet portrait 
   @else if $media == tablet-port {
     @media only screen and (min-width: $tablet-por) and (max-width: $tablet - 1) {
@@ -68,6 +61,13 @@ $tablet               : 1024px;
   // Tablet and up
   @else if $media == tablet-up {
     @media only screen and (min-width: $tablet-por) {
+      @content;
+    }
+  }
+
+  // mobile and tablet
+  @else if $media == mobile-and-tablet {
+    @media only screen and (max-width: $tablet) {
       @content;
     }
   }

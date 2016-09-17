@@ -6,7 +6,7 @@
 }
 
 .wrap-in {
-  @include respond-to(mobile) {
+  @include respond-to(mobile-and-tablet) {
     padding-left:10px;
     padding-right:10px;
   }
@@ -26,6 +26,7 @@
 .l-my-resume, 
 .one-half, 
 .one-third,
+.one-third-normal,
 .one-fourth, 
 .l-contact, 
 .l-contact-left, 
@@ -55,6 +56,13 @@
   width: 60%;
 }
 
+.col-60-res {
+  width: 60%;
+  @include respond-to(mobile) {
+    width: auto;
+  }
+}
+
 .one-third {
     width:30%;
     margin-right: 5%;
@@ -66,6 +74,14 @@
     &.last {
       margin-right:0;
     }
+}
+
+.one-third-normal {
+  width:30%;
+  margin-right: 5%;
+  &.last {
+    margin-right:0;
+  }
 }
 
 

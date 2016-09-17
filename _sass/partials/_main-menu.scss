@@ -1,6 +1,12 @@
 .main-menu-ct {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  @include rem-fallback(padding-top, 0.9375);
+  @include rem-fallback(padding-bottom, 0.9375);
+
+  @include respond-to(mobile-and-tablet) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
   box-shadow: 0 3px 3px $divider-color;
 }
 
@@ -15,6 +21,7 @@
 
 .main-menu-link {
   @extend .trans;
+  @include font-size(1.125);
   display: block;
   color: $accent-color;
   line-height:40px;
@@ -23,7 +30,6 @@
   font-weight: bold;
   padding: 0 15px;
   text-decoration: none;
-  font-size: 18px;
   border-bottom: 2px solid #fff;
 
   &:hover {
@@ -47,6 +53,5 @@
     color: $accent-color;
     text-decoration: none;
   }
-
 }
 

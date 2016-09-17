@@ -1,4 +1,15 @@
-/* -- Typography -- */   
+/* -- Typography -- */
+html {
+    font-size: 16px;
+    @include respond-to(mobile) {
+        font-size: 10px; 
+    }
+    @include respond-to(tablet) {
+       font-size: 10px;
+    }
+}
+
+
 .title {
     font-size:1.7em;
     margin-bottom:15px;
@@ -101,6 +112,6 @@
     color:$dark-grey;
     display:inline-block;
     line-height:20px;
-    margin:0 20px 20px 0;
-    padding:5px 10px;
+    @include rem-fallback(margin, 0, 1.25, 1.25, 0);
+    @include rem-fallback(padding, 0.3125, 0.625);
 }

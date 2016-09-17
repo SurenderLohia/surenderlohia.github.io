@@ -51,7 +51,9 @@
       rel:'gal', 
       inline: true,
       arrowKey: false,
-      closeButton: false
+      closeButton: false,
+      width: '100%',
+      maxWidth: '1000px'
     });
 
     $colorboxPrevBtn.on('click', $.colorbox.prev);
