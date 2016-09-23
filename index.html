@@ -64,7 +64,27 @@ active: home
           {% endfor %}
         </div>
         <div class="row">
-          <a href="/portfolio" class="button button-primary right">View More</a>
+          <a href="/portfolio" class="button button-primary right">More Projects</a>
+        </div>
+      </div><!-- /portfolio-list -->
+      <div class="divider">
+        <h2 class="title">Recent Post</h2>
+        {% for post in site.posts limit:3 %}
+          <div class="post-item">
+            <div class="mb10">
+              <a class="post-title-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              <div class="mt5">
+                <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+              </div>
+            </div>
+            <div class="post-description">
+              <p> {{ post.description }}</p>
+            </div>
+            <a href="{{ post.url | prepend: site.baseurl }}" class="button button-primary">Read More...</a>
+          </div>
+        {% endfor %}
+        <div class="row">
+          <a href="/blog" class="button button-primary right">More Post</a>
         </div>
       </div><!-- /portfolio-list -->
       <div class="row divider">
@@ -73,6 +93,14 @@ active: home
           <a class="share-link" href="#"><i class="fa fa-facebook icon share-icon"></i></a>
           <a class="share-link" href="#"><i class="fa fa-twitter icon share-icon"></i></a>
           <a class="share-link" href="#"><i class="fa fa-google-plus icon share-icon"></i></a>
+        </div>
+      </div>
+
+      <div class="row divider">
+        <h2 class="title text-center">Follow</h2>
+        <div class="follow row text-center">
+          <a class="follow-link" href="#"><i class="fa fa-google-plus icon follow-icon"></i></a>
+          <a class="follow-link" href="#"><i class="fa fa-twitter icon follow-icon"></i></a>
         </div>
       </div>
     </div>

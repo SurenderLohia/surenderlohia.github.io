@@ -23,35 +23,26 @@
   @extend .trans;
   @include font-size(1.125);
   display: block;
-  color: $accent-color;
+  color: $primary-text-color;
   line-height:40px;
   text-align: center;
   cursor: pointer;
   font-weight: bold;
   padding: 0 15px;
   text-decoration: none;
-  border-bottom: 2px solid #fff;
 
   &:hover {
-    color: darken($accent-color, 10%);
-    border-color: $accent-color;
+    color: $primary-color;
   }
 
   &:active {
-    color: darken($accent-color, 15%);
-    border-color: $accent-color;
+    color: $primary-color;
   }
   
   &.active {
-    color: darken($accent-color, 20%);
-    border-color: $accent-color;
+    color: $primary-color;
   }
 
-  &:visited,
-  &:hover,
-  &:active {
-    color: $accent-color;
-    text-decoration: none;
-  }
+  
 }
 

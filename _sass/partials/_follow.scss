@@ -1,0 +1,26 @@
+/*-- follow --*/
+
+.follow-link {
+  @extend .trans;
+  color: $primary-color;
+  text-decoration: none;
+  border: 1px solid $primary-color;
+  display: inline-block;
+  margin: 0 5px;
+
+  &:hover,
+  &:focus {
+    color: $primary-color-text;
+    text-decoration: none;
+    background-color: $primary-color;
+  }
+
+  &:active {
+    color: $primary-color-text;
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+.follow-icon {
+  font-size: 20px;
+}
