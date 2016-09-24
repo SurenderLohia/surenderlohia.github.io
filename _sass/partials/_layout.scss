@@ -12,6 +12,12 @@
   }
 }
 
+.wrap-small {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .divider {
     
     margin-bottom:3%;
@@ -71,9 +77,17 @@
       width:auto;
       margin:0 0 10px 0;
     }
-    &.last {
+    &.last, {
       margin-right:0;
     }
+}
+
+.one-third {
+  &:nth-child(3n) {
+      @include respond-to(tablet-up) {
+      margin-right:0;
+    }
+  }
 }
 
 .one-third-normal {
@@ -120,6 +134,18 @@
       margin-right:0;
     }
   }
+}
+
+.slider-ct {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-ct {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .l-contact {

@@ -51,11 +51,11 @@ active: home
         </div>
       </div>
       <!--/top-section-->
-      <div class="divider">
+      <div class="divider wrap-small">
         <h2 class="title">Recent Projects</h2>
-        <div class="row recent-projects">
-          {% for project in site.data.projects limit:4 %}
-            <div class="one-fourth">
+        <div class="row recent-projects mb30">
+          {% for project in site.data.projects limit:3 %}
+            <div class="one-third">
               <div class="thumb-box" href="#{{ project.slugName }}">
                 <span class="portfolio-btn detail-link"><img src="/asserts/images/projects/thumb/{{ project.slugName }}.jpg" | prepend: site.baseurl }}" alt="{{ project.name }}" title="{{ skill.name }}"> </span>
                 <a class="icon a p-top p-right" href="{{project.link}}"><i class="fa fa-external-link"></i></a>
@@ -67,7 +67,7 @@ active: home
           <a href="/portfolio" class="button button-primary right">More Projects</a>
         </div>
       </div><!-- /portfolio-list -->
-      <div class="divider">
+      <div class="divider post-ct">
         <h2 class="title">Recent Post</h2>
         {% for post in site.posts limit:3 %}
           <div class="post-item">
