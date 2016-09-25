@@ -1,9 +1,10 @@
 [
   {
     "id": 1,
-    "name": "Zapaco",
-    "slugName": "zapaco",
-    "link": "http://www.zapacos.com/",
+    "name": "Euroline",
+    "slugName": "euroline",
+    "link": "http://www.euroline4x4.com/index.php?language=en",
+    "isLive": true,
     "company": "sam-sys",
     "technologies": [
       "HTML",
@@ -15,29 +16,35 @@
     "devices": [
       "Desktop"
     ],
-    "date": "2012-06-30T18:30:00.000Z",
+    "date": "2012-04",
     "description": "",
     "teamMembers": {
-      "designers": [{
-        "name": "Chidambara Kumar",
-        "linkedIn": "https://www.linkedin.com/in/chidambara-kumar-42328125"
-      }],
-      "frontEndDevelopers": [{
-        "name": "Surender Lohia",
-        "linkedIn": "https://in.linkedin.com/in/surederlohia"
-      }],
-      "backEndDevelopers": [{
-        "name": "Gopi"
-      }, {
-        "name": "Francis"
-      }]
+      "designers": [
+        {
+          "name": "Chidambara Kumar",
+          "linkedIn": "https://www.linkedin.com/in/chidambara-kumar-42328125"
+        }
+      ],
+      "frontEndDevelopers": [
+        {
+          "name": "Surender Lohia",
+          "linkedIn": "https://in.linkedin.com/in/surederlohia"
+        }
+      ],
+      "backEndDevelopers": [
+        {
+          "name": "Pugazhenthi Krishnamoothi",
+          "linkedIn": "https://in.linkedin.com/in/pugazhenthikrishnamoothi"
+        }
+      ]
     }
-  }, 
+  },
   {
     "id": 2,
-    "name": "Pcgets",
-    "slugName": "pcgets",
-    "link": "http://www.pcgetz.com/http://www.zapacos.com/",
+    "name": "Desi Date",
+    "slugName": "desi_date",
+    "link": "http://desidate.dns-systems.net/",
+    "isLive": true,
     "company": "sam-sys",
     "technologies": [
       "HTML",
@@ -49,28 +56,36 @@
     "devices": [
       "Desktop"
     ],
-    "date": "2012-06-30T18:30:00.000Z",
+    "date": "2012-05",
     "description": "",
     "teamMembers": {
-      "designers": [{
-        "name": "Chidambara Kumar",
-        "linkedIn": "https://www.linkedin.com/in/chidambara-kumar-42328125"
-      }],
-      "frontEndDevelopers": [{
-        "name": "Surender Lohia",
-        "linkedIn": "https://in.linkedin.com/in/surederlohia"
-      }],
-      "backEndDevelopers": [{
-        "name": "Gopi"
-      }]
+      "designers": [
+        {
+          "name": "Chidambara Kumar",
+          "linkedIn": "https://www.linkedin.com/in/chidambara-kumar-42328125"
+        }
+      ],
+      "frontEndDevelopers": [
+        {
+          "name": "Surender Lohia",
+          "linkedIn": "https://in.linkedin.com/in/surederlohia"
+        }
+      ],
+      "backEndDevelopers": [
+        {
+          "name": "Pugazhenthi Krishnamoothi",
+          "linkedIn": "https://in.linkedin.com/in/pugazhenthikrishnamoothi"
+        }
+      ]
     }
   },
   {
     "id": 3,
-    "name": "Euroline",
-    "slugName": "euroline",
-    "link": "http://www.euroline4x4.com/index.php?language=en",
-    "company": "sam-sys",
+    "name": "Sam-Sys",
+    "slugName": "sam-sys",
+    "link": "https://web.archive.org/web/20160402013006/http://www.sam-sys.com/",
+    "isLive": false,
+    "company": "samsys",
     "technologies": [
       "HTML",
       "CSS",
@@ -79,30 +94,40 @@
       "PHP"
     ],
     "devices": [
-      "Desktop"
+      "desktop"
     ],
-    "date": "2012-04-29T18:30:00.000Z",
+    "date": "2012-06",
     "description": "",
     "teamMembers": {
-      "designers": [{
-        "name": "Chidambara Kumar",
-        "linkedIn": "https://www.linkedin.com/in/chidambara-kumar-42328125"
-      }],
-      "frontEndDevelopers": [{
-        "name": "Surender Lohia",
-        "linkedIn": "https://in.linkedin.com/in/surederlohia"
-      }],
-      "backEndDevelopers": [{
-        "name": "Pugazhenthi Krishnamoothi",
-        "linkedIn": "https://in.linkedin.com/in/pugazhenthikrishnamoothi"
-      }]
+      "designers": [],
+      "frontEndDevelopers": [
+        {
+          "name": "Surender Lohia",
+          "linkedIn": "https://in.linkedin.com/in/surederlohia"
+        },
+        {
+          "name": "kayalvizhi",
+          "linkedIn": "#"
+        },
+        {
+          "name": "Sundhar",
+          "linkedIn": "#"
+        }
+      ],
+      "backEndDevelopers": [
+        {
+          "name": "Selva Sankar",
+          "linkedIn": "https://in.linkedin.com/in/pugazhenthikrishnamoothi"
+        }
+      ]
     }
   },
   {
     "id": 4,
-    "name": "Desi Date",
-    "slugName": "desi_date",
-    "link": "http://desidate.dns-systems.net/",
+    "name": "Gadget Swag",
+    "slugName": "gadget-swag",
+    "link": "https://web.archive.org/web/20150303053030/http://gadgetswag.com/",
+    "isLive": false,
     "company": "sam-sys",
     "technologies": [
       "HTML",
@@ -112,30 +137,41 @@
       "PHP"
     ],
     "devices": [
-      "Desktop"
+      "desktop"
     ],
-    "date": "2012-05-29T18:30:00.000Z",
+    "date": "2012-06",
     "description": "",
     "teamMembers": {
-      "designers": [{
-        "name": "Chidambara Kumar",
-        "linkedIn": "https://www.linkedin.com/in/chidambara-kumar-42328125"
-      }],
-      "frontEndDevelopers": [{
-        "name": "Surender Lohia",
-        "linkedIn": "https://in.linkedin.com/in/surederlohia"
-      }],
-      "backEndDevelopers": [{
-        "name": "Pugazhenthi Krishnamoothi",
-        "linkedIn": "https://in.linkedin.com/in/pugazhenthikrishnamoothi"
-      }]
+      "designers": [
+        {
+          "name": "Chidambara Kumar",
+          "linkedIn": "https://www.linkedin.com/in/chidambara-kumar-42328125"
+        }
+      ],
+      "frontEndDevelopers": [
+        {
+          "name": "Surender Lohia",
+          "linkedIn": "https://in.linkedin.com/in/surederlohia"
+        }
+      ],
+      "backEndDevelopers": [
+        {
+          "name": "PUSHPARAJ NAGARAJAN",
+          "linkedIn": "https://www.linkedin.com/in/pushparajnagarajan"
+        },
+        {
+          "name": "Francis",
+          "linkedIn": "#"
+        }
+      ]
     }
   },
   {
     "id": 5,
-    "name": "Project 5",
-    "slugName": "desi_date",
-    "link": "http://desidate.dns-systems.net/",
+    "name": "Zapaco",
+    "slugName": "zapaco",
+    "link": "http://www.zapacos.com/",
+    "isLive": true,
     "company": "sam-sys",
     "technologies": [
       "HTML",
@@ -147,21 +183,380 @@
     "devices": [
       "Desktop"
     ],
-    "date": "2012-05-29T18:30:00.000Z",
+    "date": "2012-06",
     "description": "",
     "teamMembers": {
-      "designers": [{
-        "name": "Chidambara Kumar",
-        "linkedIn": "https://www.linkedin.com/in/chidambara-kumar-42328125"
-      }],
-      "frontEndDevelopers": [{
-        "name": "Surender Lohia",
-        "linkedIn": "https://in.linkedin.com/in/surederlohia"
-      }],
-      "backEndDevelopers": [{
-        "name": "Pugazhenthi Krishnamoothi",
-        "linkedIn": "https://in.linkedin.com/in/pugazhenthikrishnamoothi"
-      }]
+      "designers": [
+        {
+          "name": "Chidambara Kumar",
+          "linkedIn": "https://www.linkedin.com/in/chidambara-kumar-42328125"
+        }
+      ],
+      "frontEndDevelopers": [
+        {
+          "name": "Surender Lohia",
+          "linkedIn": "https://in.linkedin.com/in/surederlohia"
+        }
+      ],
+      "backEndDevelopers": [
+        {
+          "name": "Gopi"
+        },
+        {
+          "name": "Francis"
+        }
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "name": "Pcgets",
+    "slugName": "pcgets",
+    "link": "http://www.pcgetz.com/http://www.zapacos.com/",
+    "isLive": true,
+    "company": "sam-sys",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "jQuery",
+      "PHP"
+    ],
+    "devices": [
+      "Desktop"
+    ],
+    "date": "2012-06",
+    "description": "",
+    "teamMembers": {
+      "designers": [
+        {
+          "name": "Chidambara Kumar",
+          "linkedIn": "https://www.linkedin.com/in/chidambara-kumar-42328125"
+        }
+      ],
+      "frontEndDevelopers": [
+        {
+          "name": "Surender Lohia",
+          "linkedIn": "https://in.linkedin.com/in/surederlohia"
+        }
+      ],
+      "backEndDevelopers": [
+        {
+          "name": "Gopi"
+        }
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "name": "Dream Makers",
+    "slugName": "dream-makers",
+    "link": "https://web.archive.org/web/20140101063536/http://dreammakersindia.com/",
+    "isLive": false,
+    "company": "sam-sys",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "jQuery",
+      "PHP"
+    ],
+    "devices": [
+      "desktop"
+    ],
+    "date": "2012-06",
+    "description": "",
+    "teamMembers": {
+      "designers": [
+        {
+          "name": "Chidambara Kumar",
+          "linkedIn": "https://www.linkedin.com/in/chidambara-kumar-42328125"
+        }
+      ],
+      "frontEndDevelopers": [
+        {
+          "name": "Surender Lohia",
+          "linkedIn": "https://in.linkedin.com/in/surederlohia"
+        }
+      ],
+      "backEndDevelopers": [
+        {
+          "name": "Riaz",
+          "linkedIn": "#"
+        }
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "name": "Paia",
+    "slugName": "paia",
+    "link": "http://www.paiabaycoffee.com/",
+    "isLive": true,
+    "company": "sam-sys",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "jQuery",
+      "PHP"
+    ],
+    "devices": [
+      "desktop"
+    ],
+    "date": "2012-08",
+    "description": "",
+    "teamMembers": {
+      "designers": [
+        {
+          "name": "Chidambara Kumar",
+          "linkedIn": "https://www.linkedin.com/in/chidambara-kumar-42328125"
+        }
+      ],
+      "frontEndDevelopers": [
+        {
+          "name": "Surender Lohia",
+          "linkedIn": "https://in.linkedin.com/in/surederlohia"
+        }
+      ],
+      "backEndDevelopers": [
+        {
+          "name": "Pugazhenthi Krishnamoothi",
+          "linkedIn": "https://in.linkedin.com/in/pugazhenthikrishnamoothi"
+        }
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "name": "India Goodies",
+    "slugName": "india-goodies",
+    "link": "http://www.indiagoodies.com/home.php",
+    "isLive": true,
+    "company": "sam-sys",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "jQuery",
+      "PHP"
+    ],
+    "devices": [
+      "desktop"
+    ],
+    "date": "2013-05",
+    "description": "",
+    "teamMembers": {
+      "designers": [
+        {
+          "name": "Chidambara Kumar",
+          "linkedIn": "https://www.linkedin.com/in/chidambara-kumar-42328125"
+        }
+      ],
+      "frontEndDevelopers": [
+        {
+          "name": "Surender Lohia",
+          "linkedIn": "https://in.linkedin.com/in/surederlohia"
+        }
+      ],
+      "backEndDevelopers": [
+        {
+          "name": "Pugazhenthi Krishnamoothi",
+          "linkedIn": "https://in.linkedin.com/in/pugazhenthikrishnamoothi"
+        }
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "name": "Agency Symposium",
+    "slugName": "agency-symposium",
+    "link": "https://web.archive.org/web/20140606131905/http://project-d.com.au/agencysymposium/",
+    "isLive": false,
+    "company": "rage",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "jQuery",
+      "PHP"
+    ],
+    "devices": [
+      "desktop",
+      "tablet",
+      "mobile"
+    ],
+    "date": "2013-09",
+    "description": "",
+    "teamMembers": {
+      "designers": [],
+      "frontEndDevelopers": [
+        {
+          "name": "Surender Lohia",
+          "linkedIn": "https://in.linkedin.com/in/surederlohia"
+        },
+        {
+          "name": "kayalvizhi",
+          "linkedIn": "#"
+        },
+        {
+          "name": "Sundhar",
+          "linkedIn": "#"
+        }
+      ],
+      "backEndDevelopers": [
+        {
+          "name": "Selva Sankar",
+          "linkedIn": "https://in.linkedin.com/in/pugazhenthikrishnamoothi"
+        }
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "name": "Westpac Gettingmore",
+    "slugName": "westpac-gettingmore",
+    "link": "http://info.westpac.com.au/gettingmore/?wbc-vnty=www.westpac.com.au/gettingmore",
+    "isLive": true,
+    "company": "rage",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "jQuery"
+    ],
+    "devices": [
+      "desktop",
+      "tablet",
+      "mobile"
+    ],
+    "date": "2013-10",
+    "description": "",
+    "teamMembers": {
+      "frontEndDevelopers": [
+        {
+          "name": "Surender Lohia",
+          "linkedIn": "https://in.linkedin.com/in/surederlohia"
+        }
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "name": "Top Juice",
+    "slugName": "top-juice",
+    "link": "http://www.topjuice.com.au/",
+    "isLive": true,
+    "company": "rage",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "jQuery"
+    ],
+    "devices": [
+      "desktop"
+    ],
+    "date": "2013-06",
+    "description": "",
+    "teamMembers": {
+      "designers": [],
+      "frontEndDevelopers": [
+        {
+          "name": "Surender Lohia",
+          "linkedIn": "https://in.linkedin.com/in/surederlohia"
+        }
+      ],
+      "backEndDevelopers": []
+    }
+  },
+  {
+    "id": 13,
+    "name": "HappyFox Chat",
+    "slugName": "happyFox-chat",
+    "link": "https://happyfoxchat.com/",
+    "isLive": true,
+    "company": "tenmiles",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Node"
+    ],
+    "devices": [
+      "desktop",
+      "android",
+      "ios"
+    ],
+    "date": "2015-06",
+    "description": "",
+    "teamMembers": {
+      "designers": [
+        {
+          "name": "Chandra Sekar",
+          "linkedIn": "#"
+        },
+        {
+          "name": "Karthikeyan",
+          "linkedIn": "#"
+        }
+      ],
+      "frontEndDevelopers": [
+        {
+          "name": "Chandra Sekar",
+          "linkedIn": "#"
+        },
+        {
+          "name": "Surender Lohia",
+          "linkedIn": "https://in.linkedin.com/in/surederlohia"
+        },
+        {
+          "name": "Sundhar",
+          "linkedIn": "#"
+        }
+      ],
+      "backEndDevelopers": [
+        {
+          "name": "Anand Muthukrishnan",
+          "linkedIn": "https://www.linkedin.com/in/luckydev"
+        },
+        {
+          "name": "Aruljothi Kuppusamy",
+          "linkedIn": "https://www.linkedin.com/in/aruljothikuppusamy"
+        },
+        {
+          "name": "Nagarajan k",
+          "linkedIn": "https://www.linkedin.com/in/nagarajan-k-62a54744"
+        }
+      ],
+      "fullStackDevelopers": [
+        {
+          "name": "Saravanan Shanmugam",
+          "linkedIn": "https://www.linkedin.com/in/saravanan90"
+        },
+        {
+          "name": "Sundharasan",
+          "linkedIn": "#"
+        }
+      ],
+      "testing": [
+        {
+          "name": "Harish Badrinarayanan",
+          "linkedIn": "https://www.linkedin.com/in/harishbk88"
+        },
+        {
+          "name": "Saravanan",
+          "linkedIn": "#"
+        },
+        {
+          "name": "Athis",
+          "linkedIn": "#"
+        },
+        {
+          "name": "Muthu",
+          "linkedIn": "#"
+        }
+      ]
     }
   }
 ]
