@@ -4,6 +4,10 @@
   border:1px solid $divider-color;
   position:relative;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 

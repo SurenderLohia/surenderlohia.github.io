@@ -1,6 +1,6 @@
 .main-menu-ct {
-  @include rem-fallback(padding-top, 0.9375);
-  @include rem-fallback(padding-bottom, 0.9375);
+  @include rem-fallback(padding-top, 0.4375);
+  @include rem-fallback(padding-bottom, 0.4375);
 
   @include respond-to(mobile-and-tablet) {
     padding-top: 0;

@@ -10,8 +10,7 @@ active: portfolio
       {% for project in site.data.projects %}
          <div class="one-fourth">
               <div class="thumb-box" href="#{{ project.slugName }}">
-                <span class="project-btn detail-link"><img src="/asserts/images/projects/thumb/{{ project.slugName }}.jpg" | prepend: site.baseurl }}" alt="{{ project.name }}" title="{{ skill.name }}"> </span>
-                <a class="icon a p-top p-right" href="{{project.link}}"><i class="fa fa-external-link"></i></a>
+                <span class="project-btn detail-link"><img src="/asserts/images/projects/thumb/{{ project.slugName }}.png" | prepend: site.baseurl }}" alt="{{ project.name }}" title="{{ skill.name }}"> </span>
               </div>
             </div><!-- thumb-item -->
       {% endfor %}
@@ -20,7 +19,7 @@ active: portfolio
 </div>
 
 <div class="hide">
-{% for project in site.data.projects limit:4 %}
+{% for project in site.data.projects %}
 <!-- Detail -->
 
 <div id="{{ project.slugName }}">
@@ -83,7 +82,7 @@ active: portfolio
       </div>
       <div class="project-info-item bottom">
         <h4 class="project-info-item-title">Link:</h4>
-        <a class="primary-link main-text" href="{{ project.link }}">{{ project.link }}</a>
+        <a class="primary-link main-text break-word" href="{{ project.link }}">{{ project.link }}</a>
       </div>
     </div>
   </div>

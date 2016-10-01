@@ -61,6 +61,4 @@
     $colorboxCloseBtn.on('click', $.colorbox.close);
   }
 
-  
-
 })(window, document, window.jQuery);

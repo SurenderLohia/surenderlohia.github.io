@@ -42,7 +42,7 @@
   {
     "id": 2,
     "name": "Desi Date",
-    "slugName": "desi_date",
+    "slugName": "desi-date",
     "link": "http://desidate.dns-systems.net/",
     "isLive": true,
     "company": "sam-sys",
@@ -168,8 +168,8 @@
   },
   {
     "id": 5,
-    "name": "Zapaco",
-    "slugName": "zapaco",
+    "name": "Zapacos",
+    "slugName": "zapacos",
     "link": "http://www.zapacos.com/",
     "isLive": true,
     "company": "sam-sys",
@@ -210,9 +210,9 @@
   },
   {
     "id": 6,
-    "name": "Pcgets",
-    "slugName": "pcgets",
-    "link": "http://www.pcgetz.com/http://www.zapacos.com/",
+    "name": "Pcgetz",
+    "slugName": "pcgetz",
+    "link": "http://www.pcgetz.com",
     "isLive": true,
     "company": "sam-sys",
     "technologies": [
@@ -290,7 +290,7 @@
   {
     "id": 8,
     "name": "Paia",
-    "slugName": "paia",
+    "slugName": "paia-bay",
     "link": "http://www.paiabaycoffee.com/",
     "isLive": true,
     "company": "sam-sys",
@@ -473,7 +473,7 @@
   {
     "id": 13,
     "name": "HappyFox Chat",
-    "slugName": "happyFox-chat",
+    "slugName": "happyfox-chat",
     "link": "https://happyfoxchat.com/",
     "isLive": true,
     "company": "tenmiles",

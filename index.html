@@ -57,8 +57,7 @@ active: home
           {% for project in site.data.projects limit:3 %}
             <div class="one-third">
               <div class="thumb-box" href="#{{ project.slugName }}">
-                <span class="portfolio-btn detail-link"><img src="/asserts/images/projects/thumb/{{ project.slugName }}.jpg" | prepend: site.baseurl }}" alt="{{ project.name }}" title="{{ skill.name }}"> </span>
-                <a class="icon a p-top p-right" href="{{project.link}}"><i class="fa fa-external-link"></i></a>
+                <span class="portfolio-btn detail-link"><img src="/asserts/images/projects/thumb/{{ project.slugName }}.png" | prepend: site.baseurl }}" alt="{{ project.name }}" title="{{ skill.name }}"> </span>
               </div>
             </div><!-- thumb-item -->
           {% endfor %}
@@ -90,10 +89,11 @@ active: home
       <div class="row divider">
         <h2 class="title text-center">Share</h2>
         <div class="share row text-center">
-          <a class="share-link" href="#"><i class="fa fa-facebook icon share-icon"></i></a>
+          <a class="share-link fb-share" href="http://www.facebook.com/sharer.php?u=http://localhost" target="_blank"><i class="fa fa-facebook icon share-icon"></i></a>
           <a class="share-link" href="#"><i class="fa fa-twitter icon share-icon"></i></a>
           <a class="share-link" href="#"><i class="fa fa-google-plus icon share-icon"></i></a>
         </div>
+        <!-- Facebook -->
       </div>
 
       <div class="row divider">
@@ -207,7 +207,7 @@ active: home
       </div>
       <div class="project-info-item bottom">
         <h4 class="project-info-item-title">Link:</h4>
-        <a class="primary-link main-text" href="{{ project.link }}">{{ project.link }}</a>
+        <a class="primary-link main-text break-word" href="{{ project.link }}">{{ project.link }}</a>
       </div>
     </div>
   </div>
