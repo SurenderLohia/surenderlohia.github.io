@@ -4,6 +4,7 @@
     slickInit();
     lightBoxInit();
     colorboxInit();
+    shareInit();
   });
 
 
@@ -59,6 +60,26 @@
     $colorboxPrevBtn.on('click', $.colorbox.prev);
     $colorboxNextBtn.on('click', $.colorbox.next);
     $colorboxCloseBtn.on('click', $.colorbox.close);
+  }
+
+  function shareInit() {
+    config = {
+      url: 'http://surenderlohia.blogspot.in/',
+      networks: {
+        pinterest: {
+            enabled: false
+        },
+        reddit: {
+            enabled: false
+        },
+        email: {
+            enabled: false
+        }
+      }
+    }
+
+    var share = new ShareButton(config);
+    
   }
 
 })(window, document, window.jQuery);

@@ -1,5 +1,10 @@
 /*-- Share --*/
-.share-link {
+.share-row {
+    padding-bottom: 46px;
+}
+
+.share-link,
+.share-button {
   @extend .trans;
   color: $accent-color;
   text-decoration: none;
@@ -19,6 +24,23 @@
     background-color: darken($accent-color, 10%);
   }
 }
+
 .share-icon {
   font-size: 20px;
+}
+
+.sharer-0 {
+  // visibility: hidden;
+  // padding: 0;
+}
+
+.share-button {
+  background-color: transparent;
+  display: inline-block !important;
+  text-transform: capitalize;
+  min-width: 150px;
+}
+
+.share-button:before {
+  display: none;
 }
