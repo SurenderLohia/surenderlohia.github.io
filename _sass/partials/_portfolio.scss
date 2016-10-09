@@ -10,6 +10,16 @@
   }
 }
 
+.thumb-box-img {
+  border-bottom: 1px solid $divider-color;
+}
+
+.thumb-box-title {
+  color: $primary-color;
+  @extend .text-center;
+  padding: 10px 0;
+}
+
 
 // Detail
 
@@ -39,7 +49,8 @@
   background-color: #ECEAEA;
   float: right;
   width: 36%;
-  padding:20px 1% 20px 3%;
+  padding:15px 1% 15px 2%;
+  overflow-y: auto;
   @include respond-to(mobile) {
     float: none;
     width: auto;

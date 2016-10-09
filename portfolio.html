@@ -9,10 +9,11 @@ active: portfolio
     <div class="row main-content">
       {% for project in site.data.projects %}
          <div class="one-fourth">
-              <div class="thumb-box" href="#{{ project.slugName }}">
-                <span class="project-btn detail-link"><img src="/asserts/images/projects/thumb/{{ project.slugName }}.png" | prepend: site.baseurl }}" alt="{{ project.name }}" title="{{ skill.name }}"> </span>
-              </div>
-            </div><!-- thumb-item -->
+            <div class="thumb-box" href="#{{ project.slugName }}">
+              <img class="thumb-box-img" src="/asserts/images/projects/thumb/{{ project.slugName }}.png" | prepend: site.baseurl }}" alt="{{ project.name }}" title="{{ skill.name }}">
+              <div class="thumb-box-title">{{project.name}}</div>
+            </div>
+          </div><!-- thumb-item -->
       {% endfor %}
     </div>
   </div>
