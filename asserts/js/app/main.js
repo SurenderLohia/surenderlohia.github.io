@@ -48,18 +48,28 @@
     var $colorboxNextBtn = $('.colorbox-next-btn');
     var $colorboxCloseBtn = $('.colorbox-close-btn');
     
+    
     $colorbox.colorbox({
       rel:'gal', 
       inline: true,
       arrowKey: false,
       closeButton: false,
       width: '100%',
-      maxWidth: '1000px'
+      maxWidth: '1000px',
+      onComplete: setAsideHeight
     });
 
     $colorboxPrevBtn.on('click', $.colorbox.prev);
     $colorboxNextBtn.on('click', $.colorbox.next);
     $colorboxCloseBtn.on('click', $.colorbox.close);
+
+    function setAsideHeight() {
+      console.log('setAsideHeight');
+      var projectDetailAside = $('#cboxLoadedContent .project-detail-aside');
+      var projectDetailImageCt = $('#cboxLoadedContent .project-detail-image-ct');
+      projectDetailImageCtHeight = projectDetailImageCt.height();
+      projectDetailAside.outerHeight(projectDetailImageCtHeight);
+    }
   }
 
   function shareInit() {
@@ -79,7 +89,6 @@
     }
 
     var share = new ShareButton(config);
-    
   }
 
 })(window, document, window.jQuery);
