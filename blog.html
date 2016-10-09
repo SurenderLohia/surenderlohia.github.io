@@ -8,18 +8,7 @@ active: blog
   <div class="wrap-in">
     <div class="main-content">
       {% for post in site.posts %}
-        <div class="post-item">
-          <div class="mb10">
-            <a class="post-title-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            <div class="mt5">
-              <span class="post-date"><i class="fa fa-clock-o"></i> {{ post.date | date: "%b %-d, %Y" }}</span>
-            </div>
-          </div>
-          <div class="post-description">
-            <p> {{ post.description }}</p>
-          </div>
-          <a href="{{ post.url | prepend: site.baseurl }}" class="button button-primary">Read More...</a>
-        </div>
+        {% include blog-list-item.html %}
       {% endfor %}
     </div>
   </div>

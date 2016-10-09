@@ -54,7 +54,8 @@ active: home
       <div class="divider wrap-small">
         <h2 class="title">Recent Projects</h2>
         <div class="row recent-projects mb30">
-          {% for project in site.data.projects limit:3 %}
+          {% assign sortedProjects = site.data.projects | sort: "date" | reverse %}
+          {% for project in sortedProjects limit:3 %}
             <div class="one-third">
               <div class="thumb-box" href="#{{ project.slugName }}">
                 <span class="portfolio-btn detail-link"><img src="/asserts/images/projects/thumb/{{ project.slugName }}.png" | prepend: site.baseurl }}" alt="{{ project.name }}" title="{{ skill.name }}"> </span>
@@ -69,18 +70,7 @@ active: home
       <div class="divider post-ct">
         <h2 class="title">Recent Post</h2>
         {% for post in site.posts limit:3 %}
-          <div class="post-item">
-            <div class="mb10">
-              <a class="post-title-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-              <div class="mt5">
-                <span class="post-date"><i class="fa fa-clock-o"></i>  {{ post.date | date: "%b %-d, %Y" }}</span>
-              </div>
-            </div>
-            <div class="post-description">
-              <p> {{ post.description }}</p>
-            </div>
-            <a href="{{ post.url | prepend: site.baseurl }}" class="button button-primary">Read More...</a>
-          </div>
+          {% include blog-list-item.html %}
         {% endfor %}
         <div class="row">
           <a href="/blog" class="button button-primary right">More Post</a>
@@ -136,73 +126,7 @@ active: home
     <!-- Light box end -->
 
 <div class="hide">
-{% for project in site.data.projects limit:4 %}
-<!-- Detail -->
-<div id="{{ project.slugName }}">
-  <div class="wrap">
-  <div class="row colorbox-controls">
-    <div class="icon trans colorbox-control-btn colorbox-prev-btn"><i class="fa fa-chevron-left"></i></div>
-    <div class="icon trans colorbox-control-btn colorbox-next-btn"><i class="fa fa-chevron-right"></i></div>
-    <div class="icon trans colorbox-control-btn colorbox-close-btn last"><i class="fa fa-times"></i></div>
-  </div>
-  <h2 class="project-detail-title">{{ project.name }}</h2>
-  <div class="row">
-    <div class="project-detail-image-ct">
-      <img class="res-img" src="/asserts/images/projects/detail/{{ project.slugName }}.png" | prepend: site.baseurl}}" alt="{{ project.name }}">
-    </div>
-    <div class="project-detail-aside">
-      <div class="project-info-item tech">
-        <h4 class="project-info-item-title">Technologies Used:</h4>
-        <div class="row">
-          {% for tech in project.technologies %}
-            <span class="label">{{ tech }}</span>
-          {% endfor %}
-        </div>
-      </div>
-      <div class="project-info-item">
-        <h4 class="project-info-item-title">Team Members</h4>
-        <div class="mb10 row">
-          <div class="sub-title2 mb10">Designer(s):</div>
-          <ul class="divider-list row">
-          {% for designer in project.teamMembers.designers %}
-            <li class="divider-list-item"><a class="primary-link" href="{{ designer.linked_in }}">{{ designer.name }}</a></li>
-          {% endfor %}
-          </ul>
-        </div>
-
-        <div class="mb10 row">
-          <div class="sub-title2 mb10">Front End Developer(s):</div>
-          <ul class="divider-list row">
-          {% for frontEndDeveloper in project.teamMembers.frontEndDevelopers %}
-              <li class="divider-list-item"><a class="primary-link" href="{{ frontEndDeveloper.linked_in }}">{{ frontEndDeveloper.name }}</a></li>
-          {% endfor %}
-          </ul>
-        </div>
-
-        <div class="mb10 row">
-          <div class="sub-title2 mb10">Back End Developer(s):</div>
-          <ul class="divider-list row">
-          {% for backEndDeveloper in project.teamMembers.backEndDevelopers %}
-              <li class="divider-list-item"><a class="primary-link" href="{{ backEndDeveloper.linked_in }}">{{ backEndDeveloper.name }}</a></li>
-          {% endfor %}
-          </ul>
-        </div>
-      </div>
-      <div class="project-info-item">
-        <h4 class="project-info-item-title">Supported:</h4>
-        <div class="row">
-          {% for item in project.devices  %}
-            <span class="label">{{ item }}</span>
-          {% endfor %}
-        </div>
-      </div>
-      <div class="project-info-item bottom">
-        <h4 class="project-info-item-title">Link:</h4>
-        <a class="primary-link main-text break-word" href="{{ project.link }}">{{ project.link }}</a>
-      </div>
-    </div>
-  </div>
-  </div>
-  </div>
+{% for project in sortedProjects limit:3 %}
+  {% include project-detail.html %}
 {% endfor %}
 </div>
