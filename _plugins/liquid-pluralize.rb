@@ -6,7 +6,7 @@
 module Jekyll
   module Pluralize
     def pluralize(number, singular, plural = nil)
-      number = Integer(number) || 0
+      #number = Integer(number) || 0
       if number == 1
         "#{singular}"
       elsif plural.nil?

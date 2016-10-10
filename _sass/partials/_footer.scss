@@ -1,0 +1,10 @@
+.footer {
+  padding: 2% 0;
+  background-color: $primary-text-color;
+  color: $primary-color-text;
+}
+
+.copyright-text {
+  @extend .bottom;
+  color: $secondary-text-color;
+}

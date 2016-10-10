@@ -1,6 +1,7 @@
 (function(w, d, $) {
 
   $(document).ready(function() {
+    setDate();
     slickInit();
     lightBoxInit();
     colorboxInit();
@@ -89,6 +90,12 @@
     }
 
     var share = new ShareButton(config);
+  }
+
+  function setDate() {
+    var $currentYear = $('.current-year');
+    var d = new Date();
+    $currentYear.text(d.getFullYear());
   }
 
 })(window, document, window.jQuery);
