@@ -45,6 +45,7 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        "partials/vendors/vendors",
         "partials/palette",
         "partials/mixins",
         "base",
