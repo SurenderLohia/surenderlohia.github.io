@@ -8,7 +8,7 @@ active: blog
 description: "Cool Atom Packages, Atom is a text editor that's modern, approachable, yet hackable to the core a tool you can customize to do anything but also use productively without ever touching a config file."
 ---
 
-![Alt Atom Editor]({{"/asserts/images/posts/atom-editor.png" | prepend: site.baseurl}})
+![Alt Atom Editor]({{"/assets/images/posts/atom-editor.png" | prepend: site.baseurl}})
 
 ## Atom Editor
 

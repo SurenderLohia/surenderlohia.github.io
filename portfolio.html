@@ -11,7 +11,7 @@ active: portfolio
       {% for project in sortedProjects %}
          <div class="one-fourth">
             <div class="thumb-box" href="#{{ project.slugName }}">
-              <img class="thumb-box-img" src="/asserts/images/projects/thumb/{{ project.slugName }}.png" | prepend: site.baseurl }}" alt="{{ project.name }}" title="{{ skill.name }}">
+              <img class="thumb-box-img" src="/assets/images/projects/thumb/{{ project.slugName }}.png" | prepend: site.baseurl }}" alt="{{ project.name }}" title="{{ skill.name }}">
               <div class="thumb-box-title">{{project.name}}</div>
             </div>
           </div><!-- thumb-item -->
