@@ -1,0 +1,50 @@
+{
+  "name": "surender",
+  "version": "1.0.0",
+  "description": "Surender Lohia, personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://SurenderLohia@bitbucket.org/SurenderLohia/surender.git"
+  },
+  "author": "Surender Lohia",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/SurenderLohia/surender#readme",
+  "paths": {
+    "tasks": "gulp-tasks/",
+    "jekyllDir": "./",
+    "siteDir": "_site/",
+    "appDir": "_app/",
+    "appSassFiles": "_app/",
+    "vendor": {
+      "src": "assets/js/libs/",
+      "dest": "_site/assets/js/libs/"
+    },
+    "js": {
+      "src": "assets/js/app",
+      "dest": "_site/assets/js/app/"
+    },
+    "sass": {
+      "src": ""
+    },
+    "css": {
+      "src": "assets/css/",
+      "dest": "_site/assets/css/"
+    },
+    "img": {
+      "src": "assets/images/",
+      "dest": "_site/assets/images/"
+    }
+  },
+  "dependencies": {
+    "autoprefixer": "^6.5.1",
+    "cssnano": "^3.7.7",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.2.0",
+    "gulp-useref": "^3.1.2",
+    "postcss": "^5.2.4"
+  }
+}
