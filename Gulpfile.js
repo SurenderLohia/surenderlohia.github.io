@@ -1,44 +1,35 @@
 var gulp = require('gulp');
 var concat = require('gulp-concat');
+var gulpif = require('gulp-if');
 var uglify = require('gulp-uglify');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var cssnano = require('cssnano');
 var useref = require('gulp-useref');
 var gutil = require('gulp-util');
+var del = require('del');
+var gulpSequence = require('gulp-sequence');
+var imagemin = require('gulp-imagemin');
 
-
-gulp.task('js', function() {
-  gulp.src('app/js/*.js')
-    .pipe(concat('script.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('build/js/'))
-});
-
-gulp.task('useref', function(){
-  gutil.log('useref start');
-  gulp.src('_site/**/*.html, !_site/assets/')
+gulp.task('minifyJs', function() {
+  gulp.src('_site/index.html')
     .pipe(useref())
-    .pipe(gulp.dest(function(file) {
-      file.base;
-    }))
+    .pipe(gulpif('*.js', uglify()))
+    .pipe(gulp.dest('_site'))
 });
 
-
-
-gulp.task('css', function() {
+gulp.task('minifyCss', function() {
   var preprocessors = [
     autoprefixer({browsers: ['last 2 version']}),
     cssnano(),
   ]
-  gulp.src('_site/assets/css/*.css')
-    .pipe(concat('main.css'))
+  gulp.src('_site/assets/css/main.css')
     .pipe(postcss(preprocessors))
     .pipe(gulp.dest('_site/assets/css/'))
 });
 
-//gulp.watch('app/css/*.css', ['css']);
-
-gulp.task('build', ['css'], function() {
-
+gulp.task('clean', function() {
+  del(['_site/assets/js/*', '!_site/assets/js/main.js']);
 });
+
+gulp.task('build', gulpSequence('minifyJs', 'minifyCss', 'clean'));
