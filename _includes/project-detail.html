@@ -23,34 +23,52 @@
         <div class="project-info-item">
           <h4 class="project-info-item-title">Team Members:</h4>
           <div class="mb10 row">
-            <div class="sub-title2 mb10"> {{ project.teamMembers.designers | pluralize: "Designer" }}:</div>
+            <div class="sub-title2 mb10"> {{ project.teamMembers.designers.size | pluralize: "Designer" }}:</div>
             <ul class="divider-list row">
             {% for designer in project.teamMembers.designers %}
-              <li class="divider-list-item"><a class="primary-link" href="{{ designer.linked_in }}">{{ designer.name }}</a></li>
+              <li class="divider-list-item">
+              {% if designer.linkedIn == "#" %}
+                <span>{{ designer.name }}</span>
+              {% else %}
+                <a class="primary-link" href="{{ designer.linkedIn }}" target="_blank" rel="noopener noreferrer">{{ designer.name }}</a>
+              {% endif %}
+              </li>
             {% endfor %}
             </ul>
           </div>
 
           <div class="mb10 row">
-            <div class="sub-title2 mb10">{{ project.teamMembers.designers | pluralize: "Front End Developer" }}: </div>
+            <div class="sub-title2 mb10">{{ project.teamMembers.designers.size | pluralize: "Front End Developer" }}: </div>
             <ul class="divider-list row">
             {% for frontEndDeveloper in project.teamMembers.frontEndDevelopers %}
-                <li class="divider-list-item"><a class="primary-link" href="{{ frontEndDeveloper.linked_in }}">{{ frontEndDeveloper.name }}</a></li>
+                <li class="divider-list-item">
+                  {% if frontEndDeveloper.linkedIn == "#" %}
+                    <span>{{ frontEndDeveloper.name }}</span>
+                  {% else %}
+                    <a class="primary-link" href="{{ frontEndDeveloper.linkedIn }}" target="_blank" rel="noopener noreferrer">{{ frontEndDeveloper.name }}</a>
+                  {% endif %}
+                </li>
             {% endfor %}
             </ul>
           </div>
 
           <div class="mb10 row">
-            <div class="sub-title2 mb10">{{ project.teamMembers.backEndDevelopers | pluralize: "Back End Developer" }}:</div>
+            <div class="sub-title2 mb10">{{ project.teamMembers.backEndDevelopers.size | pluralize: "Back End Developer" }}:</div>
             <ul class="divider-list row">
             {% for backEndDeveloper in project.teamMembers.backEndDevelopers %}
-                <li class="divider-list-item"><a class="primary-link" href="{{ backEndDeveloper.linked_in }}">{{ backEndDeveloper.name }}</a></li>
+                <li class="divider-list-item">
+                  {% if backEndDeveloper.linkedIn == "#" %}
+                    <span>{{ backEndDeveloper.name }}</span>
+                  {% else %}
+                    <a class="primary-link" href="{{ backEndDeveloper.linkedIn }}" target="_blank" rel="noopener noreferrer">{{ backEndDeveloper.name }}</a>
+                  {% endif %}
+                </li>
             {% endfor %}
             </ul>
           </div>
         </div>
         <div class="project-info-item">
-          <h4 class="project-info-item-title">{{ project.devices | pluralize: "Supported Device" }}:</h4>
+          <h4 class="project-info-item-title">{{ project.devices.size | pluralize: "Supported Device" }}:</h4>
           <div class="row">
             {% for item in project.devices %}
               <span class="label lable-condenced">{{ item }}</span>
@@ -59,7 +77,7 @@
         </div>
         <div class="project-info-item bottom">
           <h4 class="project-info-item-title">Link:</h4>
-          <a class="primary-link main-text break-word" href="{{ project.link }}">{{ project.link }}</a>
+          <a class="primary-link main-text break-word" href="{{ project.link }}" target="_blank" rel="noopener noreferrer">{{ project.link }}</a>
         </div>
       </div>
     </div>
