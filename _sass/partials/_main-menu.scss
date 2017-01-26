@@ -24,7 +24,7 @@
   @include font-size(1.125);
   display: block;
   color: $primary-text-color;
-  line-height:40px;
+  @include rem-fallback(line-height, 2.5);
   text-align: center;
   cursor: pointer;
   text-decoration: none;

@@ -80,6 +80,14 @@
     &.last, {
       margin-right:0;
     }
+
+    &.one-third-thumb {
+      @include respond-to(mobile) {
+        max-width: 235px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
 }
 
 .one-third {

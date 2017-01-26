@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>SCSS Mixin for rem font sizing</title>
+  <meta name="description" content="Mixin for rem font sizing with px fallback for older browsers">
+  <meta property="og:title" content="Surender Lohia" />
+
+  
+  <!-- Css -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <link rel="canonical" href="https://surenderlohia.github.io/scss/2016/09/17/mixin-for-rem-font-size.html">
+  <link rel="alternate" type="application/rss+xml" title="Surender Lohia" href="https://surenderlohia.github.io/feed.xml">
+</head>
+
+
+  <body>
+    
+    <div class="main-menu-ct">
+  <div class="wrap text-center line-height-1">
+    <ul class="main-menu">
+      
+        <li class="main-menu-item">
+          
+            <a class="main-menu-link" href="/">Home</a>
+          
+        </li>
+      
+        <li class="main-menu-item">
+          
+            <a class="main-menu-link" href="/portfolio/">Portfolio</a>
+          
+        </li>
+      
+        <li class="main-menu-item">
+          
+            <a class="main-menu-link active" href="/blog/">Blog</a>
+          
+        </li>
+      
+    </ul>
+  </div>
+</div>
+      <div class="wrap-small">
+  <div class="wrap-in">
+    <div class="main-content">
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+        <header class="post-header">
+          <h1 class="post-title" itemprop="name headline">SCSS Mixin for rem font sizing</h1>
+          <div class="post-meta mt10">
+            <div class="post-meta-info-item">
+              <i class="fa fa-clock-o"></i>
+              <time datetime="2016-09-17T14:39:05+05:30" itemprop="datePublished">Sep 17, 2016</time>
+            </div>
+
+             
+            <div class="post-meta-info-item">
+              <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <i class="fa fa-pencil"></i> <span itemprop="name">Surender Lohia</span>
+              </span>
+            </div>
+            
+            <div class="post-meta-info-item">
+              <span class="fa fa-tag"> scss</span>
+            </div>
+          </div>
+        </header>
+
+        <div class="post-content" itemprop="articleBody">
+          <p>Mixin for rem font sizing with px fallback for older browsers</p>
+
+<h4 id="css">CSS</h4>
+<pre>
+  <code>
+    html {
+      font-size: 16px; /* Sets up the Base font size */
+    }
+  </code>
+</pre>
+
+<h4 id="scss">SCSS</h4>
+
+<pre>
+  <code>
+    @mixin font-size($sizeValue: 1) {
+      font-size: ($sizeValue * 16) + px;
+      font-size: $sizeValue + rem;
+    }
+  </code>
+</pre>
+
+<h3 id="usage">Usage</h3>
+
+<h4 id="scss-1">SCSS</h4>
+<pre>
+  <code>
+    p {
+      @include font-size(2);
+    }
+  </code>
+</pre>
+
+<p>(Thanks <a href="https://css-tricks.com/" target="_blank">CSS tricks</a>)</p>
+
+<p><a href="http://caniuse.com/#feat=rem" target="_blank">Can I use rem </a></p>
+
+<p><a href="http://www.standardista.com/px-to-rem-conversion-if-root-font-size-is-16px/" target="_blank">px to rem conversion if :root font-size is 16px</a></p>
+
+        </div>
+
+      </article>
+    </div>
+  </div>
+</div>
+
+    <footer class="footer">
+  <div class="wrap text-center">
+    <div class="row mb3per">
+  <h2 class="title text-center">Follow</h2>
+  <div class="follow row text-center">
+    <a class="follow-link" target="_blank" href="https://in.linkedin.com/in/surederlohia" rel="noopener noreferrer"><i class="fa fa-linkedin icon follow-icon"></i></a>
+    <a class="follow-link" target="_blank" href="https://twitter.com/surender_lohia" rel="noopener noreferrer"><i class="fa fa-twitter icon follow-icon"></i></a>
+  </div>
+</div>
+
+    <p class="copyright-text">Copyright &copy; <span class="current-year">2016</span> Surender Lohia. All rights reserved </p>
+  </div>
+</footer>
+
+<!-- build:js /assets/js/main.js -->
+<script type="text/javascript" src="/assets/js/libs/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/js/libs/slick.js"></script>
+<script type="text/javascript" src="/assets/js/libs/jquery.colorbox-min.js"></script>
+<script type="text/javascript" src="/assets/js/libs/share-button.min.js"></script>
+<script type="text/javascript" src="/assets/js/app/main.js"></script>
+<!-- endbuild -->
+
+  </body>
+</html>
