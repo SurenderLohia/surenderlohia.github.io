@@ -99,25 +99,26 @@
     "date": "2012-06",
     "description": "",
     "teamMembers": {
-      "designers": [],
+      "designers": [
+        {
+          "name": "Chidambara Kumar",
+          "linkedIn": "https://www.linkedin.com/in/chidambara-kumar-42328125"
+        }
+      ],
       "frontEndDevelopers": [
         {
           "name": "Surender Lohia",
           "linkedIn": "https://in.linkedin.com/in/surederlohia"
-        },
-        {
-          "name": "kayalvizhi",
-          "linkedIn": "#"
-        },
-        {
-          "name": "Sundhar",
-          "linkedIn": "#"
         }
       ],
       "backEndDevelopers": [
         {
-          "name": "Selva Sankar",
-          "linkedIn": "https://in.linkedin.com/in/pugazhenthikrishnamoothi"
+          "name": "Pushparaj Nagarajan",
+          "linkedIn": "https://www.linkedin.com/in/pushparajnagarajan"
+        },
+        {
+          "name": "Riaz",
+          "linkedIn": "#"
         }
       ]
     }
@@ -156,7 +157,7 @@
       ],
       "backEndDevelopers": [
         {
-          "name": "PUSHPARAJ NAGARAJAN",
+          "name": "Pushparaj Nagarajan",
           "linkedIn": "https://www.linkedin.com/in/pushparajnagarajan"
         },
         {
@@ -510,10 +511,6 @@
           "name": "Surender Lohia",
           "linkedIn": "https://in.linkedin.com/in/surederlohia"
         },
-        {
-          "name": "Sundhar",
-          "linkedIn": "#"
-        }
       ],
       "backEndDevelopers": [
         {
@@ -527,6 +524,10 @@
         {
           "name": "Nagarajan k",
           "linkedIn": "https://www.linkedin.com/in/nagarajan-k-62a54744"
+        },
+        {
+          "name": "Sundarasan Natarajan",
+          "linkedIn": "https://www.linkedin.com/in/sundarasan"
         }
       ],
       "fullStackDevelopers": [
