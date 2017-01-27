@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Surender Lohia</title>
+    <description>Surender Lohia | Front-End Developer, Passionate programmer.
+</description>
+    <link>https://surenderlohia.github.io/</link>
+    <atom:link href="https://surenderlohia.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 26 Jan 2017 21:40:56 +0530</pubDate>
+    <lastBuildDate>Thu, 26 Jan 2017 21:40:56 +0530</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>SCSS Mixin for rem font sizing</title>
+        <description>&lt;p&gt;Mixin for rem font sizing with px fallback for older browsers&lt;/p&gt;
+
+&lt;h4 id=&quot;css&quot;&gt;CSS&lt;/h4&gt;
+&lt;pre&gt;
+  &lt;code&gt;
+    html {
+      font-size: 16px; /* Sets up the Base font size */
+    }
+  &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h4 id=&quot;scss&quot;&gt;SCSS&lt;/h4&gt;
+
+&lt;pre&gt;
+  &lt;code&gt;
+    @mixin font-size($sizeValue: 1) {
+      font-size: ($sizeValue * 16) + px;
+      font-size: $sizeValue + rem;
+    }
+  &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;usage&quot;&gt;Usage&lt;/h3&gt;
+
+&lt;h4 id=&quot;scss-1&quot;&gt;SCSS&lt;/h4&gt;
+&lt;pre&gt;
+  &lt;code&gt;
+    p {
+      @include font-size(2);
+    }
+  &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;(Thanks &lt;a href=&quot;https://css-tricks.com/&quot; target=&quot;_blank&quot;&gt;CSS tricks&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://caniuse.com/#feat=rem&quot; target=&quot;_blank&quot;&gt;Can I use rem &lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.standardista.com/px-to-rem-conversion-if-root-font-size-is-16px/&quot; target=&quot;_blank&quot;&gt;px to rem conversion if :root font-size is 16px&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 17 Sep 2016 14:39:05 +0530</pubDate>
+        <link>https://surenderlohia.github.io/scss/2016/09/17/mixin-for-rem-font-size.html</link>
+        <guid isPermaLink="true">https://surenderlohia.github.io/scss/2016/09/17/mixin-for-rem-font-size.html</guid>
+        
+        
+        <category>scss</category>
+        
+      </item>
+    
+      <item>
+        <title>Cool Atom Packages(plugins) For Front End Developers</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/images/posts/atom-editor.png&quot; alt=&quot;Alt Atom Editor&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;atom-editor&quot;&gt;Atom Editor&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://atom.io/&quot; target=&quot;_blank&quot;&gt;Atom&lt;/a&gt; is a text editor that’s modern, approachable, yet hackable to the core a tool you can customize to do anything but also use productively without ever touching a config file.&lt;/p&gt;
+
+&lt;h3 id=&quot;emmet&quot;&gt;1. Emmet&lt;/h3&gt;
+
+&lt;p class=&quot;post-section&quot;&gt; 
+Emmet the essential toolkit for web-developers.
+&lt;br /&gt;
+Link: &lt;a href=&quot;https://atom.io/packages/emmet&quot; target=&quot;_blank&quot;&gt;Emmet package on Atom.io&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&quot;js-snippets&quot;&gt;2. JS Snippets&lt;/h3&gt;
+&lt;p class=&quot;post-section&quot;&gt;
+JavaScript &amp;amp; NodeJS Snippets for Atom.
+&lt;br /&gt;
+Link: &lt;a href=&quot;https://atom.io/packages/javascript-snippets&quot; target=&quot;_blank&quot;&gt;JavaScript Snippets package on Atom.io&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&quot;js-hint&quot;&gt;3. JS Hint&lt;/h3&gt;
+&lt;p class=&quot;post-section&quot;&gt;
+Validates your JS against JSHint as you type. The original and most used.
+&lt;br /&gt;
+Link: &lt;a href=&quot;https://atom.io/packages/atom-jshint&quot; target=&quot;_blank&quot;&gt;JS Hint Package on Atom.io&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&quot;fancy-new-file&quot;&gt;4. Fancy New File&lt;/h3&gt;
+&lt;p class=&quot;post-section&quot;&gt;
+Fancy New File is a plugin for Github&#39;s Atom text editor that gives you a handy dialog (accessible via) to open or create new files and directory trees by typing a relative path, with bash-like autocomplete support.
+&lt;br /&gt;
+Link: &lt;a href=&quot;https://atom.io/packages/fancy-new-file&quot; target=&quot;_blank&quot;&gt; Fancy New File package on Atom.io&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&quot;cursor-history&quot;&gt;5. Cursor History&lt;/h3&gt;
+&lt;p class=&quot;post-section&quot;&gt;
+Jump to next and previous cursor position by keeping track of cursor position.
+&lt;br /&gt;
+Link: &lt;a href=&quot;https://atom.io/packages/cursor-history&quot; target=&quot;_blank&quot;&gt; Cursor History package on Atom.io&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&quot;relative-line-number&quot;&gt;6. Relative Line Number&lt;/h3&gt;
+&lt;p class=&quot;post-section&quot;&gt;
+Replaces the regular line numbers with relative numbers. Also has an option to show the true number on the current line.
+&lt;br /&gt;
+Link: &lt;a href=&quot;https://atom.io/packages/relative-line-numbers&quot; target=&quot;_blank&quot;&gt; Relative Line Number package on Atom.io&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;h4 id=&quot;are-you-from-vim-try-this-below&quot;&gt;Are you From Vim, try this below:&lt;/h4&gt;
+
+&lt;h3 id=&quot;vim-mode&quot;&gt;7. Vim Mode&lt;/h3&gt;
+
+&lt;p&gt;Provides vim modal control for Atom, ideally blending the best of vim and Atom.
+&lt;br /&gt;
+Link: &lt;a href=&quot;https://atom.io/packages/vim-mode&quot; target=&quot;_blank&quot;&gt; Vim Mode package on Atom.io&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Note:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A. Never forget your awesome Esc key remap with jj | jk
+&lt;br /&gt;
+Link: &lt;a href=&quot;https://github.com/atom/vim-mode/issues/221&quot; target=&quot;_blank&quot;&gt; Esc key remap for Atom&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;B. Are you like :w for save
+&lt;br /&gt;
+Link: &lt;a href=&quot;https://github.com/atom/vim-mode/issues/520&quot; target=&quot;_blank&quot;&gt; :w save key remap for Atom&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 06 Aug 2015 14:39:05 +0530</pubDate>
+        <link>https://surenderlohia.github.io/front-end/2015/08/06/cool-atom-packages-for-front-end-developers.html</link>
+        <guid isPermaLink="true">https://surenderlohia.github.io/front-end/2015/08/06/cool-atom-packages-for-front-end-developers.html</guid>
+        
+        
+        <category>front-end</category>
+        
+      </item>
+    
+  </channel>
+</rss>
