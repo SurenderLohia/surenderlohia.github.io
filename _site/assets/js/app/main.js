@@ -77,9 +77,6 @@
 
   function shareInit() {
     config = {
-      url: 'https://surenderlohia.github.io/',
-      title: 'Surender Lohia',
-      description: 'Surender Lohia | Front-End Developer, Passionate programmer.',
       networks: {
         pinterest: {
             enabled: false
