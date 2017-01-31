@@ -80,7 +80,6 @@
       url: 'https://surenderlohia.github.io/',
       title: 'Surender Lohia',
       description: 'Surender Lohia | Front-End Developer, Passionate programmer.',
-      imgage: '/assets/images/share-image.png',
       networks: {
         pinterest: {
             enabled: false
@@ -90,9 +89,6 @@
         },
         email: {
             enabled: false
-        },
-        facebook: {
-          url: 'https://surenderlohia.github.io/',
         }
       }
     }

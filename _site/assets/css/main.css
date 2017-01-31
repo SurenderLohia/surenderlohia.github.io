@@ -2783,7 +2783,8 @@ body {
   background-color: transparent;
   display: inline-block !important;
   text-transform: capitalize;
-  min-width: 150px; }
+  min-width: 150px;
+  margin: 0; }
 
 .share-button:before {
   display: none; }

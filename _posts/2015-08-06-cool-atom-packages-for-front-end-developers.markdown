@@ -6,6 +6,7 @@ author: Surender Lohia
 categories: front-end
 active: blog
 description: "Cool Atom Packages, Atom is a text editor that's modern, approachable, yet hackable to the core a tool you can customize to do anything but also use productively without ever touching a config file."
+image: /assets/images/posts/atom-editor.png
 ---
 
 ![Alt Atom Editor]({{"/assets/images/posts/atom-editor.png" | prepend: site.baseurl}})
