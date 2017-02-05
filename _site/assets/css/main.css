@@ -2481,8 +2481,11 @@ body {
 .slider-btn {
   z-index: 1; }
 
-.light-box {
+.overlay {
   z-index: 2; }
+
+.light-box {
+  z-index: 3; }
 
 /*== Modules ==*/
 /* Sprite */
