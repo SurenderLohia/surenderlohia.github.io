@@ -7,51 +7,40 @@
     colorboxInit();
   });
 
+
   //Slick
   function slickInit() {
-    var slider = $('.slider');
-
-    var slickOptins = {
+    $('.slider').slick({
       autoplay: true,
       autoplaySpeed: 4000,
       prevArrow: '<div class="icon a p-left p-v-center trans slider-btn"><i class="fa fa-chevron-left"></i></div>',
       nextArrow: '<div class="icon a p-right p-v-center trans slider-btn"><i class="fa fa-chevron-right"></i></div>'
-    }
-
-    slider.slick(slickOptins);
+    });
   }
 
   // Light box
   function lightBoxInit() {
-    var lightBoxBtns = document.querySelectorAll('.light-box-btn');
-    var lightBoxBtnsLen = lightBoxBtns.length;
-
-    var lightBoxCloseBtns = document.querySelectorAll('.light-box-close-btn');
-
-    var overlay = document.querySelectorAll('.overlay')[0];
-    var body = document.querySelectorAll('body');
-
-    for(var i = 0; i < lightBoxBtnsLen; i += 1) {
-      lightBoxBtns[i].addEventListener('click', showLightBox);
-      lightBoxCloseBtns[i].addEventListener('click', closeLightBox);
-    }
-    
+    $('.light-box-btn').on('click', showLightBox);
+    $('.light-box-close-btn').on('click', closeLightBox);
 
     function showLightBox(e) {
-      var currentId = (e.target).getAttribute('data-href');
-      var lightBox = document.querySelector('#' + currentId);
+      var $overlay = $('.overlay');
+      var currentId = $(e.target).attr('data-href');
+      var $lightBox = $('#' + currentId);
+      $(window).scrollTop(0);
+      $('body').addClass('overflow-hidden');
 
-      w.scrollTo(0, 0);
-      body.className = 'overflow-hidden'; // Todo
-      overlay.style.display='block';
-      lightBox.style.display='block';
+      $overlay.show();
+      $lightBox.show();
     }
 
     function closeLightBox(e) {
-      var lightBox = $(e.target).closest('.light-box')[0]; // Todo
-      body.className = ''; // Todo
-      overlay.style.display='none';
-      lightBox.style.display='none';
+      var $overlay = $('.overlay');
+      var $lightBox = $(e.target).closest('.light-box');
+      $('body').removeClass('overflow-hidden');
+
+      $overlay.hide();
+      $lightBox.hide();
     }
   }
 
