@@ -9,15 +9,15 @@ var useref = require('gulp-useref');
 var gutil = require('gulp-util');
 var del = require('del');
 var gulpSequence = require('gulp-sequence');
-var imagemin = require('gulp-imagemin');
-var imageOp = require('gulp-image-optimization');
+var runSequence = require('run-sequence');
+
 
 gulp.task('minifyJs', function() {
   gulp.src('_site/index.html')
     .pipe(useref())
     .pipe(gulpif('*.js', uglify()))
     .pipe(gulp.dest('_site'))
-});
+  });
 
 gulp.task('minifyCss', function() {
   var preprocessors = [
@@ -29,16 +29,8 @@ gulp.task('minifyCss', function() {
     .pipe(gulp.dest('_site/assets/css/'))
 });
 
-gulp.task('imageMin', function(cb) {
-    gulp.src(['_site/assets/images/**/*.png','_site/assets/images/**/*.jpg','_site/assets/images/**/*.gif','_site/assets/images/**/*.jpeg']).pipe(imageOp({
-        optimizationLevel: 5,
-        progressive: true,
-        interlaced: true
-    })).pipe(gulp.dest('_site/assets/images')).on('end', cb).on('error', cb);
-});
-
 gulp.task('clean', function() {
-  del(['_site/assets/js/*', '!_site/assets/js/main.js']);
+  del(['_site/assets/js/app/*.js', '_site/assets/js/libs/*.js']);
 });
 
 gulp.task('build', gulpSequence('minifyJs', 'minifyCss', 'clean'));
