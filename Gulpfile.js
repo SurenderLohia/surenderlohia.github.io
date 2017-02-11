@@ -10,6 +10,7 @@ var gutil = require('gulp-util');
 var del = require('del');
 var gulpSequence = require('gulp-sequence');
 var imagemin = require('gulp-imagemin');
+var imageOp = require('gulp-image-optimization');
 
 gulp.task('minifyJs', function() {
   gulp.src('_site/index.html')
@@ -26,6 +27,14 @@ gulp.task('minifyCss', function() {
   gulp.src('_site/assets/css/main.css')
     .pipe(postcss(preprocessors))
     .pipe(gulp.dest('_site/assets/css/'))
+});
+
+gulp.task('imageMin', function(cb) {
+    gulp.src(['_site/assets/images/**/*.png','_site/assets/images/**/*.jpg','_site/assets/images/**/*.gif','_site/assets/images/**/*.jpeg']).pipe(imageOp({
+        optimizationLevel: 5,
+        progressive: true,
+        interlaced: true
+    })).pipe(gulp.dest('_site/assets/images')).on('end', cb).on('error', cb);
 });
 
 gulp.task('clean', function() {
