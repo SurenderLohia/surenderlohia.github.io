@@ -26,14 +26,14 @@ layout: default
             </div>
           </div>
           <div class="text-right">
-            <share-button class="button share-button"></share-button>
+            {% include  share.html %}
           </div>
         </header>
   
         <div class="post-content" itemprop="articleBody">
           {{ content }}
         </div>
-        <share-button class="button share-button mb20"></share-button>
+        {% include  share.html %}
 
       </article>
     </div>

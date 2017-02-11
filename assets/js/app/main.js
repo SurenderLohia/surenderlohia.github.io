@@ -5,43 +5,53 @@
     slickInit();
     lightBoxInit();
     colorboxInit();
-    shareInit();
   });
-
 
   //Slick
   function slickInit() {
-    $('.slider').slick({
+    var slider = $('.slider');
+
+    var slickOptins = {
       autoplay: true,
       autoplaySpeed: 4000,
       prevArrow: '<div class="icon a p-left p-v-center trans slider-btn"><i class="fa fa-chevron-left"></i></div>',
       nextArrow: '<div class="icon a p-right p-v-center trans slider-btn"><i class="fa fa-chevron-right"></i></div>'
-    });
+    }
+
+    slider.slick(slickOptins);
   }
 
   // Light box
   function lightBoxInit() {
-    $('.light-box-btn').on('click', showLightBox);
-    $('.light-box-close-btn').on('click', closeLightBox);
+    var lightBoxBtns = document.querySelectorAll('.light-box-btn');
+    var lightBoxBtnsLen = lightBoxBtns.length;
+
+    var lightBoxCloseBtns = document.querySelectorAll('.light-box-close-btn');
+
+    var overlay = document.querySelectorAll('.overlay')[0];
+    var body = document.querySelectorAll('body');
+
+    for(var i = 0; i < lightBoxBtnsLen; i += 1) {
+      lightBoxBtns[i].addEventListener('click', showLightBox);
+      lightBoxCloseBtns[i].addEventListener('click', closeLightBox);
+    }
+    
 
     function showLightBox(e) {
-      var $overlay = $('.overlay');
-      var currentId = $(e.target).attr('data-href');
-      var $lightBox = $('#' + currentId);
-      $(window).scrollTop(0);
-      $('body').addClass('overflow-hidden');
+      var currentId = (e.target).getAttribute('data-href');
+      var lightBox = document.querySelector('#' + currentId);
 
-      $overlay.show();
-      $lightBox.show();
+      w.scrollTo(0, 0);
+      body.className = 'overflow-hidden'; // Todo
+      overlay.style.display='block';
+      lightBox.style.display='block';
     }
 
     function closeLightBox(e) {
-      var $overlay = $('.overlay');
-      var $lightBox = $(e.target).closest('.light-box');
-      $('body').removeClass('overflow-hidden');
-
-      $overlay.hide();
-      $lightBox.hide();
+      var lightBox = $(e.target).closest('.light-box')[0]; // Todo
+      body.className = ''; // Todo
+      overlay.style.display='none';
+      lightBox.style.display='none';
     }
   }
 
@@ -73,24 +83,6 @@
       projectDetailImageCtHeight = projectDetailImageCt.height();
       projectDetailAside.outerHeight(projectDetailImageCtHeight);
     }
-  }
-
-  function shareInit() {
-    config = {
-      networks: {
-        pinterest: {
-            enabled: false
-        },
-        reddit: {
-            enabled: false
-        },
-        email: {
-            enabled: false
-        }
-      }
-    }
-
-    var share = new ShareButton(config);
   }
 
   function setDate() {

@@ -1,6 +1,6 @@
 /*-- Share --*/
 .share-row {
-    padding-bottom: 46px;
+    display: inline-block;
 }
 
 .share-link,
@@ -27,19 +27,6 @@
 
 .share-icon {
   font-size: 20px;
-}
-
-.sharer-0 {
-  // visibility: hidden;
-  // padding: 0;
-}
-
-.share-button {
-  background-color: transparent;
-  display: inline-block !important;
-  text-transform: capitalize;
-  min-width: 150px;
-  margin: 0;
 }
 
 .share-button:before {

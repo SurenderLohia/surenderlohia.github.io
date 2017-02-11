@@ -7,13 +7,14 @@
 
 # Site settings
 title: Surender Lohia
+tag_text: Surender Lohia
 email: surender.lohia.e@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Surender Lohia | Front-End Developer, Passionate programmer.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://surenderlohia.github.io" # the base hostname & protocol for your site
+url: "www.surender.net" # the base hostname & protocol for your site
 twitter_username: surender_lohia
-github_username:  surenderLohia
+github_username:  surenderlohia
 logo: /assets/img/surender.jpg
 
 # Build settings
