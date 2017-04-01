@@ -28,6 +28,12 @@
     }
 }
 
+.header-section-spacing {
+  @extend .divider;
+  padding-top: 3%;
+}
+
+
 
 .l-my-resume, 
 .one-half, 

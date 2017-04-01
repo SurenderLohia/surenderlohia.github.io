@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    
+    {% include header.html %}
+      <div class="head-section">
+        <div class="wrap">
+          <div class="wrap-in">
+            <div class="header-section-spacing">
+              <header>
+                <h1 class="title" itemprop="name headline">{{ page.title }}</h1>
+                <div class="small-sub-title text-center">
+                  <div class="post-meta-info-item">
+                    <i class="fa fa-clock-o"></i>
+                    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+                  </div>
+
+                  {% if page.author %} 
+                  <div class="post-meta-info-item">
+                    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                      <i class="fa fa-pencil"></i> <span itemprop="name">{{ page.author }}</span>
+                    </span>
+                  </div>
+                  {% endif %}
+                  <div class="post-meta-info-item">
+                    <span class="fa fa-tag"> {{page.categories}}</span>
+                  </div>
+                </div>
+              </header>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ content }}
+    {% include footer.html %}
+
+  </body>
+</html>

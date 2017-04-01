@@ -6,6 +6,16 @@
   <body>
     
     {% include header.html %}
+      <div class="head-section">
+        <div class="wrap">
+          <div class="wrap-in">
+            <div class="header-section-spacing">
+              <h2 class="title">{{ page.main-title }}</h2>
+              <p class="small-sub-title text-center mb0">{{ page.main-description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
       {{ content }}
     {% include footer.html %}
 

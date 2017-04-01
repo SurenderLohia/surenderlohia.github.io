@@ -12,7 +12,7 @@ var gulpSequence = require('gulp-sequence');
 const imagemin = require('gulp-imagemin');
 
 gulp.task('minifyJs', function() {
-  gulp.src('_site/index.html')
+  gulp.src('_site/**/*.html')
     .pipe(useref())
     .pipe(gulpif('*.js', uglify()))
     .pipe(gulp.dest('_site'))

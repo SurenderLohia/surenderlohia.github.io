@@ -5,7 +5,7 @@ date:   2015-08-06 14:39:05 +0530
 author: Surender Lohia
 categories: front-end
 active: blog
-excerpt: "Cool Atom Packages, Atom is a text editor that's modern, approachable, yet hackable to the core a tool you can customize to do anything but also use productively without ever touching a config file."
+description: "Cool Atom Packages, Atom is a text editor that's modern, approachable, yet hackable to the core a tool you can customize to do anything but also use productively without ever touching a config file."
 image: /assets/images/posts/atom-editor.png
 ---
 

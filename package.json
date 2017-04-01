@@ -46,13 +46,16 @@
     "gulp-postcss": "^6.2.0",
     "gulp-uglify": "^2.0.0",
     "gulp-useref": "^3.1.2",
-    "postcss": "^5.2.4"
+    "jquery": "^1.12.4",
+    "postcss": "^5.2.4",
+    "slick-carousel": "^1.6.0"
   },
   "devDependencies": {
     "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-if": "^2.0.2",
     "gulp-imagemin": "^3.2.0",
-    "gulp-sequence": "^0.4.6"
+    "gulp-sequence": "^0.4.6",
+    "webpack": "^2.3.2"
   }
 }
