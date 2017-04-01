@@ -1,3 +1,7 @@
+var jQuery = require('jquery');
+var slick = require('slick-carousel');
+var colorbox = require('jquery-colorbox');
+
 (function(w, d, $) {
 
   $(document).ready(function() {
@@ -80,4 +84,4 @@
     $currentYear.text(d.getFullYear());
   }
 
-})(window, document, window.jQuery);
+})(window, document, jQuery);
