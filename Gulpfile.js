@@ -9,8 +9,7 @@ var useref = require('gulp-useref');
 var gutil = require('gulp-util');
 var del = require('del');
 var gulpSequence = require('gulp-sequence');
-var runSequence = require('run-sequence');
-
+const imagemin = require('gulp-imagemin');
 
 gulp.task('minifyJs', function() {
   gulp.src('_site/index.html')
@@ -32,5 +31,11 @@ gulp.task('minifyCss', function() {
 gulp.task('clean', function() {
   del(['_site/assets/js/app/*.js', '_site/assets/js/libs/*.js']);
 });
+
+gulp.task('image-min', () =>
+  gulp.src('assets/images/**/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('assets/images'))
+);
 
 gulp.task('build', gulpSequence('minifyJs', 'minifyCss', 'clean'));
