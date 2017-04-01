@@ -29,7 +29,7 @@ gulp.task('minifyCss', function() {
 });
 
 gulp.task('clean', function() {
-  del(['_site/assets/js/main.js']);
+  del(['_site/assets/js/main.js', '_site/assets/js/main.js']);
 });
 
 gulp.task('image-min', () =>
@@ -38,4 +38,4 @@ gulp.task('image-min', () =>
     .pipe(gulp.dest('assets/images'))
 );
 
-gulp.task('build', gulpSequence('minifyCss', 'clean'));
+gulp.task('build', gulpSequence('minifyCss'));
