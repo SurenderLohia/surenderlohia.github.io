@@ -7,6 +7,7 @@ author: Surender Lohia
 categories: scss
 active: blog
 description: SCSS Mixin for rem font sizing with px fallback for older browsers
+comments: true
 ---
 
 Mixin for rem font sizing with px fallback for older browsers

@@ -16,7 +16,6 @@ url: "https://www.surender.net/" # the base hostname & protocol for your site
 twitter_username: surender_lohia
 github_username:  surenderlohia
 logo: /assets/img/surender.jpg
-author:
 
 # Build settings
 markdown: kramdown
