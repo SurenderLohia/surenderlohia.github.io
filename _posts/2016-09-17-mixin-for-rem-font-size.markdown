@@ -1,11 +1,12 @@
 ---
 layout: post
-title:  "SCSS Mixin for rem font sizing"
+title:  SCSS Mixin for rem font sizing - Surender Lohia
+main-title:  SCSS Mixin for rem font sizing
 date:   2016-09-17 14:39:05 +0530
 author: Surender Lohia
 categories: scss
 active: blog
-description: "SCSS Mixin for rem font sizing with px fallback for older browsers"
+description: SCSS Mixin for rem font sizing with px fallback for older browsers
 ---
 
 Mixin for rem font sizing with px fallback for older browsers

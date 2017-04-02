@@ -10,12 +10,13 @@ title: Surender Lohia
 tag_text: Surender Lohia
 email: surender.lohia.e@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Surender Lohia | Front-End Developer, Passionate programmer.
+  Producing quality apps, focusing on writing eloquent and maintainable code.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "www.surender.net" # the base hostname & protocol for your site
+url: "https://www.surender.net/" # the base hostname & protocol for your site
 twitter_username: surender_lohia
 github_username:  surenderlohia
 logo: /assets/img/surender.jpg
+author:
 
 # Build settings
 markdown: kramdown
