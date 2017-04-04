@@ -13,3 +13,9 @@
 .slider:not(:first-child) {
     display: none;
 }
+
+.slick-arrow {
+  @include respond-to(mobile-and-tablet) {
+    display: none !important; 
+  }
+}

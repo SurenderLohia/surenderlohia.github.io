@@ -12,12 +12,16 @@
     "type": ["js", "front-end", "language"]
   },
   {
-    "name": "Bootstrap",
-    "type": ["front-end", "html", "css", "framework"]
+    "name": "Sass",
+    "type": ["css", "front-end"]
   },
   {
-    "name": "Semantic UI",
-    "type": ["front-end", "html", "css", "framework"]
+    "name": "jQuery",
+    "type": ["js", "front-end", "library"]
+  },
+  {
+    "name": "React",
+    "type": ["js", "front-end", "library"]
   },
   {
     "name": "Angular JS",
@@ -28,9 +32,38 @@
     "type": ["js", "front-end", "framework", "library", "MV*"]
   },
   {
-    "name": "React",
-    "type": ["js", "front-end", "library"]
+    "name": "Gulp",
+    "type": ["js", "task-runner"]
   },
+  {
+    "name": "Webpack",
+    "type": ["js", "front-end", "module-loader"]
+  },
+  {
+    "name": "QUnit",
+    "type": ["js", "library", "testing"]
+  },
+  {
+    "name": "RWD",
+    "type": ["front-end", "html", "css"]
+  },
+  {
+    "name": "Cross-browser Compatibility",
+    "type": ["front-end", "html", "css", "js"]
+  },
+  {
+    "name": "Semantic UI",
+    "type": ["front-end", "html", "css", "framework"]
+  },
+  {
+    "name": "Material UI",
+    "type": ["front-end", "html", "css", "framework"]
+  },
+  {
+    "name": "Bootstrap",
+    "type": ["front-end", "html", "css", "framework"]
+  },
+  
   {
     "name": "Unix",
     "type": ["os"]
@@ -40,7 +73,7 @@
     "type": ["tool", "version-control"]
   },
   {
-    "name": "Node",
+    "name": "Node.js",
     "type": ["js", "language", "back-end"]
   },
   {
@@ -52,12 +85,8 @@
     "type": ["language", "back-end"]
   },
   {
-    "name": "MongoDB",
-    "type": ["db", "language", "back-end", "document-database"]
-  },
-  {
-    "name": "SQLite",
-    "type": ["db", "language", "back-end"]
+    "name": "Express.js",
+    "type": ["back-end", "framework"]
   },
   {
     "name": "Django",
@@ -66,5 +95,13 @@
   {
     "name": "Wordpress",
     "type": ["framework", "back-end", "php"]
+  },
+  {
+    "name": "MongoDB",
+    "type": ["db", "language", "back-end", "document-database"]
+  },
+  {
+    "name": "SQLite",
+    "type": ["db", "language", "back-end"]
   }
 ]

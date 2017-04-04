@@ -12,7 +12,7 @@
 
 .main-menu-item {
   float: left;
-  margin-right: 30px;
+  margin: 0 10px;
 }
 
 .main-menu-link { 
@@ -24,6 +24,8 @@
   text-align: center;
   cursor: pointer;
   text-decoration: none;
+  padding-right: 10px;
+  padding-left: 10px;
 
   &:hover {
     color: $primary-color;
@@ -37,6 +39,10 @@
     color: $primary-color;
   }
 
-  
+  @include respond-to(mobile-and-tablet) {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 1.2rem;
+  }
 }
 
