@@ -129,9 +129,8 @@ body {
     border:0;
     color:$dark-grey;
     display:inline-block;
-    line-height:20px;
     @include rem-fallback(margin, 0, 1.25, 1.25, 0);
-    @include rem-fallback(padding, 0.3125, 0.625);
+    @include rem-fallback(padding, 0.4, 0.625);
 
     &.lable-condenced {
         @include rem-fallback(margin, 0, 0.5, 0.5, 0);

@@ -1,6 +1,8 @@
 var jQuery = require('jquery');
 var slick = require('slick-carousel');
 var colorbox = require('jquery-colorbox');
+var prism = require('prismjs');
+var Normalizer = require('prismjs/plugins/normalize-whitespace/prism-normalize-whitespace');
 
 (function(w, d, $) {
 

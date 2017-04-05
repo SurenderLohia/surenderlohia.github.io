@@ -50,6 +50,7 @@
     "jquery": "^1.12.4",
     "jquery-colorbox": "^1.6.4",
     "postcss": "^5.2.4",
+    "prismjs": "^1.6.0",
     "slick-carousel": "^1.6.0"
   },
   "devDependencies": {

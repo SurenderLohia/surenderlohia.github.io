@@ -6,6 +6,6 @@
 </footer>
 
 {% include google-analytics.html %}
-{% if {{page.active}} == "home" or {{page.active}} == "portfolio" %}
+{% if page.main-js %}
     <script type="text/javascript" src="{{ "/assets/js/bundle.js" | prepend: site.baseurl }}"></script>
 {% endif %}

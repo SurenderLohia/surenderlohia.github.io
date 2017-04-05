@@ -8,23 +8,21 @@ categories: scss
 active: blog
 description: SCSS Mixin for rem font sizing with px fallback for older browsers
 comments: true
+main-js: true
 ---
 
 Mixin for rem font sizing with px fallback for older browsers
 
-#### CSS
-<pre>
-  <code>
+<h4>CSS</h4><pre><code class="language-css">
     html {
       font-size: 16px; /* Sets up the Base font size */
     }
-  </code>
-</pre>
+</code></pre>
 
 #### SCSS
 
 <pre>
-  <code>
+  <code class="language-css">
     @mixin font-size($sizeValue: 1) {
       font-size: ($sizeValue * 16) + px;
       font-size: $sizeValue + rem;
@@ -36,7 +34,7 @@ Mixin for rem font sizing with px fallback for older browsers
 
 #### SCSS
 <pre>
-  <code>
+  <code class="language-css">
     p {
       @include font-size(2);
     }
