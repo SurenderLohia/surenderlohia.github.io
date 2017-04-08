@@ -16,6 +16,12 @@
       }
     }
   }
+
+  &.n-list-expanded-list {
+    li {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .divider-list-item {

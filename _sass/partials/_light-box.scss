@@ -1,12 +1,16 @@
 /* Light box */
+$light-box-bottom-spacing: 60px;
+$light-box-button-bottom-spacing: 10px;
+
+$light-box-button-desktop-spacing: 20px;
 
 body {
   position:relative;
 }
 
 .overlay {
-  position:absolute;
-  background:rgba(0, 0, 0, 0.9);
+  position:fixed;
+  background:rgba(255, 255, 255, 0.9);
   top:0;
   left:0;
   width:100%;
@@ -15,50 +19,51 @@ body {
 }
 
 .light-box {
-  background-color:#fff;
   display:none;
-  max-width:800px;
-  margin:0 auto;
   position:relative;
-  top: 50px;
+  top: 0;
+  height: 100%;
 }
 
 .light-box-in {
-  padding:5%;
-  
-  // For tablet up
-  @include respond-to(tablet-up) {
-    padding:2%;
+  padding: 10px 10px $light-box-bottom-spacing 10px;
+  overflow-y: auto;
+  max-width:800px;
+  margin:0 auto;
+
+  @include respond-to(desktop) {
+    padding-top: 50px;
   }
 }
 
-.light-box-title {
-  margin-right:40px;
-}
-
 .light-box-close-btn {
-  background-color:$main-color;
-  color:#fff;
+  box-sizing: content-box;
+  color:$primary-text-color;
   display:block;
   height:$icon-size;
   position:absolute;
-  right:0;
-  top:0;
   width:$icon-size;
   text-align:center;
   cursor: pointer;
+  bottom: $light-box-button-bottom-spacing;
+  border-radius: 50%;
+  left: 50%;
+  margin-left: -($icon-size / 2);
+  border: 1px solid transparent;
   
   i {
     line-height:$icon-size;
     font-size:$icon-font-size;
-    
   }
-  
-  &:hover {
-    background-color:darken($main-color, 10%);
+
+  @include respond-to(desktop) {
+    left: auto;
+    right: $light-box-button-desktop-spacing;
+    top: $light-box-button-desktop-spacing;
   }
-  
+
+  &:hover,
   &:active {
-    background-color:$base-color;
+    border: 1px solid $primary-text-color;
   }
 }
