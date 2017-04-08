@@ -1,6 +1,5 @@
 var jQuery = require('jquery');
 var slick = require('slick-carousel');
-var colorbox = require('jquery-colorbox');
 var prism = require('prismjs');
 var Normalizer = require('prismjs/plugins/normalize-whitespace/prism-normalize-whitespace');
 
@@ -10,7 +9,6 @@ var Normalizer = require('prismjs/plugins/normalize-whitespace/prism-normalize-w
     setDate();
     slickInit();
     lightBoxInit();
-    colorboxInit();
   });
 
 
@@ -31,10 +29,22 @@ var Normalizer = require('prismjs/plugins/normalize-whitespace/prism-normalize-w
 
     function showLightBox(e) {
       var $overlay = $('.overlay');
-      var currentId = $(e.target).attr('data-href');
+      var $currentEl = $(e.target);
+      
+      if(!$currentEl.hasClass('light-box-btn')) {
+        $currentEl = $currentEl.closest('.light-box-btn');
+      }
+
+      var currentId = $currentEl.attr('data-href');
+
+      if(!currentId) {
+        console.error('Current Lightbox id is undefined');
+      }
+
       var $lightBox = $('#' + currentId);
       $(window).scrollTop(0);
       $('body').addClass('overflow-hidden');
+      $lightBox.addClass('opened-light-box');
 
       $overlay.show();
       $lightBox.show();
@@ -42,41 +52,12 @@ var Normalizer = require('prismjs/plugins/normalize-whitespace/prism-normalize-w
 
     function closeLightBox(e) {
       var $overlay = $('.overlay');
-      var $lightBox = $(e.target).closest('.light-box');
+      var $openedLightBox = $('.light-box.opened-light-box');
       $('body').removeClass('overflow-hidden');
+      $openedLightBox.removeClass('opened-light-box');
 
       $overlay.hide();
-      $lightBox.hide();
-    }
-  }
-
-  function colorboxInit() {
-    var $colorbox = $('.thumb-box');
-    var $colorboxPrevBtn = $('.colorbox-prev-btn');
-    var $colorboxNextBtn = $('.colorbox-next-btn');
-    var $colorboxCloseBtn = $('.colorbox-close-btn');
-    
-    
-    $colorbox.colorbox({
-      rel:'gal', 
-      inline: true,
-      arrowKey: false,
-      closeButton: false,
-      width: '100%',
-      maxWidth: '1000px',
-      onComplete: setAsideHeight
-    });
-
-    $colorboxPrevBtn.on('click', $.colorbox.prev);
-    $colorboxNextBtn.on('click', $.colorbox.next);
-    $colorboxCloseBtn.on('click', $.colorbox.close);
-
-    function setAsideHeight() {
-      console.log('setAsideHeight');
-      var projectDetailAside = $('#cboxLoadedContent .project-detail-aside');
-      var projectDetailImageCt = $('#cboxLoadedContent .project-detail-image-ct');
-      projectDetailImageCtHeight = projectDetailImageCt.height();
-      projectDetailAside.outerHeight(projectDetailImageCtHeight);
+      $openedLightBox.hide();
     }
   }
 

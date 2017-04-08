@@ -25,7 +25,6 @@ exclude: ["_app",
           "Gemfile.lock",
           "Gulpfile.js",
           "webpack.config.js",
-          "assets/js/bundle.js.map",
           "assets/js/main.js",
           "node_modules",
           "package.json"]

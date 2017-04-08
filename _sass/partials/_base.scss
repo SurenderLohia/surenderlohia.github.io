@@ -1,12 +1,9 @@
 /* -- Base -- */
 body {
   color: $primary-text-color;
-  font-size:0.875em;
+  @include font-size(1);
   line-height:1.4;
   height:100%;
-  @include respond-to(mobile) {
-    font-size:1em;
-  }
 }
 
 a {

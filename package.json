@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack-build": "webpack"
+    "webpack": "webpack"
   },
   "repository": {
     "type": "git",
@@ -48,7 +48,6 @@
     "gulp-uglify": "^2.0.0",
     "gulp-useref": "^3.1.2",
     "jquery": "^1.12.4",
-    "jquery-colorbox": "^1.6.4",
     "postcss": "^5.2.4",
     "prismjs": "^1.6.0",
     "slick-carousel": "^1.6.0"

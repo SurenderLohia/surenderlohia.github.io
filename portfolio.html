@@ -15,7 +15,7 @@ main-js: true
       {% assign sortedProjects = site.data.projects | sort: "date" | reverse %}
       {% for project in sortedProjects %}
          <div class="one-fourth">
-            <div class="thumb-box" href="#{{ project.slugName }}">
+            <div class="thumb-box light-box-btn" data-href="{{ project.slugName }}">
               <img class="thumb-box-img" src="/assets/images/projects/thumb/{{ project.slugName }}.png" | prepend: site.baseurl }}" alt="{{ project.name }}" title="{{ skill.name }}">
               <div class="thumb-box-title">{{project.name}}</div>
             </div>
@@ -25,8 +25,11 @@ main-js: true
   </div>
 </div>
 
-<div class="hide">
-{% for project in site.data.projects %}
-  {% include project-detail.html %}
-{% endfor %}
+<!-- Light box -->
+<div class="overlay">
+  <div class="light-box-close-btn trans"><i class="fa fa-times"></i></div>
+  {% for project in sortedProjects %}
+    {% include project-detail.html %}
+  {% endfor %}
 </div>
+<!-- Light box end -->

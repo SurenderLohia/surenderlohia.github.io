@@ -21,33 +21,63 @@ body {
     sans-serif;
 }
 
+// titles
+.h1 {
+    @include font-size(1.7);
+}
+
+.h2 {
+    @include font-size(1.5);
+}
+
+.h3 {
+    @include font-size(1.25);
+}
+
+.h4 {
+    @include font-size(1);
+}
+
+.base-text {
+    @include font-size(1);   
+}
+
+.main-text {
+  @include font-size(1.25);
+}
+
+.small-text {
+ @include font-size(0.875);
+}
+
+
+
 
 .title {
-    @include font-size(1.7);
+    @extend .h1;
     margin-bottom:15px;
     margin-top:0;
     text-align: center;
 }
 
 .sub-title {
-    font-size:1.4em;
+    @extend .h2;
 }
 
 .small-sub-title {
-    font-size:1.2em;
+    @extend .h3;
 }
 
-.main-text {
-  font-size:1.2em;
-}
 
 .desc {
   text-indent:50px;
 }
 
 .sub-title2 {
-    font-size: 1em;
+    @include font-size(1);
 }
+
+
 
 .button {
     border-radius: 3px;
@@ -124,6 +154,7 @@ body {
 
 
 .label {
+    @extend .small-text;
     border-radius: 3px;
     background-color:$grey;
     border:0;

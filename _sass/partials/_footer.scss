@@ -6,5 +6,6 @@
 
 .copyright-text {
   @extend .bottom;
+  @extend .small-text;
   color: $secondary-text-color;
 }

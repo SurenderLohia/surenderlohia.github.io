@@ -12,19 +12,16 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'assets/js')
   },
+  watchOptions: {
+    aggregateTimeout: 300,
+    poll: 1000,
+    ignored: /node_modules/
+  },
   plugins: PROD ? [
     new webpack.optimize.UglifyJsPlugin({
       compress: { warnings: false }
     }),
-
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery'
-    })
-  ] : [
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery'
-    })
-  ],
+  ] : [],
+  watch: PROD ? false : true
+  
 };

@@ -11,6 +11,10 @@
   height: auto;
 }
 
+.scrolable-area {
+  overflow-y: auto;
+}
+
 /* clearfix */
 .row:before, .row:after {
   display:table;
@@ -94,6 +98,10 @@
 
 .text-center {
   text-align: center;
+}
+
+.strong {
+  font-weight: bold;
 }
 
 .line-height-1 {

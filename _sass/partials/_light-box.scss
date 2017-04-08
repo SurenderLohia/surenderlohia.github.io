@@ -23,16 +23,37 @@ body {
   position:relative;
   top: 0;
   height: 100%;
-}
-
-.light-box-in {
-  padding: 10px 10px $light-box-bottom-spacing 10px;
-  overflow-y: auto;
-  max-width:800px;
-  margin:0 auto;
 
   @include respond-to(desktop) {
-    padding-top: 50px;
+    padding: 0;
+    overflow-y: auto;
+  }
+}
+
+.light-box-wrap {
+  max-width:700px;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: $light-box-bottom-spacing;
+
+  @include respond-to(desktop) {
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  } 
+}
+
+.light-box-content {
+  height: 100%;
+  overflow-y: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @include respond-to(desktop) {
+    overflow-y: initial;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 

@@ -2,6 +2,7 @@
 
 .follow-link {
   @extend .trans;
+  border-radius: 50%;
   color: $primary-color;
   text-decoration: none;
   border: 1px solid $primary-color;

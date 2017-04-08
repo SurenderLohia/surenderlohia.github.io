@@ -24,53 +24,28 @@
 // Detail
 
 .project-detail-title {
-  padding: 10px;
-  border-bottom: 1px solid $divider-color;
+  @include font-size(1.7);
+  padding: 10px 0;
   margin-bottom: 0;
 }
 
-.project-detail-image-ct {
-  position:relative;
-}
-
-
-.project-detail-image-ct {
-  float:left;
-  width:64%;
-  position:relative;
-  
-  @include respond-to(mobile) {
-    float: none;
-    width: auto;
-  }
-}
-
-.project-detail-aside {
-  float: right;
-  width: 36%;
-  padding:15px 1% 15px 2%;
-  overflow-y: auto;
-  @include respond-to(mobile) {
-    float: none;
-    width: auto;
-    padding:10px;
-  }
-}
-
 .project-info-item {
-  margin-bottom:15px;
+  margin-bottom:25px;
   &.tech {
-    margin-bottom:5px;
+    margin-bottom:15px;
   }
 }
 
 .project-info-item-title {
-  font-size:1.2em;
+  @extend .h3;
   margin:0 0 10px 0;
 }
 
-.project-sub-title {
-  
+.project-info-item-sub-title {
+  @extend .left;
+  @extend .strong;
+  @extend .line-height-1;
+  @extend .mr5;
 }
 
 #cboxPrevious, #cboxNext {

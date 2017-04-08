@@ -7,6 +7,7 @@
 .share-button {
   @extend .trans;
   color: $accent-color;
+  border-radius: 50px;
   text-decoration: none;
   border: 1px solid $accent-color;
   display: inline-block;
