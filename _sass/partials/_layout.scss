@@ -19,7 +19,6 @@
 }
 
 .divider {
-    
     margin-bottom:3%;
     padding-bottom:3%;
     @include respond-to(mobile) {
@@ -31,6 +30,13 @@
 .header-section-spacing {
   @extend .divider;
   padding-top: 3%;
+}
+
+.specing-bottom {
+  margin-bottom:3%;
+  @include respond-to(mobile) {
+    margin-bottom:10px;
+  }
 }
 
 
@@ -58,6 +64,13 @@
       width:auto;
       margin:0 0 10px 0;
     }
+
+  &.no-space {
+    @include respond-to(tablet-up) {
+      width:50%;
+      margin-right: 0;  
+    }
+  }
 }
 
 .col-50 {
@@ -94,6 +107,13 @@
         margin-right: auto;
       }
     }
+
+  &.no-space {
+    @include respond-to(tablet-up) {
+      width:33.33%;
+      margin-right: 0;
+    }
+  }
 }
 
 .one-third {
@@ -140,6 +160,10 @@
         margin-right:0;
       }
     }
+
+  &.no-space {
+    margin-right: 0;
+  }
 }
 
 .one-fourth {

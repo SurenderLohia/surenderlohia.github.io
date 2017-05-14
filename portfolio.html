@@ -11,11 +11,11 @@ main-js: true
 ---
 <div class="wrap">
   <div class="wrap-in">
-    <div class="row main-content">
-      {% assign sortedProjects = site.data.projects | sort: "date" | reverse %}
-      {% for project in sortedProjects %}
-         <div class="one-fourth">
-            <div class="thumb-box light-box-btn" data-href="{{ project.slugName }}">
+    <div class="row main-content specing-bottom">
+      {% assign sortedProjects = site.data.projects | sort: "uiOrder" %}
+      {% for project in sortedProjects limit:9 %}
+         <div class="one-third no-space">
+            <div class="thumb-box light-box-btn" data-href="{{ project.slugName }}" style="background-color: {{ project.logoBg }}">
               <img class="thumb-box-img" src="/assets/images/projects/thumb/{{ project.slugName }}.png" | prepend: site.baseurl }}" alt="{{ project.name }}" title="{{ skill.name }}">
               <div class="thumb-box-title">{{project.name}}</div>
             </div>

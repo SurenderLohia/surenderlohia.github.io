@@ -1,51 +1,13 @@
 [
   {
     "id": 1,
-    "name": "Euroline",
-    "slugName": "euroline",
-    "link": "http://www.euroline4x4.com/index.php?language=en",
-    "isLive": true,
-    "company": "sam-sys",
-    "technologies": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "jQuery",
-      "PHP"
-    ],
-    "devices": [
-      "Desktop"
-    ],
-    "date": "2012-04",
-    "description": "",
-    "teamMembers": {
-      "designers": [
-        {
-          "name": "Chidambara Kumar",
-          "linkedIn": "https://www.linkedin.com/in/chidambara-kumar-42328125"
-        }
-      ],
-      "frontEndDevelopers": [
-        {
-          "name": "Surender Lohia",
-          "linkedIn": "https://in.linkedin.com/in/surederlohia"
-        }
-      ],
-      "backEndDevelopers": [
-        {
-          "name": "Pugazhenthi Krishnamoothi",
-          "linkedIn": "https://in.linkedin.com/in/pugazhenthikrishnamoothi"
-        }
-      ]
-    }
-  },
-  {
-    "id": 2,
     "name": "Desi Date",
     "slugName": "desi-date",
     "link": "http://desidate.dns-systems.net/",
     "isLive": true,
+    "logoBg": "#fff",
     "company": "sam-sys",
+    "uiOrder": 10,
     "technologies": [
       "HTML",
       "CSS",
@@ -80,12 +42,14 @@
     }
   },
   {
-    "id": 3,
+    "id": 2,
     "name": "Sam-Sys",
     "slugName": "sam-sys",
     "link": "https://web.archive.org/web/20160402013006/http://www.sam-sys.com/",
     "isLive": false,
+    "logoBg": "#010B21",
     "company": "samsys",
+    "uiOrder": 9,
     "technologies": [
       "HTML",
       "CSS",
@@ -124,12 +88,14 @@
     }
   },
   {
-    "id": 4,
+    "id": 3,
     "name": "Gadget Swag",
     "slugName": "gadget-swag",
     "link": "https://web.archive.org/web/20150303053030/http://gadgetswag.com/",
     "isLive": false,
     "company": "sam-sys",
+    "logoBg": "#6D4C41",
+    "uiOrder": 7,
     "technologies": [
       "HTML",
       "CSS",
@@ -168,12 +134,14 @@
     }
   },
   {
-    "id": 5,
+    "id": 4,
     "name": "Zapacos",
     "slugName": "zapacos",
     "link": "http://www.zapacos.com/",
     "isLive": true,
+    "logoBg": "#fff",
     "company": "sam-sys",
+    "uiOrder": 8,
     "technologies": [
       "HTML",
       "CSS",
@@ -210,12 +178,14 @@
     }
   },
   {
-    "id": 6,
+    "id": 5,
     "name": "Pcgetz",
     "slugName": "pcgetz",
     "link": "http://www.pcgetz.com",
     "isLive": true,
     "company": "sam-sys",
+    "logoBg": "#fff",
+    "uiOrder": 6,
     "technologies": [
       "HTML",
       "CSS",
@@ -249,12 +219,14 @@
     }
   },
   {
-    "id": 7,
+    "id": 6,
     "name": "Dream Makers",
     "slugName": "dream-makers",
     "link": "https://web.archive.org/web/20140101063536/http://dreammakersindia.com/",
     "isLive": false,
+    "logoBg": "#607D8B",
     "company": "sam-sys",
+    "uiOrder": 5,
     "technologies": [
       "HTML",
       "CSS",
@@ -289,52 +261,14 @@
     }
   },
   {
-    "id": 8,
-    "name": "Paia",
-    "slugName": "paia-bay",
-    "link": "http://www.paiabaycoffee.com/",
-    "isLive": true,
-    "company": "sam-sys",
-    "technologies": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "jQuery",
-      "PHP"
-    ],
-    "devices": [
-      "desktop"
-    ],
-    "date": "2012-08",
-    "description": "",
-    "teamMembers": {
-      "designers": [
-        {
-          "name": "Chidambara Kumar",
-          "linkedIn": "https://www.linkedin.com/in/chidambara-kumar-42328125"
-        }
-      ],
-      "frontEndDevelopers": [
-        {
-          "name": "Surender Lohia",
-          "linkedIn": "https://in.linkedin.com/in/surederlohia"
-        }
-      ],
-      "backEndDevelopers": [
-        {
-          "name": "Pugazhenthi Krishnamoothi",
-          "linkedIn": "https://in.linkedin.com/in/pugazhenthikrishnamoothi"
-        }
-      ]
-    }
-  },
-  {
-    "id": 9,
+    "id": 7,
     "name": "India Goodies",
     "slugName": "india-goodies",
     "link": "http://www.indiagoodies.com/home.php",
     "isLive": true,
+    "logoBg": "#fff",
     "company": "sam-sys",
+    "uiOrder": 4,
     "technologies": [
       "HTML",
       "CSS",
@@ -369,12 +303,14 @@
     }
   },
   {
-    "id": 10,
+    "id": 8,
     "name": "Agency Symposium",
     "slugName": "agency-symposium",
     "link": "https://web.archive.org/web/20140606131905/http://project-d.com.au/agencysymposium/",
     "isLive": false,
+    "logoBg": "#fff",
     "company": "rage",
+    "uiOrder": 2,
     "technologies": [
       "HTML",
       "CSS",
@@ -414,12 +350,14 @@
     }
   },
   {
-    "id": 11,
+    "id": 9,
     "name": "Westpac Gettingmore",
     "slugName": "westpac-gettingmore",
     "link": "http://info.westpac.com.au/gettingmore/?wbc-vnty=www.westpac.com.au/gettingmore",
     "isLive": true,
+    "logoBg": "#BDBDBD",
     "company": "rage",
+    "uiOrder": 3,
     "technologies": [
       "HTML",
       "CSS",
@@ -443,41 +381,14 @@
     }
   },
   {
-    "id": 12,
-    "name": "Top Juice",
-    "slugName": "top-juice",
-    "link": "http://www.topjuice.com.au/",
-    "isLive": true,
-    "company": "rage",
-    "technologies": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "jQuery"
-    ],
-    "devices": [
-      "desktop"
-    ],
-    "date": "2013-06",
-    "description": "",
-    "teamMembers": {
-      "designers": [],
-      "frontEndDevelopers": [
-        {
-          "name": "Surender Lohia",
-          "linkedIn": "https://in.linkedin.com/in/surederlohia"
-        }
-      ],
-      "backEndDevelopers": []
-    }
-  },
-  {
-    "id": 13,
+    "id": 10,
     "name": "HappyFox Chat",
     "slugName": "happyfox-chat",
     "link": "https://happyfoxchat.com/",
     "isLive": true,
+    "logoBg": "#263238",
     "company": "tenmiles",
+    "uiOrder": 1,
     "technologies": [
       "HTML",
       "CSS",
@@ -516,10 +427,6 @@
         {
           "name": "Anand Muthukrishnan",
           "linkedIn": "https://www.linkedin.com/in/luckydev"
-        },
-        {
-          "name": "Aruljothi Kuppusamy",
-          "linkedIn": "https://www.linkedin.com/in/aruljothikuppusamy"
         },
         {
           "name": "Nagarajan k",

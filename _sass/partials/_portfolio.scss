@@ -1,23 +1,42 @@
 /*-- Projects --*/
 
 .thumb-box {
-  border:1px solid $divider-color;
+  background-color: #fff;
   position:relative;
   cursor: pointer;
+  padding: 20px;
+  text-align: center;
+  overflow: hidden;
 
   &:hover {
-    opacity: 0.8;
+    .thumb-box-img {
+      transform: scale(1);
+    }
+
+    .thumb-box-title {
+      transform: translateY(0);
+    }
   }
 }
 
 .thumb-box-img {
-  border-bottom: 1px solid $divider-color;
+  @extend .trans;
+
+  width: auto;
+  transform: scale(0.8);
 }
 
 .thumb-box-title {
-  color: $primary-color;
-  @extend .text-center;
-  padding: 10px 0;
+  @extend .trans;
+  color: $primary-color-text;
+  padding: 5px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  transform: translateY(50px);
 }
 
 
