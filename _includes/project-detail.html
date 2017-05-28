@@ -7,76 +7,77 @@
         <div class="icon trans colorbox-control-btn colorbox-next-btn"><i class="fa fa-chevron-right"></i></div>
         <div class="icon trans colorbox-control-btn colorbox-close-btn last"><i class="fa fa-times"></i></div>
       </div>
-      <h2 class="project-detail-title">{{ project.name }}</h2>
-      <div class="row">
-        <img class="res-img mb20" src="/assets/images/projects/detail/{{ project.slugName }}.png" | prepend: site.baseurl}}" alt="{{ project.name }}">
-        <div>
-          <div class="project-info-item tech">
-            <div class="row">
-              {{ project.technologies | join: ', ' }}
+      <div class="project-detail">
+        <div class="row">
+          <img class="res-img" src="/assets/images/projects/detail/{{ project.slugName }}.png" | prepend: site.baseurl}}" alt="{{ project.name }}">
+          <div class="project-detail-content">
+            <div class="divider-bottom project-content-spacing">
+              <h2 class="project-detail-title">
+                <a class="primary-link break-word" href="{{ project.link }}" target="_blank" rel="noopener noreferrer">{{ project.name }}</a>
+              </h2>
+              <span class="secondary-text-color">{{ project.technologies | join: ', ' }}</span>
             </div>
-          </div>
-          <div class="project-info-item">
-            <h4 class="project-info-item-title">Team Members:</h4>
-            {% if project.teamMembers.designers.size > 0 %}
-              <div class="mb10 row">
-                <span class="project-info-item-sub-title"> Design:&nbsp;</span>
-                <ul class="divider-list left row">
-                {% for designer in project.teamMembers.designers %}
-                  <li class="divider-list-item">
-                  {% if designer.linkedIn == "#" %}
-                    <span>{{ designer.name }}</span>
-                  {% else %}
-                    <a class="primary-link" href="{{ designer.linkedIn }}" target="_blank" rel="noopener noreferrer">{{ designer.name }}</a>
-                  {% endif %}
-                  </li>
-                {% endfor %}
-                </ul>
-              </div>
-            {% endif %}
-            
-            {% if project.teamMembers.frontEndDevelopers.size > 0 %}
-              <div class="mb10 row">
-                <span class="project-info-item-sub-title">Front End: </span>
-                <ul class="divider-list left row">
-                {% for frontEndDeveloper in project.teamMembers.frontEndDevelopers %}
-                    <li class="divider-list-item">
-                      {% if frontEndDeveloper.linkedIn == "#" %}
-                        <span>{{ frontEndDeveloper.name }}</span>
+            <div class="project-content-spacing">
+              
+                {% if project.teamMembers.designers.size > 0 %}
+                  <div class="mb10 row">
+                    <span class="project-info-item-sub-title"> Design:&nbsp;</span>
+                    <ul class="divider-list left row">
+                    {% for designer in project.teamMembers.designers %}
+                      <li class="divider-list-item">
+                      {% if designer.linkedIn == "#" %}
+                        <span>{{ designer.name }}</span>
                       {% else %}
-                        <a class="primary-link" href="{{ frontEndDeveloper.linkedIn }}" target="_blank" rel="noopener noreferrer">{{ frontEndDeveloper.name }}</a>
+                        <a class="primary-link" href="{{ designer.linkedIn }}" target="_blank" rel="noopener noreferrer">{{ designer.name }}</a>
                       {% endif %}
-                    </li>
-                {% endfor %}
-                </ul>
-              </div>
-            {% endif %}
-            
-            {% if project.teamMembers.backEndDevelopers.size > 0 %}
-              <div class="mb10 row">
-                <span class="project-info-item-sub-title">Back End:</span>
-                <ul class="divider-list row">
-                {% for backEndDeveloper in project.teamMembers.backEndDevelopers %}
-                    <li class="divider-list-item">
-                      {% if backEndDeveloper.linkedIn == "#" %}
-                        <span>{{ backEndDeveloper.name }}</span>
-                      {% else %}
-                        <a class="primary-link" href="{{ backEndDeveloper.linkedIn }}" target="_blank" rel="noopener noreferrer">{{ backEndDeveloper.name }}</a>
-                      {% endif %}
-                    </li>
-                {% endfor %}
-                </ul>
-              </div>
-            {% endif %}
-          </div>
-          
-          <div class="project-info-item bottom">
-            <h4 class="project-info-item-title">Link
-              {% if project.isLive != true  %}
-                (not in live now)
-              {% endif %} 
-            :</h4>
-            <a class="primary-link break-word" href="{{ project.link }}" target="_blank" rel="noopener noreferrer">{{ project.link }}</a>
+                      </li>
+                    {% endfor %}
+                    </ul>
+                  </div>
+                {% endif %}
+                
+                {% if project.teamMembers.frontEndDevelopers.size > 0 %}
+                  <div class="mb10 row">
+                    <span class="project-info-item-sub-title">Front End: </span>
+                    <ul class="divider-list left row">
+                    {% for frontEndDeveloper in project.teamMembers.frontEndDevelopers %}
+                        <li class="divider-list-item">
+                          {% if frontEndDeveloper.linkedIn == "#" %}
+                            <span>{{ frontEndDeveloper.name }}</span>
+                          {% else %}
+                            <a class="primary-link" href="{{ frontEndDeveloper.linkedIn }}" target="_blank" rel="noopener noreferrer">{{ frontEndDeveloper.name }}</a>
+                          {% endif %}
+                        </li>
+                    {% endfor %}
+                    </ul>
+                  </div>
+                {% endif %}
+                
+                {% if project.teamMembers.backEndDevelopers.size > 0 %}
+                  <div class="mb10 row">
+                    <span class="project-info-item-sub-title">Back End:</span>
+                    <ul class="divider-list row">
+                    {% for backEndDeveloper in project.teamMembers.backEndDevelopers %}
+                        <li class="divider-list-item">
+                          {% if backEndDeveloper.linkedIn == "#" %}
+                            <span>{{ backEndDeveloper.name }}</span>
+                          {% else %}
+                            <a class="primary-link" href="{{ backEndDeveloper.linkedIn }}" target="_blank" rel="noopener noreferrer">{{ backEndDeveloper.name }}</a>
+                          {% endif %}
+                        </li>
+                    {% endfor %}
+                    </ul>
+                  </div>
+                {% endif %}
+
+                {% if project.isLive != true  %}
+                  <div class="mb10">
+                    <span class="secondary-text-color">*not in live now</span>
+                  </div>
+                {% endif %} 
+              
+
+            </div>
           </div>
         </div>
       </div>

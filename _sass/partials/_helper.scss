@@ -15,6 +15,14 @@
   overflow-y: auto;
 }
 
+.divider-bottom {
+  border-bottom: 1px solid $light-divider;
+}
+
+.secondary-text-color {
+  color: $secondary-text-color;
+}
+
 /* clearfix */
 .row:before, .row:after {
   display:table;
