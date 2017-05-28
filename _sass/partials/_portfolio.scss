@@ -10,7 +10,7 @@
 
   &:hover {
     .thumb-box-img {
-      transform: scale(1);
+      transform: scale(0.8);
     }
 
     .thumb-box-title {
@@ -23,7 +23,7 @@
   @extend .trans;
 
   width: auto;
-  transform: scale(0.8);
+  transform: scale(1);
 }
 
 .thumb-box-title {
@@ -35,8 +35,25 @@
   left: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  text-align: left;
+  font-size: 14px;
 
   transform: translateY(50px);
+}
+
+.thumb-box-title-in {
+  padding: 0 10px;
+}
+
+.thumb-box-title-text {
+  &:after {
+    content: ','
+  }
+  &:nth-last-child(1) {
+   &:after {
+      content: ''
+    } 
+  }    
 }
 
 

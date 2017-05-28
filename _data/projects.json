@@ -314,14 +314,13 @@
     "technologies": [
       "HTML",
       "CSS",
+      "Responsive",
       "JavaScript",
       "jQuery",
       "PHP"
     ],
     "devices": [
-      "desktop",
-      "tablet",
-      "mobile"
+      "Responsive"
     ],
     "date": "2013-09",
     "description": "",
@@ -361,6 +360,7 @@
     "technologies": [
       "HTML",
       "CSS",
+      "Responsive",
       "JavaScript",
       "jQuery"
     ],

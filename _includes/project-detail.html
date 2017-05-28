@@ -12,18 +12,15 @@
         <img class="res-img mb20" src="/assets/images/projects/detail/{{ project.slugName }}.png" | prepend: site.baseurl}}" alt="{{ project.name }}">
         <div>
           <div class="project-info-item tech">
-            <h4 class="project-info-item-title">Technologies Used:</h4>
             <div class="row">
-              {% for tech in project.technologies %}
-                <span class="label lable-condenced">{{ tech }}</span>
-              {% endfor %}
+              {{ project.technologies | join: ', ' }}
             </div>
           </div>
           <div class="project-info-item">
             <h4 class="project-info-item-title">Team Members:</h4>
             {% if project.teamMembers.designers.size > 0 %}
               <div class="mb10 row">
-                <span class="project-info-item-sub-title"> {{ project.teamMembers.designers.size | pluralize: "Designer" }}:&nbsp;</span>
+                <span class="project-info-item-sub-title"> Design:&nbsp;</span>
                 <ul class="divider-list left row">
                 {% for designer in project.teamMembers.designers %}
                   <li class="divider-list-item">
@@ -40,7 +37,7 @@
             
             {% if project.teamMembers.frontEndDevelopers.size > 0 %}
               <div class="mb10 row">
-                <span class="project-info-item-sub-title">{{ project.teamMembers.frontEndDevelopers.size | pluralize: "Front End Developer" }}: </span>
+                <span class="project-info-item-sub-title">Front End: </span>
                 <ul class="divider-list left row">
                 {% for frontEndDeveloper in project.teamMembers.frontEndDevelopers %}
                     <li class="divider-list-item">
@@ -57,7 +54,7 @@
             
             {% if project.teamMembers.backEndDevelopers.size > 0 %}
               <div class="mb10 row">
-                <span class="project-info-item-sub-title">{{ project.teamMembers.backEndDevelopers.size | pluralize: "Back End Developer" }}:</span>
+                <span class="project-info-item-sub-title">Back End:</span>
                 <ul class="divider-list row">
                 {% for backEndDeveloper in project.teamMembers.backEndDevelopers %}
                     <li class="divider-list-item">
@@ -72,14 +69,7 @@
               </div>
             {% endif %}
           </div>
-          <div class="project-info-item">
-            <h4 class="project-info-item-title">{{ project.devices.size | pluralize: "Supported Device" }}:</h4>
-            <div class="row">
-              {% for item in project.devices %}
-                <span class="label lable-condenced">{{ item }}</span>
-              {% endfor %}
-            </div>
-          </div>
+          
           <div class="project-info-item bottom">
             <h4 class="project-info-item-title">Link
               {% if project.isLive != true  %}
