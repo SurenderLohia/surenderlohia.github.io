@@ -824,7 +824,7 @@ Prism.languages.js = Prism.languages.javascript;
 
 // Author
 (function(w, d, $) {
-
+  browserUpdateInit();
   $(document).ready(function() {
     setDate();
     slickInit();
@@ -885,6 +885,19 @@ Prism.languages.js = Prism.languages.javascript;
     var $currentYear = $('.current-year');
     var d = new Date();
     $currentYear.text(d.getFullYear());
+  }
+
+  function browserUpdateInit() {
+    var $buoop = {vs:{i:10,f:-4,o:-4,s:8,c:-4},unsecure:true,api:4};
+
+    function $buo_f(){ 
+     var e = document.createElement("script"); 
+     e.src = "//browser-update.org/update.min.js"; 
+     document.body.appendChild(e);
+    };
+
+    try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+    catch(e){window.attachEvent("onload", $buo_f)}
   }
 
 })(window, document, jQuery);
