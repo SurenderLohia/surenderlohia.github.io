@@ -9,6 +9,14 @@
   <meta property="og:image" content="{% if page.image %}{{ page.image | prepend: site.baseurl | prepend: site.url }}{% else %} {{ site.logo | escape }}{% endif %}">
   <meta name="twitter:image" content="{% if page.image %}{{ page.image | prepend: site.baseurl | prepend: site.url }}{% else %} {{ site.logo | escape }}{% endif %}">
 
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ "/apple-touch-icon.png" | prepend: site.baseurl }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ "/favicon-32x32.png" | prepend: site.baseurl }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ "/favicon-16x16.png" | prepend: site.baseurl }}">
+  <link rel="manifest" href="{{ "/manifest.json" | prepend: site.baseurl }}">
+  <link rel="mask-icon" href="{{ "/safari-pinned-tab.svg" | prepend: site.baseurl }}" color="#66655d">
+  <meta name="theme-color" content="#ffffff">
+
   <!-- Css -->
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
 

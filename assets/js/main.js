@@ -844,6 +844,8 @@ Prism.languages.js = Prism.languages.javascript;
 
   // Light box
   function lightBoxInit() {
+    var DURATION = 500;
+
     $('.light-box-btn').on('click', showLightBox);
     $('.light-box-close-btn').on('click', closeLightBox);
 
@@ -862,22 +864,35 @@ Prism.languages.js = Prism.languages.javascript;
       }
 
       var $lightBox = $('#' + currentId);
+      var $lightBoxWrap = $lightBox.find('.light-box-wrap');
       $(window).scrollTop(0);
       $('body').addClass('overflow-hidden');
       $lightBox.addClass('opened-light-box');
 
       $overlay.show();
       $lightBox.show();
+      $lightBoxWrap.addClass('animated zoomIn');
+
+      setTimeout(function() {
+        $lightBoxWrap.removeClass('zoomIn');
+      }, DURATION);
     }
 
     function closeLightBox(e) {
       var $overlay = $('.overlay');
       var $openedLightBox = $('.light-box.opened-light-box');
-      $('body').removeClass('overflow-hidden');
-      $openedLightBox.removeClass('opened-light-box');
+      var $lightBoxWrap = $openedLightBox.find('.light-box-wrap');
 
-      $overlay.hide();
-      $openedLightBox.hide();
+      $('body').removeClass('overflow-hidden');
+      $lightBoxWrap.addClass('zoomOut');
+
+      setTimeout(function() {
+        $lightBoxWrap.removeClass('animated zoomOut');
+        $openedLightBox.removeClass('opened-light-box');
+        $openedLightBox.hide();
+        $overlay.fadeOut();
+      }, DURATION - 200);
+      
     }
   }
 
