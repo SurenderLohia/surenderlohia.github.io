@@ -60,10 +60,7 @@ main-js: true
           {% assign sortedProjects = site.data.projects | sort: "date" | reverse %}
           {% for project in sortedProjects limit:2 %}
             <div class="one-half no-space">
-              <div class="thumb-box" style="background-color: {{ project.logoBg }}">
-                <span class="portfolio-btn detail-link light-box-btn" data-href="{{ project.slugName }}"><img class="thumb-box-img" src="/assets/images/projects/thumb/{{ project.slugName }}.png" | prepend: site.baseurl }}" alt="{{ project.name }}" title="{{ skill.name }}"> </span>
-                <div class="thumb-box-title">{{project.name}}</div>
-              </div>
+              {% include project-thumb.html %}
             </div><!-- thumb-item -->
           {% endfor %}
         </div>
@@ -96,7 +93,7 @@ main-js: true
       <div class="light-box-close-btn trans"><i class="fa fa-times"></i></div>
       <div class="light-box" id="education">
         <div class="light-box-wrap">
-          <div class="light-box-content">
+          <div class="light-box-content light-box-content-spacing">
             <div class="light-box-title">
               <h3 class="sub-title"><strong>Education</strong></h3>  
             </div>
@@ -110,7 +107,7 @@ main-js: true
       </div> <!-- /#education -->
       <div class="light-box" id="employment">
         <div class="light-box-wrap">
-          <div class="light-box-content">
+          <div class="light-box-content light-box-content-spacing">
             <div class="light-box-title">
               <h3 class="sub-title"><strong>Employment</strong></h3> 
             </div>
