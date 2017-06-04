@@ -11,6 +11,7 @@ var gutil = require('gulp-util');
 var del = require('del');
 var gulpSequence = require('gulp-sequence');
 const imagemin = require('gulp-imagemin');
+var svgSprite  = require('gulp-svg-sprite');
 
 gulp.task('minifyJs', function (cb) {
   pump([
@@ -41,5 +42,23 @@ gulp.task('image-min', () =>
     .pipe(imagemin())
     .pipe(gulp.dest('assets/images'))
 );
+
+gulp.task('svg-sprite', function() {
+  // Basic configuration example
+  var config          = {
+    mode        : {
+      css       : {   // Activate the «css» mode
+        render    : {
+          css   : true  // Activate CSS output (with default options)
+        }
+      }
+    }
+  };
+
+  gulp.src('*.svg', {cwd: 'assets/images/svg'})
+    .pipe(svgSprite())
+    .pipe(gulp.dest('out'));
+});
+
 
 gulp.task('build', gulpSequence('minifyCss'));

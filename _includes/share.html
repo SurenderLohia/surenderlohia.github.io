@@ -1,7 +1,9 @@
 <div class="share-row">
   <a class="share-button" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{site.baseurl}}{{ page.url }}" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" rel="noopener noreferrer">
-    <i class="fa fa-facebook icon share-icon"></i>
+    <span class="icon share-icon">
+      <img src="{{ "/assets/images/svg/facebook_24px.svg" | prepend: site.baseurl }}">
+    </span>
   </a>
   <a class="share-button" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{site.baseurl}}{{ page.url }}" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" rel="noopener noreferrer">
