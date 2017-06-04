@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var concat = require('gulp-concat');
 var gulpif = require('gulp-if');
 var uglify = require('gulp-uglify');
+var pump = require('pump');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var cssnano = require('cssnano');
@@ -11,11 +12,15 @@ var del = require('del');
 var gulpSequence = require('gulp-sequence');
 const imagemin = require('gulp-imagemin');
 
-gulp.task('minifyJs', function() {
-  gulp.src('_site/**/*.html')
-    .pipe(gulpif('*.js', uglify()))
-    .pipe(gulp.dest('_site'))
-  });
+gulp.task('minifyJs', function (cb) {
+  pump([
+        gulp.src('_site/assets/js/main.js'),
+        uglify(),
+        gulp.dest('_site/assets/js')
+    ],
+    cb
+  );
+});
 
 gulp.task('minifyCss', function() {
   var preprocessors = [

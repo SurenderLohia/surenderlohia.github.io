@@ -45,7 +45,6 @@
     "cssnano": "^3.7.7",
     "gulp": "^3.9.1",
     "gulp-postcss": "^6.2.0",
-    "gulp-uglify": "^2.0.0",
     "gulp-useref": "^3.1.2",
     "jquery": "^1.12.4",
     "postcss": "^5.2.4",
@@ -58,6 +57,8 @@
     "gulp-if": "^2.0.2",
     "gulp-imagemin": "^3.2.0",
     "gulp-sequence": "^0.4.6",
+    "gulp-uglify": "^3.0.0",
+    "pump": "^1.0.2",
     "webpack": "^2.3.2"
   }
 }
