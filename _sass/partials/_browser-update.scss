@@ -1,0 +1,38 @@
+body { 
+    .buorg {
+      @extend .system-font;
+      border-bottom:darken($warning, 10%);
+      text-align:center;
+      background-position: 16px center; 
+      background-color: #fff;
+      padding-left: 50px;
+      font-size: 17px;
+      box-shadow: none;
+
+      p {
+        background-color: $warning;
+      }
+    }
+
+    .buorg-button, .buorg-button:visited { 
+        box-shadow: none;    
+        border-radius: 3px;    
+        background: $success;
+        font-size: 14px;
+    }
+
+    .buorg-update {
+      &:hover {
+        background: darken($success, 5%);
+      }
+    }
+
+    #buorgig{ 
+      background-color: $danger;
+
+      &:hover {
+        background-color: darken($danger, 10%);
+      }
+    }
+
+}
