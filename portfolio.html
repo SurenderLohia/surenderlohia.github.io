@@ -24,7 +24,7 @@ main-js: true
 
 <!-- Light box -->
 <div class="overlay">
-  <div class="light-box-close-btn trans"><i class="fa fa-times"></i></div>
+  <div class="light-box-close-btn trans">{% include /svg/close.svg %}</div>
   {% for project in sortedProjects %}
     {% include project-detail.html %}
   {% endfor %}

@@ -1,30 +1,57 @@
 // Icons
 // ---------------------
 .icon {
+  @extend .trans;
+
   width:$icon-size;
   height:$icon-size;
   line-height:$icon-size;
+  vertical-align: middle;
   text-align:center;
   display:inline-block;
   cursor: pointer;
+  position: relative;
   
-  i {
-    font-size:$icon-font-size;
-    line-height:$icon-size;
+  > svg {
+      width: $icon-size/2;
+      height: $icon-size/2;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      right: 0;
+      margin: auto;
+      text-align: center;
+      path {
+        @extend .trans;
+        fill: $grey-color;
+    }
   }
   
   // Absolute icons overlay on image
   &.a {
     position:absolute;
     background-color:$black-op-5;
-    color:$primary-color-text;
+      > svg {
+        width: 16px;
+        height: 16px; 
+        path {
+          fill: $primary-color-text;
+        }
+      }
     // Left
     
     &.p-left {
       left:0;
+      > svg {
+        left: -5px;
+      }
     }
     &.p-right {
       right:0;
+      > svg {
+        right: -5px;
+      }
     }
     &.p-top {
       top:0;
@@ -56,6 +83,75 @@
 
   &.icon-rounded {
     border-radius: 50px;
+  }
+
+  // Theme
+  &.default {
+    > svg {
+      path {
+        fill: $grey-color;
+      }
+    }
+  }
+
+  // Shape
+  &.is-rounded {
+    border-radius: 50%;
+  }
+
+  // Theme
+  &.is-default {
+    > svg {
+      path {
+        fill: $grey-color;
+      }
+    }
+  }
+
+  &.is-primary {
+    border: 1px solid $primary-color;
+    > svg path {
+      fill: $primary-color;
+    }
+    
+    &:hover {
+      text-decoration: none;
+      background-color: $primary-color;
+
+      > svg path {
+        fill: $primary-color-text;
+      }
+    } 
+
+    &:active {
+      background-color: darken($primary-color, 10%);
+      > svg path {
+        fill: $primary-color-text;
+      }
+    }
+  }
+
+  &.is-secondary {
+    border: 1px solid $accent-color;
+    > svg path {
+      fill: $accent-color;
+    }
+    
+    &:hover {
+      text-decoration: none;
+      background-color: $accent-color;
+
+      > svg path {
+        fill: $primary-color-text;
+      }
+    } 
+
+    &:active {
+      background-color: darken($accent-color, 10%);
+      > svg path {
+        fill: $primary-color-text;
+      }
+    }
   }
 }
 

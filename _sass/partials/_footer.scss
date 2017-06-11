@@ -9,3 +9,12 @@
   @extend .small-text;
   color: $secondary-text-color;
 }
+
+.footer-text {
+  @extend .small-text;
+  color: $secondary-text-color;
+
+  a {
+    @extend .primary-link;
+  }
+}

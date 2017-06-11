@@ -11,12 +11,14 @@ main-js: true
     <div class="wrap-in">
       <header class="row header-section-spacing">
         <!-- Slider main container -->
-        <div class="slider-ct">
-          <div class="slider">
-            <img  src="{{ "/assets/images/slide-1.jpg" | prepend: site.baseurl }}" alt="Suren Portfolio Slider">
-            <img src="{{ "/assets/images/slide-2.jpg" | prepend: site.baseurl }}" alt="Suren Portfolio Slider">
-            <img src="{{ "/assets/images/slide-3.jpg" | prepend: site.baseurl }}" alt="Suren Portfolio Slider">
+        <div id="slider" class="slider-ct swipe">
+          <div class="swipe-wrap">
+            <div><img src="{{ "/assets/images/slide-1.jpg" | prepend: site.baseurl }}" alt="Suren Portfolio Slider"></div>
+            <div><img src="{{ "/assets/images/slide-2.jpg" | prepend: site.baseurl }}" alt="Suren Portfolio Slider"></div>
+            <div><img src="{{ "/assets/images/slide-3.jpg" | prepend: site.baseurl }}" alt="Suren Portfolio Slider"></div>
           </div>
+          <div id="slider-prev-btn" class="icon a p-left p-v-center trans slider-btn">{% include /svg/arrow-left.svg %}</i></div>
+          <div id="slider-next-btn" class="icon a p-right p-v-center trans slider-btn">{% include /svg/arrow-right.svg %}</i></div>
         </div>
         
         <div class="l-intro">
@@ -90,7 +92,7 @@ main-js: true
 
 <!-- Light box -->
     <div class="overlay">
-      <div class="light-box-close-btn trans"><i class="fa fa-times"></i></div>
+      <div class="light-box-close-btn trans">{% include /svg/close.svg %}</div>
       <div class="light-box" id="education">
         <div class="light-box-wrap">
           <div class="light-box-content light-box-content-spacing">

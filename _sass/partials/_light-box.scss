@@ -63,7 +63,6 @@ body {
 
 .light-box-close-btn {
   box-sizing: content-box;
-  color:$primary-text-color;
   display:block;
   height:$icon-size;
   position:absolute;
@@ -75,6 +74,21 @@ body {
   left: 50%;
   margin-left: -($icon-size / 2);
   border: 1px solid transparent;
+
+  > svg {
+      width: $icon-size/2;
+      height: $icon-size/2;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      right: 0;
+      margin: auto;
+      text-align: center;
+      path {
+        fill: $primary-text-color;
+      }
+    }
   
   i {
     line-height:$icon-size;

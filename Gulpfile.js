@@ -12,6 +12,7 @@ var del = require('del');
 var gulpSequence = require('gulp-sequence');
 const imagemin = require('gulp-imagemin');
 var svgSprite  = require('gulp-svg-sprite');
+var svgSprite = require("gulp-svg-sprites");
 
 gulp.task('minifyJs', function (cb) {
   pump([
@@ -55,10 +56,26 @@ gulp.task('svg-sprite', function() {
     }
   };
 
-  gulp.src('*.svg', {cwd: 'assets/images/svg'})
+  return gulp.src('*.svg', {cwd: 'assets/images/svg'})
     .pipe(svgSprite())
-    .pipe(gulp.dest('out'));
+    .pipe(gulp.dest('assets/images/svg-out'));
 });
+
+gulp.task('compress', function (cb) {
+  pump([
+        gulp.src('assets/js/libs/swipe.js'),
+        uglify(),
+        gulp.dest('dist')
+    ],
+    cb
+  );
+});
+
+/*gulp.task('sprites', function () {
+    return gulp.src('assets/images/svg/*.svg')
+        .pipe(svgSprite())
+        .pipe(gulp.dest("assets/images/svg-out"));
+});*/
 
 
 gulp.task('build', gulpSequence('minifyCss'));
