@@ -186,6 +186,10 @@
   cursor: pointer;
 }
 
+.avoid-clicks {
+  pointer-events: none;
+}
+
 /* mobile */
 @include respond-to(mobile) {
   .m-bottom {
