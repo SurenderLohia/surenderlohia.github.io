@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  SCSS Mixin for rem font sizing - Surender Lohia
+title:  SCSS Mixin for rem font sizing | Surender Lohia
 main-title:  SCSS Mixin for rem font sizing
 date:   2016-09-17 14:39:05 +0530
 author: Surender Lohia

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Cool Atom Packages (plugins) For Front End Developers - Surender Lohia
+title:  Cool Atom Packages (plugins) For Front End Developers | Surender Lohia
 main-title:  Cool Atom Packages (plugins) For Front End Developers
 date:   2015-08-06 14:39:05 +0530
 author: Surender Lohia

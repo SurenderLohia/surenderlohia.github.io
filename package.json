@@ -61,6 +61,7 @@
     "gulp-svg-sprites": "^4.1.1",
     "gulp-uglify": "^3.0.0",
     "pump": "^1.0.2",
+    "uglify-save-license": "^0.4.1",
     "webpack": "^2.3.2"
   }
 }
