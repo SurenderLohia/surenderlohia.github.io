@@ -14,7 +14,7 @@
     display: none;
 }
 
-.slick-arrow {
+.slider-btn {
   @include respond-to(mobile-and-tablet) {
     display: none !important; 
   }
