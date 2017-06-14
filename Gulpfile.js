@@ -12,7 +12,7 @@ var saveLicense = require('uglify-save-license');
 
 gulp.task('min-css', function() {
   var preprocessors = [
-    autoprefixer({browsers: ['last 2 version']}),
+    autoprefixer({browsers: ['last 3 version']}),
     cssnano(),
   ]
   gulp.src('_site/assets/css/main.css')
