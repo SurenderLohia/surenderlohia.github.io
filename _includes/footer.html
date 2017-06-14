@@ -10,13 +10,8 @@
   </div>
 </footer>
 
+{% include outdated-browser-close.html %}
 {% include google-analytics.html %}
-<script>
-  closeOutdatedBrowser = function() {
-    var outdated = document.getElementById('outdated');
-    outdated.style.display = 'none';
-  }
-</script>
 {% if page.main-js %}
   <script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
 {% endif %}
