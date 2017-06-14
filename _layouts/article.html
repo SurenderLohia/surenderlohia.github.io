@@ -5,14 +5,15 @@
 
   <body>
     
-    {% include header.html %}
+    
       <div class="head-section">
+        {% include main-menu.html %}
         <div class="wrap">
           <div class="wrap-in">
             <div class="header-section-spacing">
               <header>
-                <h1 class="title" itemprop="name headline">{{ page.main-title }}</h1>
-                <div class="small-sub-title text-center">
+                <h1 class="main-title" itemprop="name headline">{{ page.main-title }}</h1>
+                <div class="small-sub-title secondory-text-light text-center">
                   <div class="post-meta-info-item">
                     <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
                   </div>

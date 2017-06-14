@@ -4,9 +4,13 @@
       {% for item in site.data.navigation %}
         <li class="main-menu-item">
           {% if {{page.active}} == {{item.active}} %}
-            <a class="main-menu-link active" href="{{ item.url }}">{{ item.name }}</a>
+            <a class="main-menu-link active" href="{{ item.url }}">
+              <span class="main-menu-link-border">{{ item.name }}</span>
+            </a>
           {% else %}
-            <a class="main-menu-link" href="{{ item.url }}">{{ item.name }}</a>
+            <a class="main-menu-link" href="{{ item.url }}">
+              <span class="main-menu-link-border">{{ item.name }}</span>
+            </a>
           {% endif %}
         </li>
       {% endfor %}

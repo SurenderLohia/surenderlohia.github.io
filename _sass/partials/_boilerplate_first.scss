@@ -12,12 +12,12 @@ html {
     line-height: 1.4;
 }
 ::-moz-selection {
-    background: $main-color;
+    background: $primary-color;
     text-shadow: none;
     color:#fff;
 }
 ::selection {
-    background: $main-color;
+    background: $primary-color;
     text-shadow: none;
     color:#fff;
 }
