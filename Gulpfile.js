@@ -22,8 +22,13 @@ gulp.task('min-css', function() {
 
 gulp.task('image-min', () =>
   gulp.src('assets/images/**/*')
-    .pipe(imagemin())
-    .pipe(gulp.dest('assets/images'))
+    .pipe(imagemin([
+        imagemin.gifsicle({interlaced: true}),
+        imagemin.jpegtran({progressive: true}),
+        imagemin.optipng({optimizationLevel: 5}),
+        imagemin.svgo({plugins: [{removeViewBox: true}]})
+      ]))
+    .pipe(gulp.dest('_site/assets/images'))
 );
 
 gulp.task('min-js', function (cb) {
