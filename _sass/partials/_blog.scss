@@ -15,12 +15,20 @@
 .post-title-link {
   @include font-size(1.5);
   @extend .primary-link;
+
+  @include respond-to(mobile-and-tablet) {
+    @include font-size(1.6);
+  }
 }
 
 .post-date,
 .post-meta {
   @include font-size(0.875);
   color: $secondary-text-color;
+
+  @include respond-to(mobile-and-tablet) {
+    @include font-size(1);
+  } 
 }
 
 .post-meta-info-item {
@@ -32,6 +40,10 @@
 .post-content {
   @include font-size(1.125);
   line-height: 1.5;
+
+  @include respond-to(mobile-and-tablet) {
+    @include font-size(1.2);
+  }
 }
 
 .post-description a,

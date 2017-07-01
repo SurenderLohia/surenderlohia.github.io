@@ -4,6 +4,17 @@ body {
   @include font-size(1);
   line-height:1.4;
   height:100%;
+
+  @include respond-to(mobile-and-tablet) {
+    @include font-size(1.2);
+  }
+}
+
+pre, code {
+  @include font-size(1);
+  @include respond-to(mobile-and-tablet) {
+    @include font-size(1.2);
+  } 
 }
 
 a {
