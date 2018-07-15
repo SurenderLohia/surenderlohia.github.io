@@ -15,18 +15,18 @@
                 <h1 class="main-title" itemprop="name headline">{{ page.main-title }}</h1>
                 <div class="small-sub-title secondory-text-light text-center">
                   <div class="post-meta-info-item">
-                    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+                    <span class="icon-sm post-meta-info-icon calender-icon">{% include /svg/calender.svg %}</span> <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
                   </div>
 
                   {% if page.author %} 
                   <div class="post-meta-info-item">
-                    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                    <span class="icon-sm post-meta-info-icon author-icon">{% include /svg/pencil.svg %}</span><span itemprop="author" itemscope itemtype="http://schema.org/Person">
                       <span itemprop="name">{{ page.author }}</span>
                     </span>
                   </div>
                   {% endif %}
                   <div class="post-meta-info-item">
-                    {{page.categories}}
+                    <span class="icon-sm post-meta-info-icon tag-icon">{% include /svg/tag.svg %}</span>{{page.categories}}
                   </div>
                 </div>
               </header>

@@ -32,7 +32,7 @@
 }
 
 .post-meta-info-item {
-  margin-right: 10px;
+  margin-right: 15px;
   display: inline-block;
 }
 
@@ -63,6 +63,24 @@
 
 .post-section {
   margin-bottom: 30px;
+  margin-bottom: 2rem;
 }
+
+.post-meta-info-icon {
+  position: relative;
+  margin-right: 5px;
+
+  &.calender-icon,
+  &.author-icon {
+    top: 1px;
+  }
+
+   
+  &.tag-icon {
+    top: 3px;
+  }
+}
+
+
 
 

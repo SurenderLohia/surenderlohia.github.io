@@ -155,4 +155,18 @@
   }
 }
 
+.icon-sm {
+  display: inline-block;
+  width: $icon-size-sm;
+  height: $icon-size-sm;
+  line-height: 16px;
+
+  svg {
+    width: $icon-size-sm;
+    height: $icon-size-sm;
+  }
+}
+
+
+
 
