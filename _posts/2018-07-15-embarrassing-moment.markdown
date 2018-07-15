@@ -7,7 +7,7 @@ author: Surender Lohia
 categories: travel
 active: blog
 description: Lot of us face embarrassing moments in our life. I would like to share one of my recent incident here.
-image: /assets/images/posts/atom-editor.png
+image: /assets/images/posts/embarrassing-moment.jpg
 comments: true
 ---
 
