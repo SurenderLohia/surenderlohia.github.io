@@ -204,7 +204,6 @@ if ( window.jQuery || window.Zepto ) {
 
       forEach: function(arr, action) {
         var arrLen = arr.length;
-        var item;
         for(var i = 0; i < arrLen; i += 1) {
           action(arr[i]);
         }
