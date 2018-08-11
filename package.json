@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack"
+    "gulp": "./node_modules/gulp/bin/gulp.js",
+    "dev": "jekyll serve",
+    "build": "jekyll build && npm run gulp"
   },
   "repository": {
     "type": "git",
@@ -46,14 +48,16 @@
     "slick-carousel": "^1.6.0"
   },
   "devDependencies": {
-    "postcss": "^5.2.4",
     "autoprefixer": "^6.5.1",
     "cssnano": "^3.7.7",
-    "gulp-postcss": "^6.2.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-imagemin": "^4.1.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-print": "^5.0.0",
     "gulp-sequence": "^0.4.6",
+    "gulp-series": "^1.0.2",
     "gulp-uglify": "^3.0.0",
+    "postcss": "^5.2.4",
     "pump": "^1.0.2",
     "uglify-save-license": "^0.4.1"
   }
