@@ -4,8 +4,7 @@ var pump = require('pump');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var cssnano = require('cssnano');
-var gulpSequence = require('gulp-sequence');
-const imagemin = require('gulp-imagemin');
+//const imagemin = require('gulp-imagemin');
 var saveLicense = require('uglify-save-license');
 
 gulp.task('min-css', function(cb) {
@@ -20,18 +19,18 @@ gulp.task('min-css', function(cb) {
   cb();
 });
 
-gulp.task('image-min', (cb) => {
-  gulp.src('assets/images/**/*')
-    .pipe(imagemin([
-        imagemin.gifsicle({interlaced: true}),
-        imagemin.jpegtran({progressive: true}),
-        imagemin.optipng({optimizationLevel: 5}),
-        imagemin.svgo({plugins: [{removeViewBox: true}]})
-      ]))
-    .pipe(gulp.dest('_site/assets/images'))
-  cb();
-  }
-);
+// gulp.task('image-min', (cb) => {
+//   gulp.src('assets/images/**/*')
+//     .pipe(imagemin([
+//         imagemin.gifsicle({interlaced: true}),
+//         imagemin.jpegtran({progressive: true}),
+//         imagemin.optipng({optimizationLevel: 5}),
+//         imagemin.svgo({plugins: [{removeViewBox: true}]})
+//       ]))
+//     .pipe(gulp.dest('_site/assets/images'))
+//   cb();
+//   }
+// );
 
 gulp.task('min-js', function (cb) {
   pump([
