@@ -1,6 +1,4 @@
 var gulp = require('gulp');
-var concat = require('gulp-concat');
-var gulpif = require('gulp-if');
 var uglify = require('gulp-uglify');
 var pump = require('pump');
 var postcss = require('gulp-postcss');
@@ -12,7 +10,7 @@ var saveLicense = require('uglify-save-license');
 
 gulp.task('min-css', function() {
   var preprocessors = [
-    autoprefixer({browsers: ['last 3 version']}),
+    autoprefixer({browserslist: true, browsers: ['last 3 version']}),
     cssnano(),
   ]
   gulp.src('_site/assets/css/main.css')
