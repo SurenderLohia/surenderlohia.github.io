@@ -22,7 +22,7 @@ comments: true
 </p>
 
 <p class="post-section"> 
-  Everything was normal until then. When I was in Madiwala Mandi, drizzle started and soon raining heavily. I didn't have an umbrella with me. So I went to a nearby shelter and stood there. It was around 6:30 PM by then. I planned to wait for some more time, for up to 1 hour at max. I thought of going back home by cab or an auto if the rain wouldn't stop and visit the house the next day. If it stopped, I thought of going further to Venkatapura. Meanwhile, I was using my mobile for browsing, FB, WhatsApp, taking photos etc.
+  Everything was normal until then. When I was in Madiwala Mandi, drizzle started and soon raining heavily. I didn't have an umbrella with me. So I went to a nearby shelter and stood there. It was around 6:30 PM. I planned to wait for some more time, for up to 1 hour at max. I thought of going back home by cab or an auto if the rain wouldn't stop and visit the house the next day. If it stopped, I thought of going further to Venkatapura. Meanwhile, I was using my mobile for browsing, FB, WhatsApp, taking photos etc.
 </p>
 
 <p class="post-section"> 
