@@ -190,6 +190,10 @@
   pointer-events: none;
 }
 
+.love {
+  color: $danger;
+}
+
 /* mobile */
 @include respond-to(mobile) {
   .m-bottom {
