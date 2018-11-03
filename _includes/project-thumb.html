@@ -1,6 +1,6 @@
-<div class="thumb-box light-box-btn" data-href="{{ project.slugName }}" style="background-color: {{ project.logoBg }}">
+<div class="thumb-box light-box-btn" data-href="{{ project.slugName }}" style="background-color: {{ project.logoBg }}" data-cy="project-thumb-box">
   <img class="thumb-box-img avoid-clicks" src="/assets/images/projects/thumb/{{ project.slugName }}.png" | prepend: site.baseurl }}" alt="{{ project.name }}" title="{{ skill.name }}">
-  <div class="thumb-box-title avoid-clicks">
+  <div class="thumb-box-title avoid-clicks" data-cy="project-thumb-box-title">
     <div class="thumb-box-title-in">
       {% for tech in project.technologies %}
         <span class="thumb-box-title-text">{{ tech }}</span>

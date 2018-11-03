@@ -27,18 +27,18 @@ main-js: true
           <div class="intro">
             <h1 class="intro-name">Surender Lohia</h1>
             <h2 class="intro-des">Front-end Developer</h2>
-            <h3 class="intro-work"><a class="primary-text-link" href="https://www.thoughtworks.com/" target="_blank" rel="noopener noreferrer">@ ThoughtWorks</a></h3>
+            <h3 class="intro-work"><a class="primary-text-link" data-cy="current-office" href="https://www.thoughtworks.com/" target="_blank" rel="noopener noreferrer">@ ThoughtWorks</a></h3>
           </div>
         </div><!-- /l-intro-->
         <div class="col-60-res row center">
           <div class="one-third-normal">
-            <div class="button button-primary-transparent expand light-box-btn" data-href="education">Education</div>
+            <div class="button button-primary-transparent expand light-box-btn" data-href="education" data-cy="btn-education">Education</div>
           </div>
           <div class="one-third-normal">
-            <div class="button button-primary-inverse button-spacing-border expand light-box-btn" data-href="employment">Employment</div>
+            <div class="button button-primary-inverse button-spacing-border expand light-box-btn" data-href="employment" data-cy="btn-employment">Employment</div>
           </div>
           <div class="one-third-normal last">
-            <a class="button button-primary-transparent expand" href="{{ "/assets/images/surender-lohia-resume.pdf" | prepend: site.baseurl }}">Resume</a>
+            <a class="button button-primary-transparent expand" href="{{ "/assets/images/surender-lohia-resume.pdf" | prepend: site.baseurl }}" data-cy="btn-resume">Resume</a>
           </div>
         </div>
       </header>
@@ -53,7 +53,7 @@ main-js: true
         <h2 class="title">Skill Set</h2>
         <div class="row text-center">
           {% for skill in site.data.skills %}
-          <span class="label">{{ skill.name }}</span>
+          <span class="label" data-cy="skill">{{ skill.name }}</span>
           {% endfor %}
         </div>
       </div>
@@ -95,7 +95,7 @@ main-js: true
 <!-- Light box -->
     <div class="overlay">
       <div class="light-box-close-btn trans">{% include /svg/close.svg %}</div>
-      <div class="light-box" id="education">
+      <div class="light-box" id="education" data-cy="modal-education">
         <div class="light-box-wrap">
           <div class="light-box-content light-box-content-spacing">
             <div class="light-box-title">
@@ -109,7 +109,7 @@ main-js: true
           </div>
         </div>
       </div> <!-- /#education -->
-      <div class="light-box" id="employment">
+      <div class="light-box" id="employment" data-cy="modal-employment">
         <div class="light-box-wrap">
           <div class="light-box-content light-box-content-spacing">
             <div class="light-box-title">
@@ -136,7 +136,7 @@ main-js: true
         </div>
       </div> <!-- /#education -->
 
-      {% for project in sortedProjects limit:3 %}
+      {% for project in sortedProjects limit:2 %}
         {% include project-detail.html %}
       {% endfor %}
     </div>
