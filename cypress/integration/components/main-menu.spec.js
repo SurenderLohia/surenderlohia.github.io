@@ -1,4 +1,4 @@
-describe('Main enu', () => {
+describe('Main menu', () => {
   function shouldMatchNthHref(navIndex, expectedHref) {
     return cy.get('.main-menu-item').eq(navIndex).find('a').should('have.attr', 'href', expectedHref)
   }
