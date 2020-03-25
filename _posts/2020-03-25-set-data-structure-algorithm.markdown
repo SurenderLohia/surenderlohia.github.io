@@ -6,7 +6,7 @@ date: 2020-03-25 14:21:05 +0530
 author: Surender Lohia
 categories: js
 active: blog
-description: Set | Data Structure Algorithm in JavaScript
+description: In computer science, a set is an abstract data type that can store unique values, without any particular order.
 # image: /assets/images/posts/name
 comments: true
 main-js: true
