@@ -12,7 +12,7 @@ comments: true
 main-js: true
 ---
 
-In computer science, a set is an abstract data type that can store unique values, without any particular order.
+In computer science, a set is an abstract data type that can store unique values, without any particular order. [[wiki](https://en.wikipedia.org/wiki/Set_(abstract_data_type))].
 
 <pre>
   <code class="language-javascript">
