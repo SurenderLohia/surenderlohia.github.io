@@ -18,116 +18,116 @@ In computer science, a queue is a collection of entities that are maintained in 
   <code class="language-javascript">
     // queue.js
     function Queue() {
-  let collection = [];
+      let collection = [];
 
-  this.print = function() {
-    console.log(collection);
-  }
+      this.print = function() {
+        console.log(collection);
+      }
 
-  this.enQueue = function(item) {
-    return collection.push(item);
-  }
+      this.enQueue = function(item) {
+        return collection.push(item);
+      }
 
-  this.deQueue = function() {
-    return collection.shift();
-  }
+      this.deQueue = function() {
+        return collection.shift();
+      }
 
-  this.front = function() {
-    return collection[0];
-  }
+      this.front = function() {
+        return collection[0];
+      }
 
-  this.size = function() {
-    return collection.length;
-  }
+      this.size = function() {
+        return collection.length;
+      }
 
-  this.isEmpty = function() {
-    return collection.length === 0;
-  }
+      this.isEmpty = function() {
+        return collection.length === 0;
+      }
 
-  this.values = function() {
-    return collection;
-  }
-}
+      this.values = function() {
+        return collection;
+      }
+    }
 
-function priorityQueue() {
-  let collection = [];
-  this.print = function() {
-    console.log('collection');
-  }
+    function priorityQueue() {
+      let collection = [];
+      this.print = function() {
+        console.log('collection');
+      }
 
-  this.enQueue = function(element) {
-    if(collection.length === 0) {
-      collection.push(element);
-    } else {
-      var added = false;
-      for(let i = 0; i < collection.length; i++) {
-        // checking priority
-        if(element[1] < collection[i][1]) {
-          collection.splice(i, 0, element);
+      this.enQueue = function(element) {
+        if(collection.length === 0) {
+          collection.push(element);
+        } else {
+          var added = false;
+          for(let i = 0; i < collection.length; i++) {
+            // checking priority
+            if(element[1] < collection[i][1]) {
+              collection.splice(i, 0, element);
 
-          added = true;
-          break;
+              added = true;
+              break;
+            }
+          }
+
+          if(!added) {
+            collection.push(element);
+          }
         }
       }
 
-      if(!added) {
-        collection.push(element);
+      this.deQueue = function() {
+        var value = collection.shift();
+        return value[0];
+      };
+
+      this.front = function() {
+        return collection[0];
+      }
+
+      this.size = function() {
+        return collection.length;
+      }
+
+      this.isEmpty = function() {
+        return collection.length === 0;
       }
     }
-  }
 
-  this.deQueue = function() {
-    var value = collection.shift();
-    return value[0];
-  };
+    module.exports = {
+      Queue,
+      priorityQueue
+    };
 
-  this.front = function() {
-    return collection[0];
-  }
+    // // Test cases
+    // let q = Queue();
+    // q.enQueue('a');
+    // q.enQueue('b');
+    // q.enQueue('b');
+    // q.print(); // ['a', 'b', 'c'];
 
-  this.size = function() {
-    return collection.length;
-  }
+    // q.deQueue();
+    // q.print(); // ['b', 'c']
 
-  this.isEmpty = function() {
-    return collection.length === 0;
-  }
-}
+    // q.front(); // b
+    // q.size(); // 2
+    // q.isEmpty(); // false
 
-module.exports = {
-  Queue,
-  priorityQueue
-};
+    // // Test for priorityQueue
+    // var pq = new priorityQueue();
 
-// // Test cases
-// let q = Queue();
-// q.enQueue('a');
-// q.enQueue('b');
-// q.enQueue('b');
-// q.print(); // ['a', 'b', 'c'];
+    // pq.enQueue(['CSS', 2]);
+    // pq.enQueue(['HTML', 3]);
+    // pq.enQueue(['JavaScript', 1]);
 
-// q.deQueue();
-// q.print(); // ['b', 'c']
+    // pq.print(); // [['JavaScript', 1], ['CSS', 2], ['HTML', 3]]
 
-// q.front(); // b
-// q.size(); // 2
-// q.isEmpty(); // false
+    // pq.deQueue();
+    // pq.print() // [['CSS', 2], ['HTML', 3]]
 
-// // Test for priorityQueue
-// var pq = new priorityQueue();
+    // console.log(pq.front()); // ['CSS', 2]
 
-// pq.enQueue(['CSS', 2]);
-// pq.enQueue(['HTML', 3]);
-// pq.enQueue(['JavaScript', 1]);
-
-// pq.print(); // [['JavaScript', 1], ['CSS', 2], ['HTML', 3]]
-
-// pq.deQueue();
-// pq.print() // [['CSS', 2], ['HTML', 3]]
-
-// console.log(pq.front()); // ['CSS', 2]
-
-// console.log(pq.size()); // 2
+    // console.log(pq.size()); // 2
 
 
   </code>
