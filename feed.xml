@@ -4,10 +4,10 @@
     <title>Surender Lohia</title>
     <description>Producing quality apps, focusing on writing eloquent and maintainable code.
 </description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 04 Aug 2020 17:44:36 +0530</pubDate>
-    <lastBuildDate>Tue, 04 Aug 2020 17:44:36 +0530</lastBuildDate>
+    <link>https://www.surender.net/</link>
+    <atom:link href="https://www.surender.net/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 04 Aug 2020 17:57:51 +0530</pubDate>
+    <lastBuildDate>Tue, 04 Aug 2020 17:57:51 +0530</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -130,8 +130,8 @@
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=tf3ezjeTpfI&quot;&gt;Detailed Tutorial Here&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 04 Aug 2020 14:21:05 +0530</pubDate>
-        <link>http://localhost:4000/python/2020/08/04/tic-tac-toe.html</link>
-        <guid isPermaLink="true">http://localhost:4000/python/2020/08/04/tic-tac-toe.html</guid>
+        <link>https://www.surender.net/python/2020/08/04/tic-tac-toe.html</link>
+        <guid isPermaLink="true">https://www.surender.net/python/2020/08/04/tic-tac-toe.html</guid>
         
         
         <category>python</category>
@@ -203,8 +203,8 @@
 &lt;p&gt;Github Repository &lt;a href=&quot;https://github.com/SurenderLohia/data-structure-algorithm&quot;&gt;data-structure-algorithm&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 27 Mar 2020 14:21:05 +0530</pubDate>
-        <link>http://localhost:4000/js/2020/03/27/stack-data-structure-algorithm.html</link>
-        <guid isPermaLink="true">http://localhost:4000/js/2020/03/27/stack-data-structure-algorithm.html</guid>
+        <link>https://www.surender.net/js/2020/03/27/stack-data-structure-algorithm.html</link>
+        <guid isPermaLink="true">https://www.surender.net/js/2020/03/27/stack-data-structure-algorithm.html</guid>
         
         
         <category>js</category>
@@ -337,8 +337,8 @@
 &lt;p&gt;Github Repository &lt;a href=&quot;https://github.com/SurenderLohia/data-structure-algorithm&quot;&gt;data-structure-algorithm&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 26 Mar 2020 14:21:05 +0530</pubDate>
-        <link>http://localhost:4000/js/2020/03/26/queue-data-structure-algorithm.html</link>
-        <guid isPermaLink="true">http://localhost:4000/js/2020/03/26/queue-data-structure-algorithm.html</guid>
+        <link>https://www.surender.net/js/2020/03/26/queue-data-structure-algorithm.html</link>
+        <guid isPermaLink="true">https://www.surender.net/js/2020/03/26/queue-data-structure-algorithm.html</guid>
         
         
         <category>js</category>
@@ -461,8 +461,8 @@
 &lt;p&gt;Github Repository &lt;a href=&quot;https://github.com/SurenderLohia/data-structure-algorithm&quot;&gt;data-structure-algorithm&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 25 Mar 2020 14:21:05 +0530</pubDate>
-        <link>http://localhost:4000/js/2020/03/25/set-data-structure-algorithm.html</link>
-        <guid isPermaLink="true">http://localhost:4000/js/2020/03/25/set-data-structure-algorithm.html</guid>
+        <link>https://www.surender.net/js/2020/03/25/set-data-structure-algorithm.html</link>
+        <guid isPermaLink="true">https://www.surender.net/js/2020/03/25/set-data-structure-algorithm.html</guid>
         
         
         <category>js</category>
@@ -520,8 +520,8 @@ Jack எல்லா வலிகளையும் தாங்கிக் க
 &lt;/p&gt;
 </description>
         <pubDate>Mon, 18 Mar 2019 14:21:05 +0530</pubDate>
-        <link>http://localhost:4000/personal/2019/03/18/jack.html</link>
-        <guid isPermaLink="true">http://localhost:4000/personal/2019/03/18/jack.html</guid>
+        <link>https://www.surender.net/personal/2019/03/18/jack.html</link>
+        <guid isPermaLink="true">https://www.surender.net/personal/2019/03/18/jack.html</guid>
         
         
         <category>personal</category>
@@ -599,8 +599,8 @@ Jack எல்லா வலிகளையும் தாங்கிக் க
 &lt;/p&gt;
 </description>
         <pubDate>Sat, 03 Nov 2018 14:21:05 +0530</pubDate>
-        <link>http://localhost:4000/js/2018/11/03/the-glimpse-of-react-foo-delhi-2018.html</link>
-        <guid isPermaLink="true">http://localhost:4000/js/2018/11/03/the-glimpse-of-react-foo-delhi-2018.html</guid>
+        <link>https://www.surender.net/js/2018/11/03/the-glimpse-of-react-foo-delhi-2018.html</link>
+        <guid isPermaLink="true">https://www.surender.net/js/2018/11/03/the-glimpse-of-react-foo-delhi-2018.html</guid>
         
         
         <category>js</category>
@@ -644,8 +644,8 @@ Jack எல்லா வலிகளையும் தாங்கிக் க
 &lt;/p&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 21 Aug 2018 14:21:05 +0530</pubDate>
-        <link>http://localhost:4000/movie/2018/08/21/pasamalar.html</link>
-        <guid isPermaLink="true">http://localhost:4000/movie/2018/08/21/pasamalar.html</guid>
+        <link>https://www.surender.net/movie/2018/08/21/pasamalar.html</link>
+        <guid isPermaLink="true">https://www.surender.net/movie/2018/08/21/pasamalar.html</guid>
         
         
         <category>movie</category>
@@ -686,8 +686,8 @@ Jack எல்லா வலிகளையும் தாங்கிக் க
 
 </description>
         <pubDate>Sun, 15 Jul 2018 14:21:05 +0530</pubDate>
-        <link>http://localhost:4000/travel/2018/07/15/embarrassing-moment.html</link>
-        <guid isPermaLink="true">http://localhost:4000/travel/2018/07/15/embarrassing-moment.html</guid>
+        <link>https://www.surender.net/travel/2018/07/15/embarrassing-moment.html</link>
+        <guid isPermaLink="true">https://www.surender.net/travel/2018/07/15/embarrassing-moment.html</guid>
         
         
         <category>travel</category>
@@ -734,8 +734,8 @@ Jack எல்லா வலிகளையும் தாங்கிக் க
 &lt;p&gt;&lt;a href=&quot;http://www.standardista.com/px-to-rem-conversion-if-root-font-size-is-16px/&quot; target=&quot;_blank&quot;&gt;px to rem conversion if :root font-size is 16px&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 17 Sep 2016 14:39:05 +0530</pubDate>
-        <link>http://localhost:4000/scss/2016/09/17/mixin-for-rem-font-size.html</link>
-        <guid isPermaLink="true">http://localhost:4000/scss/2016/09/17/mixin-for-rem-font-size.html</guid>
+        <link>https://www.surender.net/scss/2016/09/17/mixin-for-rem-font-size.html</link>
+        <guid isPermaLink="true">https://www.surender.net/scss/2016/09/17/mixin-for-rem-font-size.html</guid>
         
         
         <category>scss</category>
@@ -814,8 +814,8 @@ Link: &lt;a href=&quot;https://github.com/atom/vim-mode/issues/221&quot; target=
 Link: &lt;a href=&quot;https://github.com/atom/vim-mode/issues/520&quot; target=&quot;_blank&quot;&gt; :w save key remap for Atom&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 06 Aug 2015 14:39:05 +0530</pubDate>
-        <link>http://localhost:4000/front-end/2015/08/06/cool-atom-packages-for-front-end-developers.html</link>
-        <guid isPermaLink="true">http://localhost:4000/front-end/2015/08/06/cool-atom-packages-for-front-end-developers.html</guid>
+        <link>https://www.surender.net/front-end/2015/08/06/cool-atom-packages-for-front-end-developers.html</link>
+        <guid isPermaLink="true">https://www.surender.net/front-end/2015/08/06/cool-atom-packages-for-front-end-developers.html</guid>
         
         
         <category>front-end</category>
