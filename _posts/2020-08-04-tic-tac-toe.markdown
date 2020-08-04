@@ -2,7 +2,7 @@
 layout: post
 title: Tic-tac-toe | Python | Program | Surender Lohia
 main-title: Tic-tac-toe - Python
-date: 2020-07-04 14:21:05 +0530
+date: 2020-08-04 14:21:05 +0530
 author: Surender Lohia
 categories: python
 active: blog
