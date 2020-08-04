@@ -12,7 +12,7 @@ describe('Home page', () => {
   })
 
   it('link to current office', () => {
-    cy.checkLink('current-office', 'https://www.thoughtworks.com/')
+    cy.checkLink('current-office', 'https://tenantcube.com/')
   })
 
   it('should open education modal', () => {
