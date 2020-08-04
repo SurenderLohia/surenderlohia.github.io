@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Surender Lohia</title>
+    <description>Producing quality apps, focusing on writing eloquent and maintainable code.
+</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 04 Aug 2020 17:44:36 +0530</pubDate>
+    <lastBuildDate>Tue, 04 Aug 2020 17:44:36 +0530</lastBuildDate>
+    <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>Tic-tac-toe | Python | Program | Surender Lohia</title>
+        <description>&lt;p&gt;Tic-tac-toe, noughts and crosses, or Xs and Os is a paper-and-pencil game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.&lt;/p&gt;
+
+&lt;p&gt;Tic-tac-toe game in Terminal using Python&lt;/p&gt;
+
+&lt;pre&gt;
+  &lt;code class=&quot;language-js&quot;&gt;
+    # tic-tac-toe.py
+    import itertools
+
+
+    def win(current_game):
+        def all_same(l):
+            if l.count(l[0]) == len(l) and l[0] != 0:
+                return True
+            else:
+                return False
+
+        # horizontal winner
+        for row in game:
+            if all_same(row):
+                print(f&quot;player {row[0]} is the winner horizontally!&quot;)
+                return True
+
+        # vertical winner
+        for col in range(len(game)):
+            check = []
+            for row in game:
+                check.append(row[col])
+
+            if all_same(check):
+                print(f&quot;player {check[0]} is the winner vertically (|)!&quot;)
+                return True
+
+        # diagonal winner
+        diags = []
+        for row, col in enumerate(reversed(range(len(game)))):
+            diags.append(game[row][col])
+        if all_same(diags):
+            print(f&quot;player {diags[0]} is the winner diagonally (/)!&quot;)
+            return True
+
+        diags = []
+        for ix in range(len(game)):
+            diags.append(game[ix][ix])
+        if all_same(diags):
+            print(f&quot;player {diags[0]} is the winner diagonally (\\)!&quot;)
+            return True
+
+        return False
+
+
+    def game_board(game_map, player=0, row=0, column=0, just_display=False):
+        try:
+            if game_map[row][column] != 0:
+                print('This position is occupado! Choose another!')
+                return game_map, False
+            #print('   0  1  2')
+            print('   ' + '  '.join([str(i) for i in range(len(game_map))]))
+            if not just_display:
+                game_map[row][column] = player
+            for (count, row) in enumerate(game_map):
+                print(count, row)
+            return game_map, True
+
+        except IndexError as e:
+            print('Error: Make sure you input row/column 0, 1, or 2?',  e)
+            return game_map, False
+        except Exception as e:
+            print('Something went realy wrong!', e)
+            return game_map, False
+
+
+    play = True
+    while play:
+        game = []
+
+        game_size = int(input('What size of tic tac toe? '))
+        for i in range(game_size):
+            row = []
+            for j in range(game_size):
+                row.append(0)
+            game.append(row)
+
+        player_choice = itertools.cycle([1, 2])
+        game_won = False
+        game, _ = game_board(game, just_display=True)
+        while not game_won:
+            current_player = next(player_choice)
+            print(f'current_player: {current_player}')
+            played = False
+
+            while not played:
+                row_choice = int(
+                    input('What a row do you want to play? (0, 1, 2): '))
+                column_choice = int(
+                    input('What a column do you want to play? (0, 1, 2): '))
+                game, played = game_board(
+                    game, current_player, row_choice, column_choice)
+
+                if win(game):
+                    game_won = True
+                    again = input(
+                        'The game is over would you like to play again? (y/n) ')
+                    if again.lower() == 'y':
+                        print('Restarting...')
+                    elif again.lower() == 'n':
+                        print('Byeee...')
+                        play = False
+                    else:
+                        print('Not a valid answer, so... c u l8r...')
+                        play = False
+
+  &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=tf3ezjeTpfI&quot;&gt;Detailed Tutorial Here&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 04 Aug 2020 14:21:05 +0530</pubDate>
+        <link>http://localhost:4000/python/2020/08/04/tic-tac-toe.html</link>
+        <guid isPermaLink="true">http://localhost:4000/python/2020/08/04/tic-tac-toe.html</guid>
+        
+        
+        <category>python</category>
+        
+      </item>
+    
+      <item>
+        <title>Stack | Data Structure Algorithm in JavaScript | Surender Lohia</title>
+        <description>&lt;p&gt;In computer science, a stack is an abstract data type that serves as a collection of elements, with two principal operations:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;push, which adds an element to the collection, and&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;pop, which removes the most recently added element that was not yet removed. [&lt;a href=&quot;https://en.wikipedia.org/wiki/Stack_(abstract_data_type)&quot;&gt;wiki&lt;/a&gt;].&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;
+  &lt;code class=&quot;language-javascript&quot;&gt;
+    // stack.js
+    var Stack = function() {
+      this.count = 0;
+      this.storage = {};
+
+      this.push = function(value) {
+        this.storage[this.count] = value;
+        this.count++;
+        return value;
+      }
+
+      this.pop = function() {
+        if(this.count === 0) {
+          return 'undefined';
+        }
+
+        this.count--;
+        const result = this.storage[this.count];
+        delete this.storage[this.count];
+        return result;
+      }
+
+      this.size = function() {
+        return this.count;
+      }
+
+      this.peek = function() {
+        return this.storage[this.count-1];
+      }
+    }
+
+    module.exports = Stack;
+
+    // Test cases
+
+    // const myStack = new Stack();
+    // myStack.push(10);
+    // myStack.push(20);
+    // console.log(myStack.size()); // 2
+    // console.log(myStack.peek()); // 20
+    // console.log(myStack.pop()); // 20
+
+    // myStack.push(30);
+    // console.log(myStack.peek()); // 30
+  &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Github Repository &lt;a href=&quot;https://github.com/SurenderLohia/data-structure-algorithm&quot;&gt;data-structure-algorithm&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 27 Mar 2020 14:21:05 +0530</pubDate>
+        <link>http://localhost:4000/js/2020/03/27/stack-data-structure-algorithm.html</link>
+        <guid isPermaLink="true">http://localhost:4000/js/2020/03/27/stack-data-structure-algorithm.html</guid>
+        
+        
+        <category>js</category>
+        
+      </item>
+    
+      <item>
+        <title>Queue | Data Structure Algorithm in JavaScript | Surender Lohia</title>
+        <description>&lt;p&gt;In computer science, a queue is a collection of entities that are maintained in a sequence and can be modified by the addition of entities at one end of the sequence and removal from the other end of the sequence. By convention, the end of the sequence at which elements are added is called the back, tail, or rear of the queue and the end at which elements are removed is called the head or front of the queue, analogously to the words used when people line up to wait for goods or services. [&lt;a href=&quot;https://en.wikipedia.org/wiki/Queue_(abstract_data_type)&quot;&gt;wiki&lt;/a&gt;].&lt;/p&gt;
+
+&lt;pre&gt;
+  &lt;code class=&quot;language-javascript&quot;&gt;
+    // queue.js
+    function Queue() {
+      let collection = [];
+
+      this.print = function() {
+        console.log(collection);
+      }
+
+      this.enQueue = function(item) {
+        return collection.push(item);
+      }
+
+      this.deQueue = function() {
+        return collection.shift();
+      }
+
+      this.front = function() {
+        return collection[0];
+      }
+
+      this.size = function() {
+        return collection.length;
+      }
+
+      this.isEmpty = function() {
+        return collection.length === 0;
+      }
+
+      this.values = function() {
+        return collection;
+      }
+    }
+
+    function priorityQueue() {
+      let collection = [];
+      this.print = function() {
+        console.log('collection');
+      }
+
+      this.enQueue = function(element) {
+        if(collection.length === 0) {
+          collection.push(element);
+        } else {
+          var added = false;
+          for(let i = 0; i &amp;lt; collection.length; i++) {
+            // checking priority
+            if(element[1] &amp;lt; collection[i][1]) {
+              collection.splice(i, 0, element);
+
+              added = true;
+              break;
+            }
+          }
+
+          if(!added) {
+            collection.push(element);
+          }
+        }
+      }
+
+      this.deQueue = function() {
+        var value = collection.shift();
+        return value[0];
+      };
+
+      this.front = function() {
+        return collection[0];
+      }
+
+      this.size = function() {
+        return collection.length;
+      }
+
+      this.isEmpty = function() {
+        return collection.length === 0;
+      }
+    }
+
+    module.exports = {
+      Queue,
+      priorityQueue
+    };
+
+    // // Test cases
+    // let q = Queue();
+    // q.enQueue('a');
+    // q.enQueue('b');
+    // q.enQueue('b');
+    // q.print(); // ['a', 'b', 'c'];
+
+    // q.deQueue();
+    // q.print(); // ['b', 'c']
+
+    // q.front(); // b
+    // q.size(); // 2
+    // q.isEmpty(); // false
+
+    // // Test for priorityQueue
+    // var pq = new priorityQueue();
+
+    // pq.enQueue(['CSS', 2]);
+    // pq.enQueue(['HTML', 3]);
+    // pq.enQueue(['JavaScript', 1]);
+
+    // pq.print(); // [['JavaScript', 1], ['CSS', 2], ['HTML', 3]]
+
+    // pq.deQueue();
+    // pq.print() // [['CSS', 2], ['HTML', 3]]
+
+    // console.log(pq.front()); // ['CSS', 2]
+
+    // console.log(pq.size()); // 2
+
+
+  &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Github Repository &lt;a href=&quot;https://github.com/SurenderLohia/data-structure-algorithm&quot;&gt;data-structure-algorithm&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 26 Mar 2020 14:21:05 +0530</pubDate>
+        <link>http://localhost:4000/js/2020/03/26/queue-data-structure-algorithm.html</link>
+        <guid isPermaLink="true">http://localhost:4000/js/2020/03/26/queue-data-structure-algorithm.html</guid>
+        
+        
+        <category>js</category>
+        
+      </item>
+    
+      <item>
+        <title>Set | Data Structure Algorithm in JavaScript | Surender Lohia</title>
+        <description>&lt;p&gt;In computer science, a set is an abstract data type that can store unique values, without any particular order. [&lt;a href=&quot;https://en.wikipedia.org/wiki/Set_(abstract_data_type)&quot;&gt;wiki&lt;/a&gt;].&lt;/p&gt;
+
+&lt;pre&gt;
+  &lt;code class=&quot;language-javascript&quot;&gt;
+    // set.js
+    var MySet = function() {
+      let collection = [];
+
+      this.has = function(element) {
+        return (collection.indexOf(element) !== -1);
+      }
+
+      this.add = function(element) {
+        if(!this.has(element)) {
+          collection.push(element);
+          return true;
+        }
+        return false;
+      }
+
+      this.remove = function(element) {
+        if(this.has(element)) {
+          let index = collection.indexOf(element);
+          collection.splice(index, 1);
+          return true;
+        }
+        return false;
+      }
+
+      this.size = function() {
+        return collection.length;
+      }
+
+      this.values = function() {
+        return collection;
+      }
+
+      this.union = function(otherSet) {
+        let unionSet = new MySet();
+        let firstSet = this.values();
+        let secondSet =  otherSet.values();
+
+        firstSet.forEach(function(element) {
+          unionSet.add(element);
+        });
+
+        secondSet.forEach(function(element) {
+          unionSet.add(element);
+        });
+
+        return unionSet;
+      }
+
+      this.intersection = function(otherSet) {
+        let intersectionSet = new MySet();
+        let firstSet = this.values();
+
+        firstSet.forEach(function(element) {
+          if(otherSet.has(element)) {
+            intersectionSet.add(element);
+          }
+        });
+
+        return intersectionSet;
+      }
+
+      this.different = function(otherSet) {
+        let different = new MySet();
+        let firstSet = this.values();
+
+        firstSet.forEach(function(element) {
+          if(!otherSet.has(element)) {
+            different.add(element);
+          }
+        });
+
+        return different;
+      }
+
+      this.subset = function(otherSet) {
+        let firstSet = this.values();
+        return firstSet.every(function(element) {
+          return otherSet.has(element);
+        });
+      }
+    }
+
+    module.exports = MySet;
+
+    // // Test cases
+    // let setA = new MySet();
+    // let setB = new MySet();
+
+    // setA.add('a');
+    // setB.add('a');
+    // setB.add('b');
+    // setB.add('c');
+    // setB.add('d');
+    // setB.add('e');
+
+    // console.log(setA.has('a')) // true
+    // console.log(setB.size()); // 5
+    // console.log(setA.union(setB).values()); // ['a', 'b', 'c', 'd', 'e']
+    // console.log(setA.intersection(setB).values()); // ['a']
+    // console.log(setB.different(setA).values()); // ['b', 'c', 'd', 'e']
+    // console.log(setA.subset(setB)); // true;
+
+    // setB.remove('e') // true
+  &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Github Repository &lt;a href=&quot;https://github.com/SurenderLohia/data-structure-algorithm&quot;&gt;data-structure-algorithm&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 25 Mar 2020 14:21:05 +0530</pubDate>
+        <link>http://localhost:4000/js/2020/03/25/set-data-structure-algorithm.html</link>
+        <guid isPermaLink="true">http://localhost:4000/js/2020/03/25/set-data-structure-algorithm.html</guid>
+        
+        
+        <category>js</category>
+        
+      </item>
+    
+      <item>
+        <title>Jack | Surender Lohia</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/images/posts/jack.jpg&quot; alt=&quot;Jack&quot; /&gt;&lt;/p&gt;
+
+&lt;p class=&quot;post-section&quot;&gt; 
+  நாங்க பள்ளிகூடத்துல படிச்சிட்டு இருந்த காலகட்டம், அப்ப தான் அது எங்க வீட்டுக்கு வந்துச்சி... குட்டியா, வெள்ளையா, ஒரு கண்ண சுத்தி சின்ன கறுப்பு வலையம். அப்ப விஜய் டீவில Titanic போட்ட நேரம், அதுக்கு Jack-னு பேர் வச்சுட்டோம்...
+&lt;/p&gt;
+
+&lt;p class=&quot;post-section&quot;&gt; 
+விடிய காலையில தூங்கிட்டு இருக்குற எங்கள எழுப்பி விளையாடு கூப்டும்... கடுப்பா எந்திருச்சி, கொஞ்சம் நேரத்துல ஜாலியா விளையாட ஆரம்பிச்சிருவேம்... அதுக்கு நாங்க training-லாம் குடுத்து இருக்கோம், அதுலாம் சிரிப்பா இருக்கும்...
+&lt;/p&gt;
+
+&lt;p class=&quot;post-section&quot;&gt; 
+அது வெளியாட்கள கண்டா பயப்புடும். வீட்டுக்கு, தொரிஞ்சவங்க வந்தாங்கனா, கொலைக்கலாம் செய்யாது அப்டியே எங்கனா மறைவா போய் ஒழிஞ்சிக்கும்... ஆனா குழந்தைகள பாத்தா பயப்புடாது... அப்புறம் அதுக்கு பட்டாசுனா ரொம்ப பயம், தீபாவளி அப்பலாம் வீட்டுக்குள்ளேயே தான் இருக்கும்...
+&lt;/p&gt;
+
+&lt;p class=&quot;post-section&quot;&gt; 
+அவருக்கு நிறைய நண்பர்கள்லாம் இருக்காங்க... அதுல ஒரு பூன, இரண்டு பேரும் ஒன்னா தான் இருப்பாங்க. ஆனா நாங்க யாருனா பாக்கும்போது அப்டியே அத தொரத்துர மாதிரி சும்மா சீன்னு...
+&lt;/p&gt;
+
+&lt;p class=&quot;post-section&quot;&gt; 
+அதுக்கு இப்ப நல்லா வயசாயிடிச்சி, கொஞ்சம் ஒடம்பும் சரியில்ல... அப்புறம் எங்க ஏரியால இருக்குற சிலர், அத போட்டு நல்லா அடிச்சு இருக்காங்க... சிலர் வந்து என்கிட்ட சொல்லி இருக்காங்க, தம்பி நான் தான்ப்பா அதுக்கு தண்ணி வச்சேன், சோறு வச்சேன்னு... அனா கல்ல தூக்கி அடிச்சத மட்டும் சொல்ல மாட்டாங்க... எங்க வீட்டு பக்கத்துல ஒருத்தர், நல்லா வசதியானவர், அவர் என்ன பண்ணுவார்னா அங்க பக்கத்துல இருக்குற சின்ன சின்ன குப்பையலாம் அவரே எடுப்பாரு அப்டியே பாக்கும் போது பொக்கும்... ஆனா நாயலாம் ஒரு இரக்கமே இல்லாம போட்டு அடிப்பாரு...
+&lt;/p&gt;
+
+&lt;p class=&quot;post-section&quot;&gt; 
+ஆனா ஒப்பீட்டளவில அது மேல அன்பா இருந்தவங்கதான் அதிகம்...
+&lt;/p&gt;
+
+&lt;p class=&quot;post-section&quot;&gt; 
+Jack எல்லா வலிகளையும் தாங்கிக் கொண்டுதான் வாழ்கிறது... போன வாரம் ஒரு வண்டி அது மேல ஏறிடிச்சி... அதால நடக்க முடியில... Blue Cross-ல, ஊசி போட்டாங்க, மாத்திர எழுதி கொடுத்தாங்க ஒரு மாசம் வச்சி பாருங்க சரியாக வாய்பு இருக்குன்னு சொன்னாங்க...
+&lt;/p&gt;
+
+&lt;p class=&quot;post-section&quot;&gt; 
+அதனுடைய வாழ்க்கை மேலும் வலி நிறைந்த தாய் மாறிவிட்டது... ஒரு இருண்டு நாள் கொஞ்சம் நல்லா இருந்துச்சி... அப்புறம் இன்னும் மோசமா ஆயிடிச்சு, நேத்து இரவு Jack-னு கூப்புடும் போது அதால தலய தூக்க முடியில கண்ண மட்டும் தொறந்து மேல தூக்கி பாத்திச்சு...
+&lt;/p&gt;
+
+&lt;p class=&quot;post-section&quot;&gt; 
+அன்பு மட்டுமே செலத்த தெரிந்த ஒரு உயிர் இன்று இல்லை...
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt; 
+    கடந்த கால நினைவுகளுடன் எதிர் காலத்தை நோக்கி பயணிக்கும் காலவோட்டத்தில் கரைந்து போகும் சிறு துகள் ஒன்று உன் நினைவுகளுடன்...
+  &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p class=&quot;post-section&quot;&gt; 
+&lt;span class=&quot;love&quot;&gt;♥&lt;/span&gt; சென்று வா Jack...
+&lt;/p&gt;
+</description>
+        <pubDate>Mon, 18 Mar 2019 14:21:05 +0530</pubDate>
+        <link>http://localhost:4000/personal/2019/03/18/jack.html</link>
+        <guid isPermaLink="true">http://localhost:4000/personal/2019/03/18/jack.html</guid>
+        
+        
+        <category>personal</category>
+        
+      </item>
+    
+      <item>
+        <title>The Glimpse of ReactFoo - Delhi 2018 | Surender Lohia</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/images/posts/react-foo-delhi-2018.jpg&quot; alt=&quot;ReactFoo - Delhi 2018&quot; /&gt;&lt;/p&gt;
+
+&lt;p class=&quot;post-section&quot;&gt; 
+  I recently attended ReactFoo conference in Delhi, I would like to share a glimpse of ReactFoo. Overall it was good, speakers shared a lot on their topics in detail.
+&lt;/p&gt;
+
+&lt;div class=&quot;post-section&quot;&gt; 
+  &lt;h4&gt;&lt;b&gt;Prateek Rungta&lt;/b&gt; - &lt;b&gt;&lt;i&gt;Miranj&lt;/i&gt;&lt;/b&gt;, shared his insights on how they improved their app's performance.&lt;/h4&gt;
+  &lt;ul&gt;
+    &lt;li&gt;# PJAX&lt;/li&gt;
+    &lt;li&gt;# Pre fetching&lt;/li&gt;
+    &lt;li&gt;# &lt;a target=&quot;_blank&quot; href=&quot;http://instantclick.io/&quot; rel=&quot;noopener noreferrer&quot;&gt;InstantClink&lt;/a&gt;&lt;/li&gt; 
+    &lt;li&gt;# &lt;a target=&quot;_blank&quot; href=&quot;http://barbajs.org/how-it-works.html&quot; rel=&quot;noopener noreferrer&quot;&gt;barba.js&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;# Micro caching&lt;/li&gt;
+    &lt;li&gt;# Lazy loading&lt;/li&gt;
+    &lt;li&gt;# Responsive Images&lt;/li&gt;
+    &lt;li&gt;# Edge caching&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;post-section&quot;&gt; 
+  &lt;h4&gt;&lt;b&gt;Arwa Lokhandwala&lt;/b&gt; - &lt;b&gt;&lt;i&gt;BookMyShow&lt;/i&gt;&lt;/b&gt;, spoke about &quot;Why we should use React Canvas”&lt;/h4&gt;
+  &lt;p&gt;Demo - The scenario at Bookmyshow where they had used React Canvas to solve a problem of experiencing a jank when the user tries to scroll through a large seat layout for booking.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;post-section&quot;&gt;
+  &lt;h4&gt;&lt;b&gt;Eesh Tyagi&lt;/b&gt; - &lt;b&gt;&lt;i&gt;Cleartrip&lt;/i&gt;&lt;/b&gt;, spoke about - “Cleartrip's reactive journey from 3.0s to 0.2s using Apollo GraphQL”&lt;/h4&gt;
+  &lt;ul&gt;
+    &lt;li&gt;# &lt;a target=&quot;_blank&quot; href=&quot;https://graphql.org/&quot; rel=&quot;noopener noreferrer&quot;&gt;GraphQL&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;# PWA&lt;/li&gt;
+    &lt;li&gt;# Apollo client&lt;/li&gt;
+    &lt;li&gt;# Apollo server&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;post-section&quot;&gt;
+  &lt;h4&gt;&lt;b&gt;Kiran Abburi&lt;/b&gt; - &lt;b&gt;&lt;i&gt;BangaloreJS Community&lt;/i&gt;&lt;/b&gt;, spoke about “Building blazingly fast websites with Gatsby”&lt;/h4&gt;
+  &lt;ul&gt;
+    &lt;li&gt;# &lt;a target=&quot;_blank&quot; href=&quot;https://www.gatsbyjs.org/&quot; rel=&quot;noopener noreferrer&quot;&gt;Gatsby&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;post-section&quot;&gt;
+  &lt;h4&gt;&lt;b&gt;Vaibhav Lokhande&lt;/b&gt; - &lt;b&gt;&lt;i&gt;Shaadi.com&lt;/i&gt;&lt;/b&gt;, spoke about “Deploying with confidence”&lt;/h4&gt;
+  &lt;ul&gt;
+    &lt;li&gt;# TDD&lt;/li&gt;
+    &lt;li&gt;# &lt;a target=&quot;_blank&quot; href=&quot;https://storybook.js.org/&quot; rel=&quot;noopener noreferrer&quot;&gt;Storybook&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;# Automation test - &lt;a target=&quot;_blank&quot; href=&quot;http://nightwatchjs.org/&quot; rel=&quot;noopener noreferrer&quot;&gt;Nightwatch.js&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;post-section&quot;&gt;
+  &lt;h4&gt;&lt;b&gt;Shivang Shekhar&lt;/b&gt; - &lt;b&gt;&lt;i&gt;VRAR Association&lt;/i&gt;&lt;/b&gt;, spoke about “Piggybacking your WebVR/AR experiences with React”&lt;/h4&gt;
+  &lt;ul&gt;
+    &lt;li&gt;# &lt;a target=&quot;_blank&quot; href=&quot;https://www.babylonjs.com/&quot; rel=&quot;noopener noreferrer&quot;&gt;babylon.js&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;# React native VR&lt;/li&gt;
+    &lt;li&gt;# &lt;a target=&quot;_blank&quot; href=&quot;https://aframe.io/&quot; rel=&quot;noopener noreferrer&quot;&gt;AFrame&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;# &lt;a target=&quot;_blank&quot; href=&quot;https://mixedreality.mozilla.org/&quot; rel=&quot;noopener noreferrer&quot;&gt;WebVR Mozilla&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;# React 360&lt;/li&gt;
+    &lt;li&gt;# &lt;a target=&quot;_blank&quot; href=&quot;https://viromedia.com/virovr/&quot; rel=&quot;noopener noreferrer&quot;&gt;ViroVR&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;# WebXR&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;p class=&quot;post-section&quot;&gt; 
+  Looking forward to next ReactFoo.
+&lt;/p&gt;
+</description>
+        <pubDate>Sat, 03 Nov 2018 14:21:05 +0530</pubDate>
+        <link>http://localhost:4000/js/2018/11/03/the-glimpse-of-react-foo-delhi-2018.html</link>
+        <guid isPermaLink="true">http://localhost:4000/js/2018/11/03/the-glimpse-of-react-foo-delhi-2018.html</guid>
+        
+        
+        <category>js</category>
+        
+      </item>
+    
+      <item>
+        <title>பாசமலர் | Surender Lohia</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/images/posts/pasamalar.png&quot; alt=&quot;Pasamalar&quot; /&gt;&lt;/p&gt;
+
+&lt;p class=&quot;post-section&quot;&gt; 
+  எல்லாருக்கும் தெரியும் அண்ணன், தங்கச்சி பாசம் தான் படம். ஆனால் இந்தப் படம் இன்னொரு விசயத்துக்கும் முக்கியத்துவம் கொடுத்து இருக்கு, அது கம்யூனிசம். தமிழ்நாடு ஒரு விசித்திரமான மாநிலம் தான் ஏனா 1960-களிலேயே கம்யூனிசத்த அழுத்தம், திருத்தமா ஒரு படம் பேசிட்டு போதுனா அது சாதாரண விசயம் இல்ல. சுதந்திரத்திற்கு முன்னாடியே கம்யூனிஸ்டுகளுக்கு கடுமையான நெருக்கடி... பெரியார் கம்யூனிசம் பேச கூடாதுன்னு அரசு அச்சுறுத்தல்...
+&lt;/p&gt;
+&lt;p class=&quot;post-section&quot;&gt; 
+  அப்புறம் இந்த படத்துல வர இரண்டு பாட்டையும் தமிழ்நாட்டையும் பிரிக்கவே முடியாதுன்னு சொல்ற அளவுக்கு அது தமிழ்நாட்டோட ஒன்னா கலந்துடிச்சி. இன்னிக்கும் பெரும்பாலான கல்யாணங்கள்ல பெண் அழைப்புக்கு இந்த பாட்டு இல்லாம இருக்காது...
+&lt;/p&gt;
+&lt;p class=&quot;post-section&quot;&gt; 
+  இன்னொரு பாட்டு... &lt;br /&gt;
+  அண்ணன், தங்கச்சி முதல் முறையா பிரிஞ்சிடுறாங்க. அப்படியே சில காலங்கள் கடந்து போது... இரண்டு பேராலயும் அந்த பிரிவ தாங்க முடியாத ஒரு மனநிலை... படத்தோட உச்ச கட்ட காட்சில, தமிழ் சினிமாவின் தலை சிறந்த பாடல்களில் ஒன்றான அந்த பாடல் அப்ப தான் திரையில வருது. ஏற்கனவே படத்தோட ஒன்றிப் போயிருக்க பார்வையாளர்கள் மனசுல இந்தப் பாட்டு ஒரு கலவையான உணர்வ ஏற்படுத்திடும்...
+&lt;/p&gt;
+&lt;p&gt; 
+  அந்தப் பாட்டு இப்படி முடியும்...
+&lt;p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;
+    &quot;கண்ணில் மணி போல, &lt;br /&gt;
+    மணியின் நிழல் போல, &lt;br /&gt;
+    கலந்து பிறந்தோமடா... &lt;br /&gt;
+    இந்த மண்ணும் கடல் வானும், &lt;br /&gt;
+    மறைந்து முடிந்தாலும், &lt;br /&gt;
+    மறக்க முடியாதடா... &lt;br /&gt;
+    உறவைப் பிரிக்க முடியாதடா...&quot; 
+  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p class=&quot;post-section&quot;&gt; 
+  இந்த முடிவுலையும் ஒரு மறை பொருள் வச்சி இருப்பாரு கவிஞர் கண்ணதாசன் &lt;span class=&quot;love&quot;&gt;♥&lt;/span&gt;
+&lt;/p&gt;
+
+
+
+&lt;/p&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 21 Aug 2018 14:21:05 +0530</pubDate>
+        <link>http://localhost:4000/movie/2018/08/21/pasamalar.html</link>
+        <guid isPermaLink="true">http://localhost:4000/movie/2018/08/21/pasamalar.html</guid>
+        
+        
+        <category>movie</category>
+        
+      </item>
+    
+      <item>
+        <title>Embarrassing Moment | Surender Lohia</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/images/posts/embarrassing-moment.jpg&quot; alt=&quot;Alt Embarrassing Moment&quot; /&gt;&lt;/p&gt;
+
+&lt;p class=&quot;post-section&quot;&gt; 
+  Lot of us face embarrassing moments in our life. I would like to share one of my recent incident here.
+&lt;/p&gt;
+
+&lt;p class=&quot;post-section&quot;&gt; 
+  One fine day evening, I was looking for a house for rent. I spoke with an owner and he asked me to come and see the house. It's located in Venkatapura. He said, &quot;Come to Venkatapura and give me a call.&quot; Fine. I started to go to Venkatapura by walk. 
+&lt;/p&gt;
+
+&lt;p class=&quot;post-section&quot;&gt; 
+  Everything was normal until then. When I was in Madiwala Mandi, drizzle started and soon raining heavily. I didn't have an umbrella with me. So I went to a nearby shelter and stood there. It was around 6:30 PM. I planned to wait for some more time, for up to 1 hour at max. I thought of going back home by cab or an auto if the rain wouldn't stop and visit the house the next day. If it stopped, I thought of going further to Venkatapura. Meanwhile, I was using my mobile for browsing, FB, WhatsApp, taking photos etc.
+&lt;/p&gt;
+
+&lt;p class=&quot;post-section&quot;&gt; 
+  After some time, the rain stopped. I started my journey towards Venkatapura again. I reached Venkatapura. I took my mobile out(battery was very low) and gave a call to the rental house owner. Suddenly, my mobile was switched off. I didn't have any clue to reach that person or that rental house. And one more thing, I am new to Bangalore. I don’t know the Kannada either. And thus my rental house search ended there. I planned to go back to my home. The worst part was, I forgot the route to go back home. And I was unable to book an Ola cab. The address was in my mobile. I had no clue about my address.
+&lt;/p&gt;
+
+&lt;p class=&quot;post-section&quot;&gt; 
+  Some days before all these happened, I had written down my current Bangalore address in a small paper and kept it in my purse. That was my only hope. I took that paper out, looking for an auto. He asked some amount and I started bargaining with the auto driver saying, &quot;Sir, it's less than 1 km. I'll come by walk only… etc.&quot; While travelling in that auto, that driver asked, &quot;Which block in Koramangala?.&quot; That time, I didn't know it. But now I know. Neither was it written in my note. The driver said, &quot;Without knowing Koramangala block number, how will I go sir?&quot;
+&lt;/p&gt;
+
+&lt;p class=&quot;post-section&quot;&gt; 
+  The auto kept moving, it started drizzling outside again. There was silence in both the sides. I saw some familiar places. Suddenly, I started to tell the route and he went that way. Even then, the auto driver did not trust me. He asked me again, &quot;Sir, do you really remember your route? Do you have money to pay?&quot;
+&lt;/p&gt;
+
+&lt;p class=&quot;post-section&quot;&gt; 
+  Finally, we reached our destination. That auto driver felt relieved, and me too. And the drizzle continues…
+&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 15 Jul 2018 14:21:05 +0530</pubDate>
+        <link>http://localhost:4000/travel/2018/07/15/embarrassing-moment.html</link>
+        <guid isPermaLink="true">http://localhost:4000/travel/2018/07/15/embarrassing-moment.html</guid>
+        
+        
+        <category>travel</category>
+        
+      </item>
+    
+      <item>
+        <title>SCSS Mixin for rem font sizing | Surender Lohia</title>
+        <description>&lt;p&gt;Mixin for rem font sizing with px fallback for older browsers&lt;/p&gt;
+
+&lt;h4&gt;CSS&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-css&quot;&gt;
+    html {
+      font-size: 16px; /* Sets up the Base font size */
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;scss&quot;&gt;SCSS&lt;/h4&gt;
+
+&lt;pre&gt;
+  &lt;code class=&quot;language-css&quot;&gt;
+    @mixin font-size($sizeValue: 1) {
+      font-size: ($sizeValue * 16) + px;
+      font-size: $sizeValue + rem;
+    }
+  &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;usage&quot;&gt;Usage&lt;/h3&gt;
+
+&lt;h4 id=&quot;scss-1&quot;&gt;SCSS&lt;/h4&gt;
+&lt;pre&gt;
+  &lt;code class=&quot;language-css&quot;&gt;
+    p {
+      @include font-size(2);
+    }
+  &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;(Thanks &lt;a href=&quot;https://css-tricks.com/&quot; target=&quot;_blank&quot;&gt;CSS tricks&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://caniuse.com/#feat=rem&quot; target=&quot;_blank&quot;&gt;Can I use rem &lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.standardista.com/px-to-rem-conversion-if-root-font-size-is-16px/&quot; target=&quot;_blank&quot;&gt;px to rem conversion if :root font-size is 16px&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 17 Sep 2016 14:39:05 +0530</pubDate>
+        <link>http://localhost:4000/scss/2016/09/17/mixin-for-rem-font-size.html</link>
+        <guid isPermaLink="true">http://localhost:4000/scss/2016/09/17/mixin-for-rem-font-size.html</guid>
+        
+        
+        <category>scss</category>
+        
+      </item>
+    
+      <item>
+        <title>Cool Atom Packages (plugins) For Front End Developers | Surender Lohia</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/images/posts/atom-editor.png&quot; alt=&quot;Alt Atom Editor&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;atom-editor&quot;&gt;Atom Editor&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://atom.io/&quot; target=&quot;_blank&quot;&gt;Atom&lt;/a&gt; is a text editor that’s modern, approachable, yet hackable to the core a tool you can customize to do anything but also use productively without ever touching a config file.&lt;/p&gt;
+
+&lt;h3 id=&quot;1-emmet&quot;&gt;1. Emmet&lt;/h3&gt;
+
+&lt;p class=&quot;post-section&quot;&gt; 
+Emmet the essential toolkit for web-developers.
+&lt;br /&gt;
+Link: &lt;a href=&quot;https://atom.io/packages/emmet&quot; target=&quot;_blank&quot;&gt;Emmet package on Atom.io&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&quot;2-js-snippets&quot;&gt;2. JS Snippets&lt;/h3&gt;
+&lt;p class=&quot;post-section&quot;&gt;
+JavaScript &amp;amp; NodeJS Snippets for Atom.
+&lt;br /&gt;
+Link: &lt;a href=&quot;https://atom.io/packages/javascript-snippets&quot; target=&quot;_blank&quot;&gt;JavaScript Snippets package on Atom.io&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&quot;3-js-hint&quot;&gt;3. JS Hint&lt;/h3&gt;
+&lt;p class=&quot;post-section&quot;&gt;
+Validates your JS against JSHint as you type. The original and most used.
+&lt;br /&gt;
+Link: &lt;a href=&quot;https://atom.io/packages/atom-jshint&quot; target=&quot;_blank&quot;&gt;JS Hint Package on Atom.io&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&quot;4-fancy-new-file&quot;&gt;4. Fancy New File&lt;/h3&gt;
+&lt;p class=&quot;post-section&quot;&gt;
+Fancy New File is a plugin for Github's Atom text editor that gives you a handy dialog (accessible via) to open or create new files and directory trees by typing a relative path, with bash-like autocomplete support.
+&lt;br /&gt;
+Link: &lt;a href=&quot;https://atom.io/packages/fancy-new-file&quot; target=&quot;_blank&quot;&gt; Fancy New File package on Atom.io&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&quot;5-cursor-history&quot;&gt;5. Cursor History&lt;/h3&gt;
+&lt;p class=&quot;post-section&quot;&gt;
+Jump to next and previous cursor position by keeping track of cursor position.
+&lt;br /&gt;
+Link: &lt;a href=&quot;https://atom.io/packages/cursor-history&quot; target=&quot;_blank&quot;&gt; Cursor History package on Atom.io&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&quot;6-relative-line-number&quot;&gt;6. Relative Line Number&lt;/h3&gt;
+&lt;p class=&quot;post-section&quot;&gt;
+Replaces the regular line numbers with relative numbers. Also has an option to show the true number on the current line.
+&lt;br /&gt;
+Link: &lt;a href=&quot;https://atom.io/packages/relative-line-numbers&quot; target=&quot;_blank&quot;&gt; Relative Line Number package on Atom.io&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;h4 id=&quot;are-you-from-vim-try-this-below&quot;&gt;Are you From Vim, try this below:&lt;/h4&gt;
+
+&lt;h3 id=&quot;7-vim-mode&quot;&gt;7. Vim Mode&lt;/h3&gt;
+
+&lt;p&gt;Provides vim modal control for Atom, ideally blending the best of vim and Atom.
+&lt;br /&gt;
+Link: &lt;a href=&quot;https://atom.io/packages/vim-mode&quot; target=&quot;_blank&quot;&gt; Vim Mode package on Atom.io&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Note:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A. Never forget your awesome Esc key remap with jj | jk
+&lt;br /&gt;
+Link: &lt;a href=&quot;https://github.com/atom/vim-mode/issues/221&quot; target=&quot;_blank&quot;&gt; Esc key remap for Atom&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;B. Are you like :w for save
+&lt;br /&gt;
+Link: &lt;a href=&quot;https://github.com/atom/vim-mode/issues/520&quot; target=&quot;_blank&quot;&gt; :w save key remap for Atom&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 06 Aug 2015 14:39:05 +0530</pubDate>
+        <link>http://localhost:4000/front-end/2015/08/06/cool-atom-packages-for-front-end-developers.html</link>
+        <guid isPermaLink="true">http://localhost:4000/front-end/2015/08/06/cool-atom-packages-for-front-end-developers.html</guid>
+        
+        
+        <category>front-end</category>
+        
+      </item>
+    
+  </channel>
+</rss>
