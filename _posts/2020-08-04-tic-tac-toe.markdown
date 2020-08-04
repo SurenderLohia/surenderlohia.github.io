@@ -29,10 +29,10 @@ Tic-tac-toe game in Terminal using Python
             else:
                 return False
 
-        # horizantal winner
+        # horizontal winner
         for row in game:
             if all_same(row):
-                print(f"player {row[0]} is the winner horizantally!")
+                print(f"player {row[0]} is the winner horizontally!")
                 return True
 
         # vertical winner
