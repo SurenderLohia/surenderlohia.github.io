@@ -6,8 +6,8 @@
 </description>
     <link>https://www.surender.net/</link>
     <atom:link href="https://www.surender.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 12 Aug 2020 23:22:01 +0530</pubDate>
-    <lastBuildDate>Wed, 12 Aug 2020 23:22:01 +0530</lastBuildDate>
+    <pubDate>Wed, 12 Aug 2020 23:24:52 +0530</pubDate>
+    <lastBuildDate>Wed, 12 Aug 2020 23:24:52 +0530</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -23,17 +23,17 @@ This tutorial is all about how to create a simple todo list using web technologi
 &lt;h3 id=&quot;live&quot;&gt;Live:&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.surender.net/todo-app&quot;&gt;https://www.surender.net/todo-app&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;source-code&quot;&gt;Source Code:&lt;/h3&gt;
+&lt;h3 id=&quot;source-code&quot;&gt;Source code:&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/SurenderLohia/todo-app&quot;&gt;https://github.com/SurenderLohia/todo-app&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;targeted-audience&quot;&gt;Targeted Audience:&lt;/h3&gt;
+&lt;h3 id=&quot;targeted-audience&quot;&gt;Targeted audience:&lt;/h3&gt;
 &lt;p&gt;One who looking to learn front-end development.&lt;br /&gt;
 One who looking to build some cool stuff using web technology.&lt;br /&gt;
 If you are new to the front-end, I believe this one will be a good starting point.&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Yeah, will start…&lt;/p&gt;
 
-&lt;h3 id=&quot;pro-tip&quot;&gt;Pro Tip:&lt;/h3&gt;
+&lt;h3 id=&quot;pro-tip&quot;&gt;Pro tip:&lt;/h3&gt;
 &lt;p&gt;If you stuck somewhere in code feel free to check it out that part from &lt;a href=&quot;https://github.com/SurenderLohia/todo-app&quot;&gt;source code&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;task-breakdown&quot;&gt;Task breakdown:&lt;/h3&gt;
