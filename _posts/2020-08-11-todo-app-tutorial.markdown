@@ -28,9 +28,9 @@ This tutorial is all about how to create a simple todo list using web technologi
 
 
 ### Targeted Audience:
-One who looking for learn front-end development.<br>
-One who looking for build some cool stuff using web technology.<br>
-If you are new to front-end, I believe this one will be a good starting point.<br>
+One who looking to learn front-end development.<br>
+One who looking to build some cool stuff using web technology.<br>
+If you are new to the front-end, I believe this one will be a good starting point.<br>
 
 Yeah, will start...
 
@@ -112,7 +112,7 @@ You will see below HTML
 
 We have not added any actual content yet, but this is our starting point.
 
-Now, will add the required *CSS* styles. Open the **css/main.css** file in the editor and copy-paste the below code.
+Now, will add the required **CSS** styles. Open the **css/main.css** file in the editor and copy-paste the below code.
 
 <pre>
   <code class="language-css">
@@ -217,12 +217,12 @@ Open index.html in an editor and before closing head tag (</head>) add the below
 </pre>
 
 Now we have to add required **HTML** for todo-list
-In **index.html** copy and past the below code in between the body tags (<body>....</body>)
+In **index.html** copy and paste the below code in between the body tags (<body>....</body>)
 
-#### **Below html contains:**
+#### **Below HTML contains:**
 1. Todo-list title <br>
 2. Add-todo section <br>
-3. Todo-list Header section which contains All, Completed, Active filters and delete all button. <br>
+3. Todo-list Header section which contains All, Completed, Active filters, and delete all button. <br>
 4. And Todo-list
 
 <pre>
@@ -274,7 +274,7 @@ Now, the todo-app structure is ready goto browser and refresh it, you will see l
 <br>
 ### 3. Add JavaScript functionality
 
-Open js/main.js file in editor and copy past the below js code
+Open js/main.js file in the editor and copy-paste the below js code
 <pre>
   <code class="language-js">
     // IIFE to create local scope and to avoid global namespacing collisions
@@ -489,8 +489,9 @@ Add **main.js** file to **index.html** file. Add below line before body closing 
   </code>
 </pre>
 
-Now remove the plaseholder todo-list items from index.html. <br>
-Remove below code from index.html.
+Now remove the placeholder todo-list items from index.html. <br>
+Remove the below code from index.html.
+
 <pre>
   <code class="language-html">
     &lt;li class=&quot;flex align-center todo-list-item&quot;&gt;
@@ -530,7 +531,7 @@ After that need to add all files to git. For that run the below command in termi
   </code>
 </pre>
 
-Then do git commit. Run the below command in terminal.
+Then do git commit. Run the below command in the terminal.
 <pre>
   <code class="language-shell">
     git commit -m "Create todo-app"
@@ -550,14 +551,14 @@ Give a Repository name to "todo-app" and click create repository button.
 and past it to terminal <br> -->
 
 To add remote origin, run the below command in terminal <br>
-Note: update your github &lt;username&gt;
+Note: update your Github &lt;username&gt;
 <pre>
   <code class="language-shell">
     git remote add origin git@github.com:&lt;username&gt;/todo-app.git
   </code>
 </pre>
 
-To push your code to respective remote repository, run the below command in terminal <br>
+To push your code to the respective remote repository, run the below command in terminal <br>
 <pre>
   <code class="language-shell">
     git push -u origin master
@@ -566,9 +567,9 @@ To push your code to respective remote repository, run the below command in term
 
 Refresh the Github repository. Now, your code will be there...
 
-#### **Now we have to deploy via github-pages**
+#### **Now we have to deploy via Github-pages**
 
-In that github repository, click **settings** -> (scroll) go to **GitHub Pages** section. Click the select box under the source section, select **master** and click save.
+In that Github repository, click **settings** -> (scroll) go to **GitHub Pages** section. Click the select box under the source section, select **master** and click save.
 
 You will get a notification like "GitHub Pages source saved."
 
