@@ -6,25 +6,25 @@
 </description>
     <link>https://www.surender.net/</link>
     <atom:link href="https://www.surender.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 12 Aug 2020 20:14:54 +0530</pubDate>
-    <lastBuildDate>Wed, 12 Aug 2020 20:14:54 +0530</lastBuildDate>
+    <pubDate>Wed, 12 Aug 2020 20:49:35 +0530</pubDate>
+    <lastBuildDate>Wed, 12 Aug 2020 20:49:35 +0530</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
-        <title>Todo App | HTML | CSS | JavaScript | Front-end Development | Program | Todo List | | Surender Lohia</title>
+        <title>Todo App | JavaScript | Front-end Development | Surender Lohia</title>
         <description>&lt;p&gt;Hi Folks, &lt;br /&gt;
 This tutorial is all about how to create a simple todo list using web technologies - HTML, CSS, and JavaScript…&lt;/p&gt;
 
 &lt;h3 id=&quot;demo&quot;&gt;Demo:&lt;/h3&gt;
 &lt;div class=&quot;video-container mb20&quot;&gt;
-  &lt;iframe src=&quot;https://www.youtube.com/embed/isSe2Nza8Dk&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&quot;https://www.youtube.com/embed/isSe2Nza8Dk?rel=0&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;h3 id=&quot;live&quot;&gt;Live:&lt;/h3&gt;
-&lt;p&gt;https://www.surender.net/todo-app&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.surender.net/todo-app&quot;&gt;https://www.surender.net/todo-app&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;source-code&quot;&gt;Source Code:&lt;/h3&gt;
-&lt;p&gt;https://github.com/SurenderLohia/todo-app&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/SurenderLohia/todo-app&quot;&gt;https://github.com/SurenderLohia/todo-app&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;targeted-audience&quot;&gt;Targeted Audience:&lt;/h3&gt;
 &lt;p&gt;One who looking for learn front-end development.&lt;br /&gt;
