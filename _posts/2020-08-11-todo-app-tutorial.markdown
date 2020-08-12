@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Todo App | HTML | CSS | JavaScript | Front-end Development | Program | Todo List | | Surender Lohia
-main-title: Todo App Tutorial - HTML | CSS | JavaScript
+title: Todo App | JavaScript | Front-end Development | Surender Lohia
+main-title: Todo App Tutorial - Front-end Development
 date: 2020-08-11 14:21:05 +0530
 author: Surender Lohia
 categories: front-end
 active: blog
-description: Simple Todo list tutorial using HTML, CSS, JavaScript | Todo App
+description: Simple Todo App tutorial using HTML, CSS, JavaScript.
 image: /assets/images/posts/todo-app/todo-app.png
 comments: true
 main-js: true
@@ -17,14 +17,14 @@ This tutorial is all about how to create a simple todo list using web technologi
 
 ### Demo:
 <div class="video-container mb20">
-  <iframe src="https://www.youtube.com/embed/isSe2Nza8Dk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/isSe2Nza8Dk?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### Live: 
-https://www.surender.net/todo-app
+[https://www.surender.net/todo-app](https://www.surender.net/todo-app)
 
 ### Source Code:
-https://github.com/SurenderLohia/todo-app
+[https://github.com/SurenderLohia/todo-app](https://github.com/SurenderLohia/todo-app)
 
 
 ### Targeted Audience:
