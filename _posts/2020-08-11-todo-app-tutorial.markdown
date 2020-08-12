@@ -12,7 +12,8 @@ comments: true
 main-js: true
 ---
 
-Hi Folks this tutorial is all about how to create a simple todo list using web technologies - HTML, CSS and JavaScript...
+Hi Folks, <br>
+This tutorial is all about how to create a simple todo list using web technologies - HTML, CSS, and JavaScript...
 
 ### Demo:
 <div class="video-container mb20">
@@ -27,22 +28,27 @@ https://github.com/SurenderLohia/todo-app
 
 
 ### Targeted Audience:
-For one who knows the basics of HTML, CSS and JavaScript. <br>
-One who looking for build some cool stuff using web technology. <br>
-If your new to this domin, I believe this one will be a good starting point. <br>
+One who looking for learn front-end development.<br>
+One who looking for build some cool stuff using web technology.<br>
+If you are new to front-end, I believe this one will be a good starting point.<br>
 
-Yeah will start...
+Yeah, will start...
+
+### Pro Tip: 
+If you stuck somewhere in code feel free to check it out that part from [source code](https://github.com/SurenderLohia/todo-app)
 
 ### Task breakdown:
 
-1. Create required files and folders
-2. Create basic structure using HTML and CSS
-3. Add JavaScript functionality
+1. Create required files and folders.
+2. Create a basic structure using HTML and CSS.
+3. Add JavaScript functionality.
 4. Deploy our code to live, using Github pages.
 
-### 1. Create required files and folder
+<br>
+### 1. Create required files and folders
 
-First will create the required directories and files. Enter the below command in terminal
+First will create the required directories and files. Run the below commands one by one in the terminal. <br>
+Note: Don't copy $ sign while coping command, it's just a placeholder to indicate terminal cursor pointer.
 
 <pre>
   <code class="language-shell">
@@ -61,7 +67,7 @@ First will create the required directories and files. Enter the below command in
 
 Open the created directory (todo-app) in your favorite editor (I am using [VS Code](https://code.visualstudio.com/)).
 
-Will add basic html skeleton first. Open index.html and past the below html code to into that file.
+Will add a basic HTML skeleton first. Open index.html and paste the below HTML code in that file.
 
 <pre>
   <code class="language-html">
@@ -80,9 +86,9 @@ Will add basic html skeleton first. Open index.html and past the below html code
   </code>
 </pre>
 
-Run the local server to view this html in browser...
+Run the local server to view this HTML in the browser...
 
-To start the local python server (or you run any other server) go to terminal and navigate to todo-app directory. And past the below command. It will start the local python server.
+To start the local python server (or you run any other server) go to terminal and navigate to the todo-app directory. And past the below command. It will start the local python server.
 
 <pre>
   <code class="language-shell">
@@ -90,7 +96,7 @@ To start the local python server (or you run any other server) go to terminal an
   </code>
 </pre>
 
-Once server started open Chrome browser and enter the below url
+Once server started open Chrome browser and enter the below URL
 
 <pre>
   <code class="language-shell">
@@ -98,15 +104,15 @@ Once server started open Chrome browser and enter the below url
   </code>
 </pre>
 
-(Python is available in Mac OS by default, in case if you don't have python or not aware of [how to start a local server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server), then goto todo-app directory right click the index.html file and click open with -> Google Chrome)
+(Python is available in Mac OS by default, in case if you don't have python or not aware of [how to start a local server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server), then goto todo-app directory right-click the index.html file and click open with -> Google Chrome)
 
-You will see below html
+You will see below HTML
 
 <img class="border" src="{{'/assets/images/posts/todo-app/base-html.png' | prepend: site.baseurl}}" alt="Base html">
 
-We are not added any actual content yet, but this is our starting point.
+We have not added any actual content yet, but this is our starting point.
 
-Now will add the required *CSS* styles. Open the **css/main.css** file in the editor and copy past the below code.
+Now, will add the required *CSS* styles. Open the **css/main.css** file in the editor and copy-paste the below code.
 
 <pre>
   <code class="language-css">
@@ -201,8 +207,8 @@ Now will add the required *CSS* styles. Open the **css/main.css** file in the ed
 </pre>
 
 Now will update our index.html. <br>
-First we have to include main.css in index.html. <br>
-Open index.html in editor and before closing head tag (</head>) add the below line
+First, we have to include main.css in index.html. <br>
+Open index.html in an editor and before closing head tag (</head>) add the below line
 
 <pre>
   <code class="language-html">
@@ -261,7 +267,7 @@ In **index.html** copy and past the below code in between the body tags (<body>.
   </code>
 </pre>
 
-Now todo-app structure is ready goto browser and refresh it, you will see like below html page
+Now, the todo-app structure is ready goto browser and refresh it, you will see like below HTML page.
 
 <img class="border" src="{{'/assets/images/posts/todo-app/todo-app.png' | prepend: site.baseurl}}" alt="Todo-app basic structure"> 
 
@@ -502,14 +508,14 @@ Refresh the page you will see the below **todo-app** with empty todo-list
 
 <img class="border" src="{{'/assets/images/posts/todo-app/todo-app-final.png' | prepend: site.baseurl}}" alt="Todo-app app">
 
-Now go ahead add, remove todo-items. After a refresh also data will be available, because we stored our data in localstore store, so it's persisting...
+Now, go ahead add, remove todo-items. After a refresh also data will be available, because we stored our data on local storage, so it's persisting...
 
 That's all we are done. Now will deploy our app.
 
 <br>
 ### 4. Deploy our code to live, using Github Pages.
 
-First we have to do [git](https://git-scm.com/) init. Go to terminal, navigate to todo-app directory and enter the below command
+First, we have to do [git](https://git-scm.com/) init. Go to the terminal, navigate to the todo-app directory, and enter the below command.
 
 <pre>
   <code class="language-shell">
@@ -517,50 +523,56 @@ First we have to do [git](https://git-scm.com/) init. Go to terminal, navigate t
   </code>
 </pre>
 
-After that need to add all files to git. For that add below command in terminal
+After that need to add all files to git. For that run the below command in terminal
 <pre>
   <code class="language-shell">
     git add .
   </code>
 </pre>
 
-Then do git commit. Enter the below command in terminal.
+Then do git commit. Run the below command in terminal.
 <pre>
   <code class="language-shell">
     git commit -m "Create todo-app"
   </code>
 </pre>
 
-Now go to your github account [https://github.com/]
+Now, go to your Github account [https://github.com/]
 
-In right hand side corner there will be **+** icon click on that icon and select "New repositiory". It looks like below screenshot
+In the right-hand side corner, there will be a **+** icon click on that icon and select "New repository". It looks like below screenshot
 
 ![Create new repository]({{"/assets/images/posts/todo-app/create-new-repository.png" | prepend: site.baseurl}})
 
 Give a Repository name to "todo-app" and click create repository button.
 
-From that page copy the code from this section <br>
+<!-- From that page copy the code from this section <br>
 **…or push an existing repository from the command line** <br>
-and past it to terminal <br>
+and past it to terminal <br> -->
 
-The code you have to copy it looks like below <br>
-Eg:
+To add remote origin, run the below command in terminal <br>
+Note: update your github &lt;username&gt;
 <pre>
   <code class="language-shell">
     git remote add origin git@github.com:&lt;username&gt;/todo-app.git
+  </code>
+</pre>
+
+To push your code to respective remote repository, run the below command in terminal <br>
+<pre>
+  <code class="language-shell">
     git push -u origin master
   </code>
 </pre>
 
-Refresh the githup repository your code will be there...
+Refresh the Github repository. Now, your code will be there...
 
 #### **Now we have to deploy via github-pages**
 
-In that github repository, click **settings** -> (scroll) go to **GitHub Pages section**. Click the select box under the source section, select **master** and click save.
+In that github repository, click **settings** -> (scroll) go to **GitHub Pages** section. Click the select box under the source section, select **master** and click save.
 
 You will get a notification like "GitHub Pages source saved."
 
-After that, Under the GitHub Pages section you can find your published app url. Like below...
+After that, Under the GitHub Pages section, you can find your published app URL. Like below...
 
 "Your site is ready to be published at http://www.surender.net/todo-app"
 
