@@ -23,18 +23,18 @@ This tutorial is all about how to create a simple todo list using web technologi
 ### Live: 
 [https://www.surender.net/todo-app](https://www.surender.net/todo-app)
 
-### Source Code:
+### Source code:
 [https://github.com/SurenderLohia/todo-app](https://github.com/SurenderLohia/todo-app)
 
 
-### Targeted Audience:
+### Targeted audience:
 One who looking to learn front-end development.<br>
 One who looking to build some cool stuff using web technology.<br>
 If you are new to the front-end, I believe this one will be a good starting point.<br>
 
 Yeah, will start...
 
-### Pro Tip: 
+### Pro tip:
 If you stuck somewhere in code feel free to check it out that part from [source code](https://github.com/SurenderLohia/todo-app)
 
 ### Task breakdown:
