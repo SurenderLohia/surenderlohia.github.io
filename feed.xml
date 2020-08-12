@@ -6,8 +6,8 @@
 </description>
     <link>https://www.surender.net/</link>
     <atom:link href="https://www.surender.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 12 Aug 2020 20:49:35 +0530</pubDate>
-    <lastBuildDate>Wed, 12 Aug 2020 20:49:35 +0530</lastBuildDate>
+    <pubDate>Wed, 12 Aug 2020 23:22:01 +0530</pubDate>
+    <lastBuildDate>Wed, 12 Aug 2020 23:22:01 +0530</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -27,9 +27,9 @@ This tutorial is all about how to create a simple todo list using web technologi
 &lt;p&gt;&lt;a href=&quot;https://github.com/SurenderLohia/todo-app&quot;&gt;https://github.com/SurenderLohia/todo-app&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;targeted-audience&quot;&gt;Targeted Audience:&lt;/h3&gt;
-&lt;p&gt;One who looking for learn front-end development.&lt;br /&gt;
-One who looking for build some cool stuff using web technology.&lt;br /&gt;
-If you are new to front-end, I believe this one will be a good starting point.&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;One who looking to learn front-end development.&lt;br /&gt;
+One who looking to build some cool stuff using web technology.&lt;br /&gt;
+If you are new to the front-end, I believe this one will be a good starting point.&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Yeah, will start…&lt;/p&gt;
 
@@ -113,7 +113,7 @@ Note: Don’t copy $ sign while coping command, it’s just a placeholder to ind
 
 &lt;p&gt;We have not added any actual content yet, but this is our starting point.&lt;/p&gt;
 
-&lt;p&gt;Now, will add the required &lt;em&gt;CSS&lt;/em&gt; styles. Open the &lt;strong&gt;css/main.css&lt;/strong&gt; file in the editor and copy-paste the below code.&lt;/p&gt;
+&lt;p&gt;Now, will add the required &lt;strong&gt;CSS&lt;/strong&gt; styles. Open the &lt;strong&gt;css/main.css&lt;/strong&gt; file in the editor and copy-paste the below code.&lt;/p&gt;
 
 &lt;pre&gt;
   &lt;code class=&quot;language-css&quot;&gt;
@@ -218,13 +218,13 @@ Open index.html in an editor and before closing head tag (&amp;lt;/head&amp;gt;)
 &lt;/pre&gt;
 
 &lt;p&gt;Now we have to add required &lt;strong&gt;HTML&lt;/strong&gt; for todo-list
-In &lt;strong&gt;index.html&lt;/strong&gt; copy and past the below code in between the body tags (&amp;lt;body&amp;gt;….&amp;lt;/body&amp;gt;)&lt;/p&gt;
+In &lt;strong&gt;index.html&lt;/strong&gt; copy and paste the below code in between the body tags (&amp;lt;body&amp;gt;….&amp;lt;/body&amp;gt;)&lt;/p&gt;
 
-&lt;h4 id=&quot;below-html-contains&quot;&gt;&lt;strong&gt;Below html contains:&lt;/strong&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;below-html-contains&quot;&gt;&lt;strong&gt;Below HTML contains:&lt;/strong&gt;&lt;/h4&gt;
 &lt;ol&gt;
   &lt;li&gt;Todo-list title &lt;br /&gt;&lt;/li&gt;
   &lt;li&gt;Add-todo section &lt;br /&gt;&lt;/li&gt;
-  &lt;li&gt;Todo-list Header section which contains All, Completed, Active filters and delete all button. &lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Todo-list Header section which contains All, Completed, Active filters, and delete all button. &lt;br /&gt;&lt;/li&gt;
   &lt;li&gt;And Todo-list&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -277,7 +277,7 @@ In &lt;strong&gt;index.html&lt;/strong&gt; copy and past the below code in betwe
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h3 id=&quot;3-add-javascript-functionality&quot;&gt;3. Add JavaScript functionality&lt;/h3&gt;
 
-&lt;p&gt;Open js/main.js file in editor and copy past the below js code&lt;/p&gt;
+&lt;p&gt;Open js/main.js file in the editor and copy-paste the below js code&lt;/p&gt;
 &lt;pre&gt;
   &lt;code class=&quot;language-js&quot;&gt;
     // IIFE to create local scope and to avoid global namespacing collisions
@@ -492,8 +492,9 @@ In &lt;strong&gt;index.html&lt;/strong&gt; copy and past the below code in betwe
   &lt;/code&gt;
 &lt;/pre&gt;
 
-&lt;p&gt;Now remove the plaseholder todo-list items from index.html. &lt;br /&gt;
-Remove below code from index.html.&lt;/p&gt;
+&lt;p&gt;Now remove the placeholder todo-list items from index.html. &lt;br /&gt;
+Remove the below code from index.html.&lt;/p&gt;
+
 &lt;pre&gt;
   &lt;code class=&quot;language-html&quot;&gt;
     &amp;lt;li class=&amp;quot;flex align-center todo-list-item&amp;quot;&amp;gt;
@@ -533,7 +534,7 @@ Remove below code from index.html.&lt;/p&gt;
   &lt;/code&gt;
 &lt;/pre&gt;
 
-&lt;p&gt;Then do git commit. Run the below command in terminal.&lt;/p&gt;
+&lt;p&gt;Then do git commit. Run the below command in the terminal.&lt;/p&gt;
 &lt;pre&gt;
   &lt;code class=&quot;language-shell&quot;&gt;
     git commit -m &quot;Create todo-app&quot;
@@ -553,14 +554,14 @@ Remove below code from index.html.&lt;/p&gt;
 and past it to terminal &lt;br&gt; --&gt;
 
 &lt;p&gt;To add remote origin, run the below command in terminal &lt;br /&gt;
-Note: update your github &amp;lt;username&amp;gt;&lt;/p&gt;
+Note: update your Github &amp;lt;username&amp;gt;&lt;/p&gt;
 &lt;pre&gt;
   &lt;code class=&quot;language-shell&quot;&gt;
     git remote add origin git@github.com:&amp;lt;username&amp;gt;/todo-app.git
   &lt;/code&gt;
 &lt;/pre&gt;
 
-&lt;p&gt;To push your code to respective remote repository, run the below command in terminal &lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;To push your code to the respective remote repository, run the below command in terminal &lt;br /&gt;&lt;/p&gt;
 &lt;pre&gt;
   &lt;code class=&quot;language-shell&quot;&gt;
     git push -u origin master
@@ -569,9 +570,9 @@ Note: update your github &amp;lt;username&amp;gt;&lt;/p&gt;
 
 &lt;p&gt;Refresh the Github repository. Now, your code will be there…&lt;/p&gt;
 
-&lt;h4 id=&quot;now-we-have-to-deploy-via-github-pages&quot;&gt;&lt;strong&gt;Now we have to deploy via github-pages&lt;/strong&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;now-we-have-to-deploy-via-github-pages&quot;&gt;&lt;strong&gt;Now we have to deploy via Github-pages&lt;/strong&gt;&lt;/h4&gt;
 
-&lt;p&gt;In that github repository, click &lt;strong&gt;settings&lt;/strong&gt; -&amp;gt; (scroll) go to &lt;strong&gt;GitHub Pages&lt;/strong&gt; section. Click the select box under the source section, select &lt;strong&gt;master&lt;/strong&gt; and click save.&lt;/p&gt;
+&lt;p&gt;In that Github repository, click &lt;strong&gt;settings&lt;/strong&gt; -&amp;gt; (scroll) go to &lt;strong&gt;GitHub Pages&lt;/strong&gt; section. Click the select box under the source section, select &lt;strong&gt;master&lt;/strong&gt; and click save.&lt;/p&gt;
 
 &lt;p&gt;You will get a notification like “GitHub Pages source saved.”&lt;/p&gt;
 
