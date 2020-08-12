@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Todo App | HTML | CSS | JavaScript | Front-end Development | Program | Todo List | | Surender Lohia</title>
+  <meta name="description" content="Simple Todo list tutorial using HTML, CSS, JavaScript | Todo App">
+  <meta name="author" content="Surender Lohia">
+  <meta property="og:title" content="Todo App | HTML | CSS | JavaScript | Front-end Development | Program | Todo List | | Surender Lohia" />
+  <meta property="og:image" content="https://www.surender.net/assets/images/posts/todo-app/todo-app.png">
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@surender_lohia">
+  <meta name="twitter:creator" content="@surender_lohia">
+  <meta name="twitter:title" content="Todo App | HTML | CSS | JavaScript | Front-end Development | Program | Todo List | | Surender Lohia" />
+  <meta name="twitter:description" content="Simple Todo list tutorial using HTML, CSS, JavaScript | Todo App" />
+  <meta name="twitter:image" content="https://www.surender.net/assets/images/posts/todo-app/todo-app.png">
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#66655d">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Css -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <link rel="canonical" href="https://www.surender.net/front-end/2020/08/11/todo-app-tutorial.html">
+  <link rel="alternate" type="application/rss+xml" title="Surender Lohia" href="https://www.surender.net/feed.xml">
+</head>
+
+
+  <body>
+    
+    
+      <div class="head-section">
+        <div class="main-menu-ct">
+  <div class="wrap text-center line-height-1">
+    <ul class="main-menu">
+      
+        <li class="main-menu-item">
+          
+            <a class="main-menu-link" href="/">
+              <span class="main-menu-link-border">Home</span>
+            </a>
+          
+        </li>
+      
+        <li class="main-menu-item">
+          
+            <a class="main-menu-link" href="/portfolio/">
+              <span class="main-menu-link-border">Portfolio</span>
+            </a>
+          
+        </li>
+      
+        <li class="main-menu-item">
+          
+            <a class="main-menu-link active" href="/blog/">
+              <span class="main-menu-link-border">Blog</span>
+            </a>
+          
+        </li>
+      
+    </ul>
+  </div>
+</div>
+        <div class="wrap">
+          <div class="wrap-in">
+            <div class="header-section-spacing">
+              <header>
+                <h1 class="main-title" itemprop="name headline">Todo App Tutorial - HTML | CSS | JavaScript</h1>
+                <div class="small-sub-title secondory-text-light text-center">
+                  <div class="post-meta-info-item">
+                    <span class="icon-sm post-meta-info-icon calender-icon"><?xml version="1.0" encoding="utf-8"?>
+<svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1111 1385l-46 46q-9 9-22 9t-23-9l-188-189-188 189q-10 9-23 9t-22-9l-46-46q-9-9-9-22t9-23l189-188-189-188q-9-10-9-23t9-22l46-46q9-9 22-9t23 9l188 188 188-188q10-9 23-9t22 9l46 46q9 9 9 22t-9 23l-188 188 188 188q9 10 9 23t-9 22zm-983 279h1408v-1024h-1408v1024zm384-1216v-288q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v288q0 14 9 23t23 9h64q14 0 23-9t9-23zm768 0v-288q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v288q0 14 9 23t23 9h64q14 0 23-9t9-23zm384-64v1280q0 52-38 90t-90 38h-1408q-52 0-90-38t-38-90v-1280q0-52 38-90t90-38h128v-96q0-66 47-113t113-47h64q66 0 113 47t47 113v96h384v-96q0-66 47-113t113-47h64q66 0 113 47t47 113v96h128q52 0 90 38t38 90z" fill="#fff"/></svg></span> <time datetime="2020-08-11T14:21:05+05:30" itemprop="datePublished">Aug 11, 2020</time>
+                  </div>
+
+                   
+                  <div class="post-meta-info-item">
+                    <span class="icon-sm post-meta-info-icon author-icon"><?xml version="1.0" encoding="utf-8"?>
+<svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M491 1536l91-91-235-235-91 91v107h128v128h107zm523-928q0-22-22-22-10 0-17 7l-542 542q-7 7-7 17 0 22 22 22 10 0 17-7l542-542q7-7 7-17zm-54-192l416 416-832 832h-416v-416zm683 96q0 53-37 90l-166 166-416-416 166-165q36-38 90-38 53 0 91 38l235 234q37 39 37 91z" fill="#fff"/></svg></span><span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                      <span itemprop="name">Surender Lohia</span>
+                    </span>
+                  </div>
+                  
+                  <div class="post-meta-info-item">
+                    <span class="icon-sm post-meta-info-icon tag-icon"><?xml version="1.0" encoding="utf-8"?>
+<svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M576 448q0-53-37.5-90.5t-90.5-37.5-90.5 37.5-37.5 90.5 37.5 90.5 90.5 37.5 90.5-37.5 37.5-90.5zm1067 576q0 53-37 90l-491 492q-39 37-91 37-53 0-90-37l-715-716q-38-37-64.5-101t-26.5-117v-416q0-52 38-90t90-38h416q53 0 117 26.5t102 64.5l715 714q37 39 37 91z" fill="#fff"/></svg></span>front-end
+                  </div>
+                </div>
+              </header>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrap-small">
+  <div class="wrap-in">
+    <div class="main-content">
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+        <div class="post-content" itemprop="articleBody">
+          <p>Hi Folks, <br />
+This tutorial is all about how to create a simple todo list using web technologies - HTML, CSS, and JavaScript…</p>
+
+<h3 id="demo">Demo:</h3>
+<div class="video-container mb20">
+  <iframe src="https://www.youtube.com/embed/isSe2Nza8Dk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+<h3 id="live">Live:</h3>
+<p>https://www.surender.net/todo-app</p>
+
+<h3 id="source-code">Source Code:</h3>
+<p>https://github.com/SurenderLohia/todo-app</p>
+
+<h3 id="targeted-audience">Targeted Audience:</h3>
+<p>One who looking for learn front-end development.<br />
+One who looking for build some cool stuff using web technology.<br />
+If you are new to front-end, I believe this one will be a good starting point.<br /></p>
+
+<p>Yeah, will start…</p>
+
+<h3 id="pro-tip">Pro Tip:</h3>
+<p>If you stuck somewhere in code feel free to check it out that part from <a href="https://github.com/SurenderLohia/todo-app">source code</a></p>
+
+<h3 id="task-breakdown">Task breakdown:</h3>
+
+<ol>
+  <li>Create required files and folders.</li>
+  <li>Create a basic structure using HTML and CSS.</li>
+  <li>Add JavaScript functionality.</li>
+  <li>Deploy our code to live, using Github pages.</li>
+</ol>
+
+<p><br /></p>
+<h3 id="1-create-required-files-and-folders">1. Create required files and folders</h3>
+
+<p>First will create the required directories and files. Run the below commands one by one in the terminal. <br />
+Note: Don’t copy $ sign while coping command, it’s just a placeholder to indicate terminal cursor pointer.</p>
+
+<pre>
+  <code class="language-shell">
+    $ mkdir todo-app
+    $ cd todo-app
+    $ touch index.html
+    $ mkdir css
+    $ mkdir js
+    $ touch css/main.css
+    $ touch js/main.js
+  </code>
+</pre>
+<p><br /></p>
+
+<h3 id="2-create-basic-structure-using-html-and-css">2. Create basic structure using HTML and CSS</h3>
+
+<p>Open the created directory (todo-app) in your favorite editor (I am using <a href="https://code.visualstudio.com/">VS Code</a>).</p>
+
+<p>Will add a basic HTML skeleton first. Open index.html and paste the below HTML code in that file.</p>
+
+<pre>
+  <code class="language-html">
+    &lt;!-- index.html --&gt;
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+      &lt;meta charset=&quot;UTF-8&quot;&gt;
+      &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+      &lt;title&gt;Todo App&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;h2&gt;Todo App&lt;/h1&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+  </code>
+</pre>
+
+<p>Run the local server to view this HTML in the browser…</p>
+
+<p>To start the local python server (or you run any other server) go to terminal and navigate to the todo-app directory. And past the below command. It will start the local python server.</p>
+
+<pre>
+  <code class="language-shell">
+    $ python -m SimpleHTTPServer
+  </code>
+</pre>
+
+<p>Once server started open Chrome browser and enter the below URL</p>
+
+<pre>
+  <code class="language-shell">
+    http://localhost:8000
+  </code>
+</pre>
+
+<p>(Python is available in Mac OS by default, in case if you don’t have python or not aware of <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server">how to start a local server</a>, then goto todo-app directory right-click the index.html file and click open with -&gt; Google Chrome)</p>
+
+<p>You will see below HTML</p>
+
+<p><img class="border" src="/assets/images/posts/todo-app/base-html.png" alt="Base html" /></p>
+
+<p>We have not added any actual content yet, but this is our starting point.</p>
+
+<p>Now, will add the required <em>CSS</em> styles. Open the <strong>css/main.css</strong> file in the editor and copy-paste the below code.</p>
+
+<pre>
+  <code class="language-css">
+    /* css/main.css */
+    body {
+      margin: 0;
+    }
+
+    .wrap {
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    /* Flex */
+    .flex {
+      display: flex;
+    }
+
+    .align-center {
+      align-items: center;
+    }
+
+
+    /* Typo */
+    .font-weight-normal {
+      font-weight: normal;
+    }
+
+    /* Margins */
+    .mr1 {
+      margin-right: 10px;
+    }
+
+    .mt0 {
+      margin-top: 0;
+    }
+
+    .mb0 {
+      margin-bottom: 0;
+    }
+
+    .mla {
+      margin-left: auto;
+    }
+
+    .text-btn {
+      background-color: transparent;
+      padding: 0;
+      border: 0;
+      cursor: pointer;
+    }
+
+    .text-btn:focus {
+      outline: 0;
+    }
+
+    .danger {
+      color: red;
+    }
+
+
+    /* Todo List */
+    .add-todo {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    .todo-list {
+      padding-left: 0;
+    }
+
+    .todo-list-item {
+      padding: 10px 10px 10px 0;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .todo-list-item input:checked + label {
+    text-decoration: line-through;
+    }
+
+    .delete-btn {
+      padding: 5px;
+    }
+
+  </code>
+</pre>
+
+<p>Now will update our index.html. <br />
+First, we have to include main.css in index.html. <br />
+Open index.html in an editor and before closing head tag (&lt;/head&gt;) add the below line</p>
+
+<pre>
+  <code class="language-html">
+    &lt;link href=&quot;css/main.css&quot; rel=&quot;stylesheet&quot;&gt;
+  </code>
+</pre>
+
+<p>Now we have to add required <strong>HTML</strong> for todo-list
+In <strong>index.html</strong> copy and past the below code in between the body tags (&lt;body&gt;….&lt;/body&gt;)</p>
+
+<h4 id="below-html-contains"><strong>Below html contains:</strong></h4>
+<ol>
+  <li>Todo-list title <br /></li>
+  <li>Add-todo section <br /></li>
+  <li>Todo-list Header section which contains All, Completed, Active filters and delete all button. <br /></li>
+  <li>And Todo-list</li>
+</ol>
+
+<pre>
+  <code class="language-html">
+    &lt;div class=&quot;wrap&quot;&gt;
+      &lt;h2 class=&quot;font-weight-normal&quot;&gt;Todo App&lt;/h1&gt;
+      &lt;section class=&quot;todo-list-container&quot;&gt;
+        &lt;section class=&quot;add-todo flex&quot;&gt;
+          &lt;input id=&quot;js-add-todo-input&quot; class=&quot;mr1&quot; type=&quot;text&quot; value=&quot;&quot; placeholder=&quot;Task&quot; /&gt;
+          &lt;button id=&quot;js-add-todo-btn&quot;&gt;Add&lt;/button&gt;
+        &lt;/section&gt;
+        &lt;header class=&quot;todo-header flex&quot;&gt;
+          &lt;div class=&quot;flex align-center mr1&quot;&gt;
+            &lt;input class=&quot;mt0 js-filter-todo-radio-btn&quot; type=&quot;radio&quot; value=&quot;all&quot; id=&quot;all&quot; name=&quot;todo-filter&quot; checked=&quot;checked&quot; /&gt;
+            &lt;label for=&quot;all&quot;&gt;All&lt;/label&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;flex align-center mr1&quot;&gt;
+            &lt;input class=&quot;mt0 js-filter-todo-radio-btn&quot; type=&quot;radio&quot; value=&quot;active&quot; id=&quot;active&quot; name=&quot;todo-filter&quot; /&gt;
+            &lt;label for=&quot;active&quot;&gt;Active&lt;/label&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;flex align-center mr1&quot;&gt;
+            &lt;input class=&quot;mt0 js-filter-todo-radio-btn&quot; type=&quot;radio&quot; value=&quot;completed&quot; id=&quot;completed&quot; name=&quot;todo-filter&quot; /&gt;
+            &lt;label for=&quot;completed&quot;&gt;Completed&lt;/label&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;flex align-center mla&quot;&gt;
+            &lt;button id=&quot;js-delete-all-btn&quot;&gt;Delete All&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/header&gt;
+        &lt;ul class=&quot;todo-list&quot; id=&quot;js-todo-list&quot;&gt;
+          &lt;li class=&quot;flex align-center todo-list-item&quot;&gt;
+            &lt;input class=&quot;mt0 mb0 mr1&quot; type=&quot;checkbox&quot; value=&quot;todo-id-1&quot; id=&quot;todo-id-1&quot; /&gt;
+            &lt;label for=&quot;todo-id-1&quot;&gt;HTML&lt;/label&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;flex align-center todo-list-item&quot;&gt;
+            &lt;input class=&quot;mt0 mb0 mr1&quot; type=&quot;checkbox&quot; value=&quot;todo-id-2&quot; id=&quot;todo-id-2&quot; /&gt;
+            &lt;label for=&quot;todo-id-2&quot;&gt;CSS&lt;/label&gt;
+          &lt;/li&gt;
+        
+        &lt;/ul&gt;
+      &lt;/section&gt;
+    &lt;/div&gt;
+  </code>
+</pre>
+
+<p>Now, the todo-app structure is ready goto browser and refresh it, you will see like below HTML page.</p>
+
+<p><img class="border" src="/assets/images/posts/todo-app/todo-app.png" alt="Todo-app basic structure" /></p>
+
+<p><br /></p>
+<h3 id="3-add-javascript-functionality">3. Add JavaScript functionality</h3>
+
+<p>Open js/main.js file in editor and copy past the below js code</p>
+<pre>
+  <code class="language-js">
+    // IIFE to create local scope and to avoid global namespacing collisions
+    (function () {
+      let todoCollection = {};
+      let todoIds = [];
+
+      /* 
+      Data Structure:
+
+      const todoCollection = {
+        "1": {
+          id: 1,
+          task: "HTML",
+          isCompleted: false,
+        },
+        "2": {
+          id: 2,
+          task: "CSS",
+          isCompleted: false,
+        },
+      };
+
+      const todoIds = [1, 2];
+
+      */
+
+      // Localstorage
+      function persistData(key, value) {
+        const valueStirng = JSON.stringify(value);
+        window.localStorage.setItem(key, valueStirng);
+      }
+
+      function getPersistedData(key) {
+        const value = window.localStorage.getItem(key);
+        return JSON.parse(value);
+      }
+
+      function init() {
+        const _todoCollection = getPersistedData('todoCollection');
+        const _todoIds = getPersistedData('todoIds');
+
+        if(_todoCollection) {
+          todoCollection = _todoCollection;
+        }
+
+        if(_todoIds) {
+          todoIds = _todoIds;
+        }
+
+        if(todoIds.length) {
+          renderTodoList(todoListEl, todoIds, todoCollection);
+        }
+      }
+
+      // Dom Elements
+      const todoListEl = document.getElementById("js-todo-list");
+      const addTodoBtn = document.getElementById('js-add-todo-btn');
+      const addTodoInput = document.getElementById('js-add-todo-input');
+      const filterTodoRadioBtns =  document.querySelectorAll('.js-filter-todo-radio-btn');
+      const deleteAllBtn = document.getElementById('js-delete-all-btn');
+
+      function createListItemEl(todoItem) {
+        return `<li class="flex align-center todo-list-item">
+        &lt;input class="mt0 mb0 mr1" type="checkbox" value="${todoItem.id}" id="${todoItem.id}" ${todoItem.isCompleted ? 'checked': ''} /&gt;
+        <label for="${todoItem.id}">${todoItem.task}</label>
+        <button class="text-btn delete-btn danger js-delete-btn mla" data-id="${todoItem.id}">X</button>
+        </li>`;
+      }
+
+      function renderTodoList(container, todoIds, todoCollection) {
+        let todoListHTML = "";
+        todoIds.forEach((id) =&gt; {
+          todoListHTML += createListItemEl(todoCollection[id]);
+        });
+
+        container.innerHTML = todoListHTML;
+      }
+
+      function addTodo(task) {
+        const todoId = todoIds.length + 1;
+        const todoItem = {
+          id: todoId,
+          task,
+          isCompleted: false,
+        };
+
+        todoCollection[todoId] = todoItem;
+        todoIds.push(todoItem.id);
+        addTodoInput.value = '';
+
+        persistData('todoCollection', todoCollection);
+        persistData('todoIds', todoIds);
+
+        renderTodoList(todoListEl, todoIds, todoCollection);
+      }
+
+      function toggleTodoItem(id) {
+        todoCollection[id].isCompleted = !todoCollection[id].isCompleted;
+        persistData('todoCollection', todoCollection);
+      }
+
+      function filterTodoitems(category) {
+        console.log('category', category);
+
+        if(category === 'all') {
+          renderTodoList(todoListEl, todoIds, todoCollection);
+          return;
+        }
+        
+        let filteredTodoCollection = {}
+        let filteredTodoIds = [];
+        if(category === 'active') {
+          todoIds.forEach((id) =&gt; {
+            const todoItem = todoCollection[id];
+            console.log(todoItem);
+            if(!todoItem.isCompleted) {
+              filteredTodoCollection[id] = todoItem;
+              filteredTodoIds.push(id);
+            }
+          });
+        }
+
+        else if(category === 'completed') {
+          todoIds.forEach((id) =&gt; {
+            const todoItem = todoCollection[id];
+            if(todoItem.isCompleted) {
+              filteredTodoCollection[id] = todoItem;
+              filteredTodoIds.push(id);
+            }
+          });
+        } else {
+          filteredTodoCollection = todoCollection;
+        }
+
+        renderTodoList(todoListEl, filteredTodoIds, filteredTodoCollection);
+      }
+
+      function deleteAll() {
+        todoCollection = {};
+        todoIds = [];
+
+        persistData('todoCollection', {});
+        persistData('todoIds', []);
+
+        renderTodoList(todoListEl, [], {});
+      }
+
+      function deleteTodoItem(id) {
+        const todoItemIndex = todoIds.indexOf(Number(id));
+        delete todoCollection[id];
+        todoIds.splice(todoItemIndex, 1);
+
+        persistData('todoCollection', todoCollection);
+        persistData('todoIds', todoIds);
+
+        renderTodoList(todoListEl, todoIds, todoCollection);
+      }
+
+      function onAddTodo() {
+        const task = addTodoInput.value;
+        addTodo(task);
+      }
+
+      // Using EventDelegation: to keep our code simple and performant
+      function onClickTodoItem(e) {
+        
+        const target = e.target;
+        
+        if(target.tagName === 'INPUT') {
+          e.stopPropagation();
+          const id = target.id;
+          toggleTodoItem(id);
+        }
+
+        if(target.tagName === 'BUTTON' &amp;&amp; target.classList.contains('js-delete-btn')) {
+          e.stopPropagation();
+          const id = target.getAttribute('data-id');
+          deleteTodoItem(id);  
+        }
+      }
+
+      function onFilterTodoItems(e) {
+        e.stopPropagation();
+        const category = e.target.value;
+        filterTodoitems(category);
+      }
+
+      function onDeleteAll() {
+        deleteAll();
+      }
+
+      init();
+      
+      // AttachEvents
+      addTodoBtn.addEventListener('click', onAddTodo, false);
+      todoListEl.addEventListener('click', onClickTodoItem, false);
+      filterTodoRadioBtns.forEach((item) =&gt; {
+        item.addEventListener('input', onFilterTodoItems, false);
+      });
+      deleteAllBtn.addEventListener('click', onDeleteAll, true);
+  })();
+
+  </code>
+</pre>
+
+<p>Add <strong>main.js</strong> file to <strong>index.html</strong> file. Add below line before body closing tag (&lt;/body&gt;)</p>
+
+<pre>
+  <code class="language-html">
+    &lt;script src=&quot;js/main.js&quot;&gt;&lt;/script&gt;
+  </code>
+</pre>
+
+<p>Now remove the plaseholder todo-list items from index.html. <br />
+Remove below code from index.html.</p>
+<pre>
+  <code class="language-html">
+    &lt;li class=&quot;flex align-center todo-list-item&quot;&gt;
+      &lt;input class=&quot;mt0 mb0 mr1&quot; type=&quot;checkbox&quot; value=&quot;todo-id-1&quot; id=&quot;todo-id-1&quot; /&gt;
+      &lt;label for=&quot;todo-id-1&quot;&gt;HTML&lt;/label&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;flex align-center todo-list-item&quot;&gt;
+      &lt;input class=&quot;mt0 mb0 mr1&quot; type=&quot;checkbox&quot; value=&quot;todo-id-2&quot; id=&quot;todo-id-2&quot; /&gt;
+      &lt;label for=&quot;todo-id-2&quot;&gt;CSS&lt;/label&gt;
+    &lt;/li&gt;
+  </code>
+</pre>
+
+<p>Refresh the page you will see the below <strong>todo-app</strong> with empty todo-list</p>
+
+<p><img class="border" src="/assets/images/posts/todo-app/todo-app-final.png" alt="Todo-app app" /></p>
+
+<p>Now, go ahead add, remove todo-items. After a refresh also data will be available, because we stored our data on local storage, so it’s persisting…</p>
+
+<p>That’s all we are done. Now will deploy our app.</p>
+
+<p><br /></p>
+<h3 id="4-deploy-our-code-to-live-using-github-pages">4. Deploy our code to live, using Github Pages.</h3>
+
+<p>First, we have to do <a href="https://git-scm.com/">git</a> init. Go to the terminal, navigate to the todo-app directory, and enter the below command.</p>
+
+<pre>
+  <code class="language-shell">
+    git init
+  </code>
+</pre>
+
+<p>After that need to add all files to git. For that run the below command in terminal</p>
+<pre>
+  <code class="language-shell">
+    git add .
+  </code>
+</pre>
+
+<p>Then do git commit. Run the below command in terminal.</p>
+<pre>
+  <code class="language-shell">
+    git commit -m "Create todo-app"
+  </code>
+</pre>
+
+<p>Now, go to your Github account [https://github.com/]</p>
+
+<p>In the right-hand side corner, there will be a <strong>+</strong> icon click on that icon and select “New repository”. It looks like below screenshot</p>
+
+<p><img src="/assets/images/posts/todo-app/create-new-repository.png" alt="Create new repository" /></p>
+
+<p>Give a Repository name to “todo-app” and click create repository button.</p>
+
+<!-- From that page copy the code from this section <br>
+**…or push an existing repository from the command line** <br>
+and past it to terminal <br> -->
+
+<p>To add remote origin, run the below command in terminal <br />
+Note: update your github &lt;username&gt;</p>
+<pre>
+  <code class="language-shell">
+    git remote add origin git@github.com:&lt;username&gt;/todo-app.git
+  </code>
+</pre>
+
+<p>To push your code to respective remote repository, run the below command in terminal <br /></p>
+<pre>
+  <code class="language-shell">
+    git push -u origin master
+  </code>
+</pre>
+
+<p>Refresh the Github repository. Now, your code will be there…</p>
+
+<h4 id="now-we-have-to-deploy-via-github-pages"><strong>Now we have to deploy via github-pages</strong></h4>
+
+<p>In that github repository, click <strong>settings</strong> -&gt; (scroll) go to <strong>GitHub Pages</strong> section. Click the select box under the source section, select <strong>master</strong> and click save.</p>
+
+<p>You will get a notification like “GitHub Pages source saved.”</p>
+
+<p>After that, Under the GitHub Pages section, you can find your published app URL. Like below…</p>
+
+<p>“Your site is ready to be published at http://www.surender.net/todo-app”</p>
+
+
+        </div>
+        <!-- <div class="divider">
+          <div class="row text-center">
+  <a class="icon is-rounded is-secondary m-r-10" data-cy="share-in-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://www.surender.net/front-end/2020/08/11/todo-app-tutorial.html" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" rel="noopener noreferrer">
+    <?xml version="1.0" encoding="utf-8"?>
+<svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z"/></svg>
+  </a>
+  <a class="icon is-rounded is-secondary m-r-10" data-cy="share-in-twitter" href="https://twitter.com/intent/tweet?text=Todo App | HTML | CSS | JavaScript | Front-end Development | Program | Todo List | | Surender Lohia&url=https://www.surender.net/front-end/2020/08/11/todo-app-tutorial.html" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" rel="noopener noreferrer">
+    <?xml version="1.0" encoding="utf-8"?>
+<svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"/></svg>
+  </a>
+  <a class="icon is-rounded is-secondary" data-cy="share-in-google-plus" href="https://plus.google.com/share?url=https://www.surender.net/front-end/2020/08/11/todo-app-tutorial.html" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" rel="noopener noreferrer">
+    <?xml version="1.0" encoding="utf-8"?>
+<svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1045 905q0-33-6-64h-362v132h217q-12 76-74.5 120.5t-142.5 44.5q-99 0-169-71.5t-70-170.5 70-170.5 169-71.5q93 0 153 59l104-101q-108-100-257-100-160 0-272 112.5t-112 271.5 112 271.5 272 112.5q165 0 266.5-105t101.5-270zm345 46h109v-110h-109v-110h-110v110h-110v110h110v110h110v-110zm274-55q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"/>
+</svg>
+  </a>
+</div>
+
+
+        </div> -->
+        
+        
+  <div id="disqus_thread"></div>
+    <script>
+
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+    
+    var disqus_config = function () {
+      this.page.url = 'https://www.surender.net' + '/front-end/2020/08/11/todo-app-tutorial.html';  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "Todo App | HTML | CSS | JavaScript | Front-end Development | Program | Todo List | | Surender Lohia"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://suren.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+      </article>
+    </div>
+  </div>
+</div>
+
+    <footer class="footer">
+  <div class="wrap text-center">
+    <div class="row mb3per">
+  <h2 class="title text-center">Follow</h2>
+  <div class="row text-center">
+    <a class="icon is-primary is-rounded m-r-5" target="_blank" href="https://in.linkedin.com/in/surenderlohia" rel="noopener noreferrer" data-cy="follow-on-linkedin"><?xml version="1.0" encoding="utf-8"?>
+<svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z"/></svg></a>
+    <a class="icon is-primary is-rounded" target="_blank" href="https://twitter.com/surender_lohia" rel="noopener noreferrer" data-cy="follow-on-twitter"><?xml version="1.0" encoding="utf-8"?>
+<svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"/></svg></a>
+  </div>
+</div>
+
+    <p class="footer-text">
+      Powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer" data-cy="jekyll">Jekyll</a>. Hosted on  <a href="https://github.com/" target="_blank" rel="noopener noreferrer" data-cy="github">Github</a>. <br> 
+      Icon credits:  Font Awesome by Dave Gandy - <a href="http://fontawesome.io" target="_blank" rel="noopener noreferrer" data-cy="font-awesome">http://fontawesome.io</a>. <br>
+      <a href="https://github.com/encharm/Font-Awesome-SVG-PNG" target="_blank" rel="noopener noreferrer" data-cy="font-awesome-svg">Font-Awesome-SVG-PNG</a> by Damian Kaczmarek and Dominykas Blyžė
+    </p>
+    <p class="copyright-text">Copyright &copy; <span class="current-year">2018</span> Surender Lohia. All rights reserved </p>
+  </div>
+</footer>
+
+<!--[if lt IE 9]>
+  <script>
+  closeOutdatedBrowser = function() {
+    var outdated = document.getElementById('outdated');
+    outdated.style.display = 'none';
+  }
+</script>
+<![endif]-->
+
+<script>
+  if (document.location.hostname.search("surender.net") !== -1) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-91796846-1', 'auto');
+    ga('send', 'pageview');
+  }
+</script>
+
+  <script src="/assets/js/main.js"></script>
+
+
+
+  </body>
+</html>
