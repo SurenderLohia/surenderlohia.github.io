@@ -195,6 +195,10 @@
   font-size: 1.5rem;
 }
 
+.border {
+  border: 1px solid $divider-color;
+}
+
 /* mobile */
 @include respond-to(mobile) {
   .m-bottom {
