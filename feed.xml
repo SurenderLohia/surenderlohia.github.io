@@ -6,8 +6,8 @@
 </description>
     <link>https://www.surender.net/</link>
     <atom:link href="https://www.surender.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 12 Aug 2020 23:24:52 +0530</pubDate>
-    <lastBuildDate>Wed, 12 Aug 2020 23:24:52 +0530</lastBuildDate>
+    <pubDate>Thu, 13 Aug 2020 21:03:22 +0530</pubDate>
+    <lastBuildDate>Thu, 13 Aug 2020 21:03:22 +0530</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -578,7 +578,7 @@ Note: update your Github &amp;lt;username&amp;gt;&lt;/p&gt;
 
 &lt;p&gt;After that, Under the GitHub Pages section, you can find your published app URL. Like below…&lt;/p&gt;
 
-&lt;p&gt;“Your site is ready to be published at http://www.surender.net/todo-app”&lt;/p&gt;
+&lt;p&gt;“Your site is ready to be published at &lt;a href=&quot;http://www.surender.net/todo-app&quot;&gt;http://www.surender.net/todo-app&lt;/a&gt;”&lt;/p&gt;
 
 </description>
         <pubDate>Tue, 11 Aug 2020 14:21:05 +0530</pubDate>
