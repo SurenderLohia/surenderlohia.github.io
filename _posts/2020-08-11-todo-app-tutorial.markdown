@@ -575,7 +575,7 @@ You will get a notification like "GitHub Pages source saved."
 
 After that, Under the GitHub Pages section, you can find your published app URL. Like below...
 
-"Your site is ready to be published at http://www.surender.net/todo-app"
+"Your site is ready to be published at [http://www.surender.net/todo-app](http://www.surender.net/todo-app)"
 
 
 
