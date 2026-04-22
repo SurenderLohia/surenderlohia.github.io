@@ -12,6 +12,8 @@ comments: true
 main-js: true
 ---
 
+![Civic Sense]({{"/assets/images/posts/civic-sense.png" | prepend: site.baseurl}})
+
 ### Public Transport & Restaurants
 We board a bus and start talking on the phone, often continuing until we reach our destination. We rarely stop to think if our loud conversation is bothering the person sitting next to us. It’s the same story in restaurants. I feel that a little bit of Civic Sense regarding how much our noise disrupts the peace of a public space would go a long way.
 <br>
